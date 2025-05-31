@@ -1,0 +1,39 @@
+﻿@if (Model == "ClassFilter")
+{
+    <div class="col-md-6">
+        <div class="form-group">
+            <label>Select Class</label>
+            <select id="ddlSelectClass_Filter" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
+            </select>
+        </div>
+    </div>
+}
+else if (Model == "SessionFilter")
+{
+    <div class="col-md-6">
+        <div class="form-group">
+            <label>Select Session</label>
+            <select id="ddlSession_Filter" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
+            </select>
+        </div>
+    </div>
+}
+else if (Model == "ClassFilter,SessionFilter")
+{
+    <div class="col-md-6">
+        <div class="form-group">
+            <label>Select Session</label>
+            <select id="ddlSession_Filter" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
+            </select>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <label>Select Class</label>
+            <select id="ddlSelectClass_Filter" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;" disabled>
+            </select>
+        </div>
+    </div>
+}
+
+

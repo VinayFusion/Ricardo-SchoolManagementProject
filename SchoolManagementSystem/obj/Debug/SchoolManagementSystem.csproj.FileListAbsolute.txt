@@ -1,0 +1,905 @@
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\SchoolManagementSystem.dll.config
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\SchoolManagementSystem.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\SchoolManagementSystem.pdb
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csc.exe
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csc.exe.config
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csc.rsp
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csi.exe
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csi.exe.config
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csi.rsp
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.Managed.Core.targets
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.AppContext.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Collections.Immutable.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Console.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Globalization.Calendars.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.Compression.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.FileSystem.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Net.Http.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Net.Sockets.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Reflection.Metadata.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.ValueTuple.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.XmlDocument.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.XPath.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\vbc.exe
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\vbc.exe.config
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\vbc.rsp
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\VBCSCompiler.exe
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\VBCSCompiler.exe.config
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Antlr3.Runtime.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.SqlServer.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Abstractions.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Logging.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Tokens.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.Jwt.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.OAuth.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Newtonsoft.Json.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Owin.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Net.Http.Formatting.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Helpers.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.Owin.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.WebHost.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Mvc.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Optimization.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Razor.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Deployment.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Razor.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\WebGrease.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.SqlServer.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Abstractions.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Logging.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Tokens.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.Jwt.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.OAuth.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Net.Http.Formatting.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.Owin.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Helpers.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Mvc.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Optimization.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Razor.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Deployment.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Razor.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Newtonsoft.Json.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Antlr3.Runtime.pdb
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.WebHost.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_1.resources
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_2.resources
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.GenerateResource.cache
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.CoreCompileInputs.cache
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.CopyComplete
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.dll
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.pdb
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csprojAssemblyReference.cache
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.RemoveStaffType.resources
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddFieldTypeAndValues.resources
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddFieldsInFieldTypeValuesTable.resources
+D:\HP D 2\Official\Protolabz eServices\withGitVC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddSessionTable.resources
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\SchoolManagementSystem.dll.config
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\SchoolManagementSystem.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\SchoolManagementSystem.pdb
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csc.exe
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csc.exe.config
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csc.rsp
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csi.exe
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csi.exe.config
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csi.rsp
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.AppContext.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Collections.Immutable.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Console.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Globalization.Calendars.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.Compression.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.FileSystem.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Net.Http.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Net.Sockets.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Reflection.Metadata.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.ValueTuple.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.XPath.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\vbc.exe
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\vbc.exe.config
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\vbc.rsp
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\VBCSCompiler.exe
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\VBCSCompiler.exe.config
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Antlr3.Runtime.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.SqlServer.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Abstractions.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Logging.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Tokens.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.Jwt.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Newtonsoft.Json.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Owin.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Net.Http.Formatting.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Helpers.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.Owin.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.WebHost.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Mvc.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Optimization.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Razor.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Deployment.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Razor.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\WebGrease.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.SqlServer.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Abstractions.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Logging.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Tokens.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.Jwt.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Net.Http.Formatting.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.Owin.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Helpers.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Mvc.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Optimization.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Razor.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Deployment.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Razor.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Newtonsoft.Json.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Antlr3.Runtime.pdb
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.WebHost.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.AssemblyReference.cache
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_1.resources
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_2.resources
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.RemoveStaffType.resources
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddFieldTypeAndValues.resources
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddFieldsInFieldTypeValuesTable.resources
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddSessionTable.resources
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.GenerateResource.cache
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.CoreCompileInputs.cache
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.CopyComplete
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.dll
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.pdb
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_Class_Table.resources
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_student_table.resources
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_ClassSection_Table_and_RemoveSection_In_ClassTable.resources
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Update_Session_fields.resources
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.modifiy_SectionTable.resources
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.student_tableUpdate_SessionIDAndSectionId.resources
+E:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_AdminTable.resources
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\SchoolManagementSystem.dll.config
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\SchoolManagementSystem.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\SchoolManagementSystem.pdb
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csc.exe
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csc.exe.config
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csc.rsp
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csi.exe
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csi.exe.config
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csi.rsp
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.Managed.Core.targets
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.AppContext.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Collections.Immutable.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Console.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Globalization.Calendars.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.Compression.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.FileSystem.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Net.Http.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Net.Sockets.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Reflection.Metadata.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.ValueTuple.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.XmlDocument.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.XPath.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\vbc.exe
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\vbc.exe.config
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\vbc.rsp
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\VBCSCompiler.exe
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\VBCSCompiler.exe.config
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Antlr3.Runtime.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.SqlServer.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Abstractions.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Logging.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Tokens.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.Jwt.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.OAuth.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Newtonsoft.Json.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Owin.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.IdentityModel.Tokens.Jwt.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Net.Http.Formatting.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Helpers.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.Owin.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.WebHost.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Mvc.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Optimization.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Razor.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Deployment.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Razor.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\WebGrease.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.SqlServer.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Abstractions.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Logging.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Tokens.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.Jwt.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.OAuth.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.IdentityModel.Tokens.Jwt.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Net.Http.Formatting.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.Owin.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Helpers.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Mvc.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Optimization.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Razor.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Deployment.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Razor.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Newtonsoft.Json.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Antlr3.Runtime.pdb
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.WebHost.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.AssemblyReference.cache
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_1.resources
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_2.resources
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.RemoveStaffType.resources
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddFieldTypeAndValues.resources
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddFieldsInFieldTypeValuesTable.resources
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddSessionTable.resources
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_Class_Table.resources
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_student_table.resources
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_ClassSection_Table_and_RemoveSection_In_ClassTable.resources
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Update_Session_fields.resources
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.modifiy_SectionTable.resources
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.student_tableUpdate_SessionIDAndSectionId.resources
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_AdminTable.resources
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.GenerateResource.cache
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.CoreCompileInputs.cache
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.CopyComplete
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.dll
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.pdb
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_SessionFee_Table.resources
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Modify_FeeType_In_SessionFee.resources
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Modify_SessionId_in_SessionFee.resources
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_PayFeeReceiptTable_PayFeeReceiptNumberTable_ReceiptFeeTypeTable.resources
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_ManagePayFee_and_ReceiptFeeType_Table.resources
+F:\Official Projects\Dheeraj\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_StudentTable_AddTransport_COL.resources
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\SchoolManagementSystem.dll.config
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\SchoolManagementSystem.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\SchoolManagementSystem.pdb
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csc.exe
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csc.exe.config
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csc.rsp
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csi.exe
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csi.exe.config
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csi.rsp
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.AppContext.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Collections.Immutable.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Console.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Globalization.Calendars.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.Compression.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.FileSystem.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Net.Http.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Net.Sockets.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Reflection.Metadata.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.ValueTuple.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.XPath.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\vbc.exe
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\vbc.exe.config
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\vbc.rsp
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\VBCSCompiler.exe
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\VBCSCompiler.exe.config
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Antlr3.Runtime.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.SqlServer.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Abstractions.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Logging.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Tokens.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.Jwt.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Newtonsoft.Json.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Owin.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.Net.Http.Formatting.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Helpers.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.Owin.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.WebHost.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Mvc.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Optimization.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Razor.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Deployment.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Razor.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\WebGrease.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.SqlServer.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Abstractions.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Logging.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Tokens.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.Jwt.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.Net.Http.Formatting.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.Owin.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Helpers.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Mvc.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Optimization.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Razor.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Deployment.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Razor.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Newtonsoft.Json.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Antlr3.Runtime.pdb
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.WebHost.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.AssemblyReference.cache
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_1.resources
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_2.resources
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.RemoveStaffType.resources
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddFieldTypeAndValues.resources
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddFieldsInFieldTypeValuesTable.resources
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddSessionTable.resources
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_Class_Table.resources
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_student_table.resources
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_ClassSection_Table_and_RemoveSection_In_ClassTable.resources
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Update_Session_fields.resources
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.modifiy_SectionTable.resources
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.student_tableUpdate_SessionIDAndSectionId.resources
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_AdminTable.resources
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_SessionFee_Table.resources
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Modify_FeeType_In_SessionFee.resources
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Modify_SessionId_in_SessionFee.resources
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_PayFeeReceiptTable_PayFeeReceiptNumberTable_ReceiptFeeTypeTable.resources
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_ManagePayFee_and_ReceiptFeeType_Table.resources
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_StudentTable_AddTransport_COL.resources
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.GenerateResource.cache
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.CoreCompileInputs.cache
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.CopyComplete
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.dll
+E:\Office Project\Dheeraj\All_School Management System files\Project (Current)\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.pdb
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\SchoolManagementSystem.dll.config
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\SchoolManagementSystem.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\SchoolManagementSystem.pdb
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csc.exe
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csc.exe.config
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csc.rsp
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csi.exe
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csi.exe.config
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csi.rsp
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.Managed.Core.targets
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.AppContext.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Collections.Immutable.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Console.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Globalization.Calendars.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.Compression.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.FileSystem.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Net.Http.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Net.Sockets.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Reflection.Metadata.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.ValueTuple.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.XmlDocument.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.XPath.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\vbc.exe
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\vbc.exe.config
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\vbc.rsp
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\VBCSCompiler.exe
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\VBCSCompiler.exe.config
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Antlr3.Runtime.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.SqlServer.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Abstractions.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Logging.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Tokens.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.Jwt.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.OAuth.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Newtonsoft.Json.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Owin.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.Net.Http.Formatting.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Helpers.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.Owin.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.WebHost.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Mvc.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Optimization.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Razor.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Deployment.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Razor.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\WebGrease.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.SqlServer.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Abstractions.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Logging.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Tokens.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.Jwt.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.OAuth.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.Net.Http.Formatting.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.Owin.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Helpers.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Mvc.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Optimization.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Razor.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Deployment.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Razor.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Newtonsoft.Json.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Antlr3.Runtime.pdb
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.WebHost.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.AssemblyReference.cache
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_1.resources
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_2.resources
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.RemoveStaffType.resources
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddFieldTypeAndValues.resources
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddFieldsInFieldTypeValuesTable.resources
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddSessionTable.resources
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_Class_Table.resources
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_student_table.resources
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_ClassSection_Table_and_RemoveSection_In_ClassTable.resources
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Update_Session_fields.resources
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.modifiy_SectionTable.resources
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.student_tableUpdate_SessionIDAndSectionId.resources
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_AdminTable.resources
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_SessionFee_Table.resources
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Modify_FeeType_In_SessionFee.resources
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Modify_SessionId_in_SessionFee.resources
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_PayFeeReceiptTable_PayFeeReceiptNumberTable_ReceiptFeeTypeTable.resources
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_ManagePayFee_and_ReceiptFeeType_Table.resources
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_StudentTable_AddTransport_COL.resources
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.GenerateResource.cache
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.CoreCompileInputs.cache
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolMa.D9F7BBC0.Up2Date
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.dll
+E:\SchoolManagementSystem\SchoolManagementSystem_08_Apr_2025_2_38_PM\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.pdb
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\SchoolManagementSystem.dll.config
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\SchoolManagementSystem.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\SchoolManagementSystem.pdb
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csc.exe
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csc.exe.config
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csc.rsp
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csi.exe
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csi.exe.config
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\csi.rsp
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.AppContext.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Collections.Immutable.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Console.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Globalization.Calendars.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.Compression.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.FileSystem.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Net.Http.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Net.Sockets.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Reflection.Metadata.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.ValueTuple.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.XPath.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\vbc.exe
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\vbc.exe.config
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\vbc.rsp
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\VBCSCompiler.exe
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\roslyn\VBCSCompiler.exe.config
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Antlr3.Runtime.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.SqlServer.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Abstractions.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Logging.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Tokens.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.Jwt.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Newtonsoft.Json.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Owin.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.Net.Http.Formatting.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Helpers.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.Owin.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.WebHost.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Mvc.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Optimization.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Razor.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Deployment.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Razor.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\WebGrease.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\EntityFramework.SqlServer.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Abstractions.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Logging.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.IdentityModel.Tokens.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.Jwt.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.Net.Http.Formatting.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.Owin.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Helpers.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Mvc.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Optimization.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Razor.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Deployment.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.WebPages.Razor.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Newtonsoft.Json.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Antlr3.Runtime.pdb
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\System.Web.Http.WebHost.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.AssemblyReference.cache
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_1.resources
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_2.resources
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.RemoveStaffType.resources
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddFieldTypeAndValues.resources
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddFieldsInFieldTypeValuesTable.resources
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddSessionTable.resources
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_Class_Table.resources
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_student_table.resources
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_ClassSection_Table_and_RemoveSection_In_ClassTable.resources
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Update_Session_fields.resources
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.modifiy_SectionTable.resources
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.student_tableUpdate_SessionIDAndSectionId.resources
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_AdminTable.resources
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_SessionFee_Table.resources
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Modify_FeeType_In_SessionFee.resources
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Modify_SessionId_in_SessionFee.resources
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_PayFeeReceiptTable_PayFeeReceiptNumberTable_ReceiptFeeTypeTable.resources
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_ManagePayFee_and_ReceiptFeeType_Table.resources
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_StudentTable_AddTransport_COL.resources
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.GenerateResource.cache
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.CoreCompileInputs.cache
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolMa.D9F7BBC0.Up2Date
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.dll
+E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.pdb
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\SchoolManagementSystem.dll.config
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\SchoolManagementSystem.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\SchoolManagementSystem.pdb
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\csc.exe
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\csc.exe.config
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\csc.rsp
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\csi.exe
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\csi.exe.config
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\csi.rsp
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.AppContext.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Collections.Immutable.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Console.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Globalization.Calendars.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.IO.Compression.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.IO.FileSystem.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Net.Http.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Net.Sockets.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Reflection.Metadata.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.ValueTuple.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Xml.XPath.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\vbc.exe
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\vbc.exe.config
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\vbc.rsp
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\VBCSCompiler.exe
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\VBCSCompiler.exe.config
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Antlr3.Runtime.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\EntityFramework.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\EntityFramework.SqlServer.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Microsoft.IdentityModel.Abstractions.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Microsoft.IdentityModel.Logging.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Microsoft.IdentityModel.Tokens.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Microsoft.Owin.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Microsoft.Owin.Security.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Microsoft.Owin.Security.Jwt.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Newtonsoft.Json.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Owin.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.Net.Http.Formatting.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.Web.Helpers.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.Web.Http.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.Web.Http.Owin.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.Web.Http.WebHost.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.Web.Mvc.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.Web.Optimization.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.Web.Razor.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.Web.WebPages.Deployment.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.Web.WebPages.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.Web.WebPages.Razor.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\WebGrease.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\EntityFramework.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\EntityFramework.SqlServer.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Microsoft.IdentityModel.Abstractions.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Microsoft.IdentityModel.Logging.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Microsoft.IdentityModel.Tokens.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Microsoft.Owin.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Microsoft.Owin.Security.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Microsoft.Owin.Security.Jwt.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.Net.Http.Formatting.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.Web.Http.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.Web.Http.Owin.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.Web.Helpers.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.Web.Mvc.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.Web.Optimization.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.Web.Razor.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.Web.WebPages.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.Web.WebPages.Deployment.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.Web.WebPages.Razor.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Newtonsoft.Json.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Antlr3.Runtime.pdb
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\System.Web.Http.WebHost.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.AssemblyReference.cache
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_1.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_2.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.RemoveStaffType.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddFieldTypeAndValues.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddFieldsInFieldTypeValuesTable.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddSessionTable.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_Class_Table.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_student_table.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_ClassSection_Table_and_RemoveSection_In_ClassTable.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Update_Session_fields.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.modifiy_SectionTable.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.student_tableUpdate_SessionIDAndSectionId.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_AdminTable.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_SessionFee_Table.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Modify_FeeType_In_SessionFee.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Modify_SessionId_in_SessionFee.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_PayFeeReceiptTable_PayFeeReceiptNumberTable_ReceiptFeeTypeTable.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_ManagePayFee_and_ReceiptFeeType_Table.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_StudentTable_AddTransport_COL.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.GenerateResource.cache
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.CoreCompileInputs.cache
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolMa.D9F7BBC0.Up2Date
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.pdb

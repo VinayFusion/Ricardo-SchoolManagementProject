@@ -1,0 +1,149 @@
+﻿
+@{
+    ViewBag.Title = "Manage Section";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Manage Section</h1>
+            </div>
+            <div class="col-sm-6" style="text-align:right;">
+                <button id="btnAddNewSection" type="button" class="btn btn-primary" onclick="AddNewSection_ShowForm();"><i class="fa fa-plus" aria-hidden="true" style="margin-right:5px;"></i> Add New Section</button>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<style>
+    .disable-select {
+        user-select: none; /* supported by Chrome and Opera */
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+    }
+</style>
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div id="dv_AddUpdateSectionForm" class="row" style="display:none;">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 id="Title_SectionForm_ManageSection" class="card-title">@*Add New Class*@</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Select Class<span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlSelectClass_ManageSection" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;"onchange="SessionBindByClass()">
+                                        </select>
+                                        <span id="SelectClass_error_ManageSection" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Select Session<span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlSession_ManageSection" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;"onchange="SectionBindBySession()">
+                                        </select>
+                                        <span id="Session_error_ManageSection" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Select Class Sections<span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlSection_ManageSection" class="form-control select2 select2-danger " data-dropdown-css-class="select2-danger" style="width: 100%;" multiple="multiple">
+                                        </select>
+                                        <span id="Section_error_ManageSection" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <button id="btnSubmitManageSection" type="button" class="btn btn-primary" onclick="AddUpdateClass(1);">Submit</button>
+                            <button id="btnUpdateManageSection" type="button" class="btn btn-primary" onclick="AddUpdateClass(2);" style="display:none;">Update</button>
+                            <button type="button" class="btn btn-default" onclick="CancelForm();">Cancel</button>
+                        </div>
+                    </form>
+
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!--/.col (left) -->
+    </div>
+    <div id="dv_SectionListBox" class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Class List</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+
+                        </div>
+                        @Html.Partial("_ClassSessionFilter", "SessionFilter")
+                        <div class="col-md-3">
+
+                        </div>
+                    </div>
+                    <table id="tblSection_ManageSection" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Sno</th>
+                                <th>Session (Class)</th>
+                                <th>Section</th>
+                                <th>Edit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Sno</th>
+                                <th>Session (Class)</th>
+                                <th>Section</th>
+                                <th>Edit</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <!-- /.card-body -->
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+</section>
+<!-- /.content -->
+
+
+<script src="~/ScriptFiles/ManageSection.js"></script>
+<script src="~/ScriptFiles/ClassSessionFilter.js"></script>
+<script>
+    $(function () {
+        $("#tblCLass_ManageSection").DataTable();
+        //Initialize Select2 Elements
+        document.getElementById("ddlSession_Filter").onchange = function () { GetAllSectionList(); };
+        $('.select2').select2();
+        $("#ddlSelectClass_ManageSection").select2({ placeholder: "No Class Created" });
+        $("#ddlSession_ManageSection").select2({ placeholder: "No Session of selected Class" });
+        $("#ddlSession_Filter").select2({ placeholder: "No Session created of class" });
+    });
+</script>

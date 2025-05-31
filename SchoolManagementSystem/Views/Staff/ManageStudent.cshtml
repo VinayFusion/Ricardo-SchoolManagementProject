@@ -1,0 +1,295 @@
+﻿
+@{
+    ViewBag.Title = "ManageStudent";
+    Layout = "~/Views/Shared/_StaffLayout.cshtml";
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Manage Student</h1>
+            </div>
+            <div class="col-sm-6" style="text-align:right;">
+                <button id="btnAddNewStudent" type="button" class="btn btn-primary" onclick="AddNewStudent_ShowForm();">
+                    <i class="fa fa-plus" aria-hidden="true" style="margin-right:5px;"></i> Add New Student
+                </button>   
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<link href="~/Content/Panel/plugins/jquery-ui/jquery-ui.css" rel="stylesheet" />
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div id="dv_AddUpdateStudentForm" class="row" style="display:none;">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 id="Title_StudentForm_ManageStudent" class="card-title">@*Add New Course*@</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form>
+                        <div class="card-body">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>First Name <span class="requiredFieldClass">*</span></label>
+                                                <input type="text" class="form-control AvoidSpaceAtFirst " id="txtFirstName_ManageStudent" placeholder="Enter Student First Name">
+                                                <span id="firstName_error_ManageStudent" class="errorsClass"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Last Name <span class="requiredFieldClass">*</span></label>
+                                                <input type="text" class="form-control AvoidSpaceAtFirst " id="txtLastName_ManageStudent" placeholder="Enter Student Last Name">
+                                                <span id="lastName_error_ManageStudent" class="errorsClass"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Date Of Birth <span class="requiredFieldClass">*</span></label>
+                                        <div class="form-check float-right">
+                                            <input type="checkbox" class="form-check-input" id="chkIsExist_ManageStudent" onchange="IsExistingChange()">
+                                            <label class="form-check-label" for="chkIsExist_ManageStudent" style="cursor:pointer;"><b>Is Exists</b></label>
+                                        </div>
+
+                                        <input type="text" class="form-control isDatePicker" id="txtDOB_ManageStudent" placeholder="Select Date Of Birth" style="cursor:pointer;" readonly>
+                                        <span id="DOB_error_ManageStudent" class="errorsClass"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Father Name <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control AvoidSpaceAtFirst " id="txtFatherName_ManageStudent" placeholder="Enter Father Name">
+                                        <span id="FatherName_error_ManageStudent" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Mother Name <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control AvoidSpaceAtFirst " id="txtMotherName_ManageStudent" placeholder="Enter Mother Name">
+                                        <span id="MotherName_error_ManageStudent" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Select Gender<span class="requiredFieldClass">*</span></label>
+                                                <select id="ddlGender_ManageStudent" class="form-control select2 select2-danger " data-dropdown-css-class="select2-danger" style="width: 100%;" placeholder="Select Gender">
+                                                </select>
+                                                <span id="Gender_error_ManageStudent" class="errorsClass"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Select Blood Group<span class="requiredFieldClass"></span></label>
+                                                <select id="ddlBlood_ManageStudent" class="form-control select2 select2-danger " data-dropdown-css-class="select2-danger" style="width: 100%;" placeholder="Select Blood Group">
+                                                </select>
+                                                <span id="Blood_error_ManageStudent" class="errorsClass"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>UserName</label>
+                                                <input type="text" class="form-control AvoidSpace" id="txtUserName_ManageStudent" placeholder="Enter UserName">
+                                                <span id="UserName_error_ManageStudent" class="errorsClass"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Password </label>
+                                                <input type="text" class="form-control" id="txtPassword_ManageStudent" placeholder="Enter Password">
+                                                <span id="password_error_ManageStudent" class="errorsClass"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="text" class="form-control isEmailField AvoidSpace" id="txtEmail_ManageStudent" placeholder="Enter Email">
+                                        <span id="email_error_ManageStudent" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Mobile <span class="requiredFieldClass">*</span></label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">+91</span>
+                                            </div>
+                                            <input type="text" class="form-control IsNumeric" id="txtMobile_ManageStudent" placeholder="Enter Mobile-Number" maxlength="10">
+                                        </div>
+                                        <span id="mobile_error_ManageStudent" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Pincode <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control IsNumeric" id="txtPincode_ManageStudent" placeholder="Enter Pincode" maxlength="8">
+                                        <span id="pincode_error_ManageStudent" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Address <span class="requiredFieldClass">*</span></label>
+                                        <textarea class="form-control" id="txtAddress_ManageStudent" placeholder="Enter Address" rows="3"></textarea>
+                                        <span id="address_error_ManageStudent" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Select Class<span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlSelectClass_ManageStudent" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;" onchange="SessionBindByClass()">
+                                        </select>
+                                        <span id="SelectClass_error_ManageStudent" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Select Session<span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlSession_ManageStudent" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;" onchange="SectionBindBySession()">
+                                        </select>
+                                        <span id="Session_error_ManageStudent" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Select Class Section<span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlSection_ManageStudent" class="form-control select2 select2-danger " data-dropdown-css-class="select2-danger" style="width: 100%;">
+                                        </select>
+                                        <span id="Section_error_ManageStudent" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="chkIsActive_ManageStudent" checked>
+                                        <label class="form-check-label" for="chkIsActive_ManageStudent" style="cursor:pointer;">Is Active</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- /.card-body -->
+
+                        <div class="card-footer">
+                            <button id="btnSubmitManageStudent" type="button" class="btn btn-primary" onclick="AddUpdateStudent(1);">Submit</button>
+                            <button id="btnUpdateManageStudent" type="button" class="btn btn-primary" onclick="AddUpdateStudent(2);" style="display:none;">Update</button>
+                            <button type="button" class="btn btn-default" onclick="CancelForm();">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- /.card -->
+            </div>
+            <!--/.col (left) -->
+        </div>
+        <div id="dv_StudentListBox" class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Students List</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+
+                            </div>
+                            @*<div class="col-md-4">
+                                <label>Select Branch</label>
+                                <select id="ddlBranch_Filter_ManageStudent" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;" onchange="FilterStudentByBranch();">
+                                </select>
+                            </div>*@
+                            <div class="col-md-4">
+
+                            </div>
+                        </div>
+                        <table id="tblStudent_ManageStudent" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Sno</th>
+                                    <th>Name</th>
+                                    <th>Session (Class)</th>
+                                    <th>Section</th>
+                                    <th>Address</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>Sno</th>
+                                    <th>Name</th>
+                                    <th>Session (Class)</th>
+                                    <th>Section</th>
+                                    <th>Address</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+<script src="/ScriptFiles/ManageStudent.js"></script>
+<script src="~/ScriptFiles/ClassSessionFilter.js"></script>
+
+
+<script>
+    $(function () {
+        $("#tblStudent_ManageStudent").DataTable();
+        $(".isDatePicker").datepicker({
+            dateFormat: 'yy-mm-dd',
+            changeYear: true,
+            changeMonth: true,
+            showMonthAfterYear: true,
+        });
+        //Initialize Select2 Elements
+        $('.select2').select2();
+
+        $("#ddlSelectClass_ManageStudent").select2({ placeholder: "No Class Created" });
+        $("#ddlSession_ManageStudent").select2({ placeholder: "No Session have Section of selected Class" });
+        $("#ddlSection_ManageStudent").select2({ placeholder: "No Section of selected Session" });
+    });
+</script>
+@*<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>*@

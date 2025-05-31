@@ -1,0 +1,230 @@
+﻿
+@{
+    ViewBag.Title = "Manage Revenue";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+<style>
+    #tblRevenueData_ManageRevenue_filter {
+        display: none;
+    }
+    .table-heading {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .table-value {
+        font-weight: bold;
+        font-size: 20px;
+        color: green;
+    }
+
+    #revenue_Calculation_Table {
+        margin-top: 20px;
+    }
+
+        #revenue_Calculation_Table tbody tr td:last-child {
+            padding-left: 100px;
+            text-align: right;
+        }
+</style>
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Reports (Revenue)</h1>
+            </div>
+            <div class="col-sm-6" style="text-align:right;">
+                @*<ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">General Form</li>
+                    </ol>*@
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Revenue List</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+
+                        <div class="row">
+                            @*<div class="col-md-4">
+                                <div class="form-group">
+                                    <label>From</label>
+                                    <input type="text" class="form-control isDatePicker" id="txtFromDate_ManageRevenue" placeholder="Select From-Date" style="cursor:pointer;" onchange="StartDateChangeFun();" readonly>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>To</label>
+                                    <input type="text" class="form-control isDatePicker" id="txtToDate_ManageRevenue" placeholder="Select To-Date" style="cursor:pointer;" onchange="EndDateChangeFun();" readonly>
+                                </div>
+                            </div>*@
+                            @Html.Partial("_FilterByDate_From_To")
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Branch</label>
+                                    <select id="ddlBranch_Filter_ManageRevenue" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;" onchange="FilterRevenueListDataByBranch();">
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="dv_PrintableRevenueButtons_Section" class="row" style="margin-block:15px;display:none;">
+                            <div class="col-md-12">
+                                <button id="btnPrint_ManageRevenue" type="button" class="btn btn-primary" onclick="PrintRevenueData();"> Print</button>
+                                <button id="btnSendRevenue_ManageRevenue" type="button" class="btn btn-primary" onclick="SendRevenueData();"> Send</button>
+                            </div>
+                        </div>
+
+                        <table id="tblRevenueData_ManageRevenue" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Receipt-Number</th>
+                                    <th>Student</th>
+                                    <th>Paid Fee</th>
+                                    <th>Paid On</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Receipt-Number</th>
+                                    <th>Student</th>
+                                    <th>Paid Fee</th>
+                                    <th>Paid On</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+
+                        @*<div class="row" style="margin-top:30px;margin-bottom:20px;">
+            <div class="col-md-12">
+                <span style="font-weight:bold;font-size:15px;">Total Revenue</span>
+                <span id="span_TotalRevenue_ManageRevenue" style="font-weight: bold; font-size: 20px;margin-left:10px;color:green;"></span>
+            </div>
+        </div>*@
+                        <table id="revenue_Calculation_Table">
+                            <tbody>
+                                <tr>
+                                    <td><span class="table-heading">Total Revenue</span></td>
+                                    <td><span id="span_TotalRevenue_ManageRevenue" class="table-value"></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="table-heading">Total Expenditure</span></td>
+                                    <td><span id="span_TotalExpenditure_ManageRevenue" class="table-value" style="color:red;"></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="table-heading">Revenue - Expenditure</span></td>
+                                    <td><span id="span_TotalRemaining_ManageRevenue" class="table-value"></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</section>
+
+<div id='dv_PrintRevenueData_Section' style='display:none;'>
+    <div style='font-size:22px;padding-top:10px;padding-bottom:15px;'>
+        Revenue Data
+    </div>
+    <table style='width: 100%; border-collapse: collapse;'>
+        <thead>
+            <tr>
+                <th style='text-align: center;border:1px solid #ccc;padding-top:4px;padding-bottom:4px;'>#</th>
+                <th style='text-align: center; border: 1px solid #ccc; padding-top: 4px; padding-bottom: 4px;'>Receipt-Number</th>
+                <th style='text-align: center; border: 1px solid #ccc; padding-top: 4px; padding-bottom: 4px;'>Student</th>
+                <th style='text-align: center; border: 1px solid #ccc; padding-top: 4px; padding-bottom: 4px;'>Paid Fee</th>
+                <th style='text-align: center; border: 1px solid #ccc; padding-top: 4px; padding-bottom: 4px;'>Paid On</th>
+            </tr>
+        </thead>
+        <tbody id='tbody_RevenueData_Printable'>
+        </tbody>
+    </table>
+    @*<div style='margin-top:20px;'>
+            <span style='font-weight:bold;font-size:15px;'>Total Revenue</span>
+            <span id='span_TotalRevenue_ManageRevenue_Printable' style='font-weight: bold; font-size: 20px;margin-left:10px;color:green;'></span>
+        </div>*@
+    <table id="revenue_Calculation_Table_Printable" style="margin-top:20px;">
+        <tbody>
+            <tr>
+                <td><span style="font-weight:bold;font-size:15px;">Total Revenue</span></td>
+                <td style="padding-left: 50px; text-align: right;"><span id="span_TotalRevenue_ManageRevenue_Printable" style="font-weight: bold; font-size: 20px;margin-left:10px;color:green;float:right;"></span></td>
+            </tr>
+            <tr>
+                <td><span style="font-weight:bold;font-size:15px;">Total Expenditure</span></td>
+                <td style="padding-left: 50px; text-align: right;"><span id="span_TotalExpenditure_ManageRevenue_Printable" style="font-weight: bold; font-size: 20px;margin-left:10px;color:red;float:right;"></span></td>
+            </tr>
+            <tr>
+                <td><span style="font-weight:bold;font-size:15px;">Revenue - Expenditure</span></td>
+                <td style="padding-left: 50px; text-align: right;"><span id="span_TotalRemaining_ManageRevenue_Printable" style="font-weight: bold; font-size: 20px;margin-left:10px;color:green;float:right;"></span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<button id='btn_SendRevenueData_ManageRevenue_Modal' type='button' class='btn btn-default' data-toggle='modal' data-target='#SendRevenueData_ManageRevenue_Modal' style='display:none;'>
+</button>
+
+<div class='modal fade' id='SendRevenueData_ManageRevenue_Modal'>
+    <div class='modal-dialog'>
+        <div class='modal-content'>
+            <div class='modal-header'>
+                <h4 class='modal-title'>Email</h4>
+                <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                </button>
+            </div>
+            <div class='modal-body'>
+                <div class='row'>
+                    <div class='col-md-10'>
+                        <div class='form-group'>
+                            <label>Please check the email below <span class='requiredFieldClass'>*</span></label>
+                            <input id='txtEmail_ManageRevenue_Modal' type='text' class='form-control isEmailField AvoidSpace' />
+                            <span id='email_error_ManageRevenue' class='errorsClass'></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='modal-footer justify-content-between'>
+                <button id='btnClose_ManageRevenue_Modal' type='button' class='btn btn-default' data-dismiss='modal'>Cancel</button>
+                <button type='button' class='btn btn-primary' onclick='ConfirmSendRevenueDataEmail();'>Send</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<!-- /.content -->
+<script src="/ScriptFiles/ManageRevenue.js"></script>
+<script src="~/ScriptFiles/DateCheck.js"></script>
+<script>
+    $(function () {
+        $("#tblRevenueData_ManageRevenue").DataTable();
+
+        $(".isDatePicker").datepicker({ dateFormat: 'yy-mm-dd' });
+
+        //Initialize Select2 Elements
+        $('.select2').select2();
+    });
+</script>
+

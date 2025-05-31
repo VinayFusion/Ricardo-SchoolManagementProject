@@ -1,0 +1,355 @@
+﻿@{
+    ViewBag.Title = "Pay Course Fee";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+
+<style>
+    .hr-line-dashed {
+        border-top: 1px dashed #b6b8ba;
+        color: #ffffff;
+        background-color: #ffffff;
+        height: 1px;
+        margin: 20px 0;
+    }
+
+    #tblStudentProfile {
+        padding: 25px 0;
+    }
+
+        #tblStudentProfile tr td:first-child {
+            padding-right: 30px;
+            font-weight: bold;
+        }
+
+        #tblStudentProfile tr td:last-child {
+            padding-left: 30px;
+        }
+
+    .widget-student-image {
+        left: 50%;
+        margin-left: -45px;
+        position: absolute;
+        top: 30px;
+    }
+
+        .widget-student-image img {
+            border: 3px solid white;
+            height: auto;
+            width: 90px;
+        }
+
+    .student-img-circle {
+        border-radius: 50%;
+    }
+</style>
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Manage Fee</h1>
+            </div>
+            <div class="col-sm-6" style="text-align:right;">
+                <button id="btnPayFee" type="button" class="btn btn-primary" onclick="FindStudentIDPopUp();"><i class="fa fa-plus" aria-hidden="true" style="margin-right:5px;"></i> Pay Course Fee</button>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div id="dv_PayFeeForm" class="row" style="display:none;">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 id="Title_PayFeeForm_ManagePayFee" class="card-title"></h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Paid on</label>
+                                                <input type="text" class="form-control isDatePicker" id="txtPaidOnDate_ManagePayFee" placeholder="Select Date" style="cursor:pointer;" readonly disabled>
+                                                <span id="paidOnDate_error_ManagePayFee" class="errorsClass"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Start CheckBox Monthly, yearly, Activity, Transport-->
+                                    @*-----For Dynamic FeeType show --------------------------------------*@
+                                    <div class="row" id="FeeTypeRow_ManagePayFee">
+                                    </div>
+                                    <!--End CheckBox Monthly, yearly, Activity, Transport-->
+                                    <!--Start CheckBox Month Name-->
+                                    @Html.Partial("_MonthsTab")
+                                    <!--End CheckBox Month Name-->
+                                </div>
+                                <!-- Start student Profile Table -->
+                                <div class="col-md-6">
+                                    <div class="card card-primary " style="margin-top: 2em">
+                                        <div class="card card-widget widget-user">
+                                            <!-- Add the bg color to the header using any of the bg-* classes -->
+                                            <div class="widget-user-header bg-info m-0 p-0" style="background-color:red!important;width:auto; height:85px;">
+                                                <div class="row w-100 h-100">
+                                                    <div class="col-md-4" style="display: inline-block;align-self: flex-end;">
+                                                        <h3 id="ProfileName_ManagePayFee" class="widget-user-username">name</h3>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="widget-student-image">
+                                                            <img id="imgProfile_ManagePayFee" class="student-img-circle elevation-2" src="" alt="User Avatar">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4" style="display: inline-block;align-self: flex-end;">
+                                                        <h5 id="ProfileEmail_ManagePayFee" class="widget-user-desc m-0 p-0">email</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <table id="tblStudentProfile " class="m-auto" style="font-weight:bold;">
+                                                <tr>
+                                                    <td style="width: 250px;">Student Father</td>
+                                                    <td style="width: 50px;">:-</td>
+                                                    <td id="StudentFatherLabel" style="width: 250px;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Student Mobile No</td>
+                                                    <td>:-</td>
+                                                    <td id="StudentMobileLabel"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Session</td>
+                                                    <td>:-</td>
+                                                    <td id="SessionLabel"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Class</td>
+                                                    <td>:-</td>
+                                                    <td id="ClassLabel"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Section</td>
+                                                    <td>:-</td>
+                                                    <td id="SectionLabel"></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End student Profile Table -->
+                            </div>
+                            <!-- start table section -->
+                            <div class="row mt-2">
+                                <div class="col-md-12">
+                                    <table id="tbl_tablevalues" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Fee Type</th>
+                                                <th>Base Fee Amount</th>
+                                                <th>Payable Amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- end table section -->
+                            <hr class="m-0 p-0 mb-2" />
+                            <!-- Start table column Like Fine Total and Grand Total Amount -->
+                            <div class="row">
+                                <div class="col-md-1 text-left p-0 m-0 pl-2">
+                                    <label class="m-0 p-0 mt-2">Total Fine :- </label>
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="text" class="form-control IsNumeric" name="_FineAmount" id="txtFine_ManagePayFee" placeholder="Enter Fine will be 10Rs./day" value="0">
+                                </div>
+                                <div class="col-md-1 text-left p-0 m-0 pl-2">
+                                    <label class="m-0 p-0 mt-2">Discount :- </label>
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="text" class="form-control IsNumeric" name="_DiscountAmount" id="txtDiscount_ManagePayFee" placeholder="Enter discount Amount" value="0">
+                                </div>
+                                <div class="col-md-3 p-0 text-right">
+                                    <div class="form-group">
+                                        <label class="m-0 p-0 mt-2">Total Amount Payable :- <span id="txtGrandTotalAmount_ManagePayFee" onchange="CalculateAmountOnChange('FeeToPay')"></span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End table column Like Fine Total and Grand Total Amount -->
+                            <hr class="m-0 p-0 mb-3" />
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Total Paid Amount</label>
+                                        <input type="text" class="form-control IsNumeric" name="_FeeToPayAmount" id="txtTotalPaid_ManagePayFee" placeholder="Enter Fee To Pay" onchange="CalculateAmountOnChange('PendingFee')" value="0">
+                                        <span id="TotalPaid_error_ManagePayFee" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Pending Amount</label>
+                                        <input type="text" class="form-control IsNumeric" id="txtpendingAmount_ManagePayFee" value="0" disabled>
+                                        <span id="PendingAmount_error_ManagePayFee" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Pending Amount Paying Date</label>
+                                        <input type="text" class="form-control isDatePicker" id="PendingDate_ManageStudent" placeholder="If Payment Pending Then Select Date When Pay Left Amount" style="cursor:pointer;" readonly disabled>
+                                        <span id="PendingDate_error_ManageStudent" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Remarks (Optional)</label>
+                                        <input type="text" id="txtRemarks_ManagePayFee" class="form-control" placeholder="Enter Remarks" maxlength="50" disabled />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Payment Method <span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlPaymentMethod_ManagePayFee" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;" onchange="ChangePaymentMethod()">
+                                        </select>
+                                        <span id="PaymentMethod_error_ManagePayFee" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Reference Number</label>
+                                        <input type="text" class="form-control" id="txtReferenceNo_ManagePayFee" placeholder="Enter Reference Number Or Transaction Number" disabled>
+                                        <span id="ReferenceNo_error_ManagePayFee" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- /.card-body -->
+
+                        <div class="card-footer">
+                            <button id="btnSubmitManagePayFee" type="button" class="btn btn-primary" onclick="InsertUpdateManagePayFee(1);">Submit</button>
+                            <button type="button" class="btn btn-default" onclick="CancelForm();">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- /.card -->
+            </div>
+            <!--/.col (left) -->
+        </div>
+        <div id="dv_PayFeeListBox" class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Fee Records List</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <div class="row">
+                            @Html.Partial("_ClassSessionFilter", "ClassFilter,SessionFilter")
+                        </div>
+                        <table id="tblPayFee_ManagePayFee" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Sno</th>
+                                    <th>Student(Father)</th>
+                                    <th>Total Amount</th>
+                                    <th>Fee (paid)</th>
+                                    <th>Paid On</th>
+                                    <th>Pending Fee</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>Sno</th>
+                                    <th>Student(Father)</th>
+                                    <th>Total Amount</th>
+                                    <th>Fee (paid)</th>
+                                    <th>Paid On</th>
+                                    <th>Pending Fee</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</section>
+
+<button id="btn_SendReceipt_PayFee_Modal" type="button" class="btn btn-default" data-toggle="modal" data-target="#SendReceipt_PayFee_Modal" style="display:none;">
+    Launch Default Modal
+</button>
+
+<div class="modal fade" id="SendReceipt_PayFee_Modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Email</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="form-group">
+                            <label>Please check the email below <span class="requiredFieldClass">*</span></label>
+                            <input id="txtEmail_ManagePayFee_Modal" type="text" class="form-control isEmailField AvoidSpace" />
+                            <span id="email_FeeModal_error_ManagePayFee" class="errorsClass"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button id="btnClose_SendReceipt_PayFee_Modal" type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" onclick="ConfirmSendReceiptEmail();">Send</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<!-- /.content -->
+<script src="/ScriptFiles/ManagePayFee.js"></script>
+<script src="~/ScriptFiles/ClassSessionFilter.js"></script>
+
+<script>
+    $(function () {
+        $("#tblPayFee_ManagePayFee").DataTable({
+            "scrollX": true
+        });
+
+        $(".isDatePicker").datepicker({ dateFormat: 'yy-mm-dd' });
+        //Initialize Select2 Elements
+        $('.select2').select2();
+        $("#ddlFeeTypes_1").select2({ placeholder: "Select fee Type to Pay" });
+        $("#ddlSelectClass_ManagePayFee").select2({ placeholder: "No Class Created" });
+        $("#ddlSession_ManagePayFee").select2({ placeholder: "No Session of selected Class" });
+        $("#ddlStudent_ManagePayFee").select2({ placeholder: "No Student of selected Session" });
+
+        document.getElementById("ddlSelectClass_Filter").onchange = function () { GetFilterPayFeeData(); };
+        document.getElementById("ddlSession_Filter").onchange = function () { GetDdlClassDataForFilter(GetFilterPayFeeData); };
+    });
+</script>
+<!-- JavaScript for Tab Months -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>

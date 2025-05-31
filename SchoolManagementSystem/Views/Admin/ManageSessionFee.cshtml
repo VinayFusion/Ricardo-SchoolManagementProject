@@ -1,0 +1,165 @@
+﻿
+@{
+    ViewBag.Title = "ManageSessionFee";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+
+<style>
+    .hr-line-dashed {
+        border-top: 1px dashed #b6b8ba;
+        color: #ffffff;
+        background-color: #ffffff;
+        height: 1px;
+        margin: 20px 0;
+    }
+</style>
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Manage Session Fee</h1>
+            </div>
+            <div class="col-sm-6" style="text-align:right;">
+                <button id="btnSessionFee" type="button" class="btn btn-primary" onclick="SessionFee_ShowForm();"><i class="fa fa-plus" aria-hidden="true" style="margin-right:5px;"></i> Add New Session Fee</button>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div id="dv_SessionFeeForm" class="row" style="display:none;">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 id="Title_SessionFeeForm_ManageSessionFee" class="card-title"></h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Select Class<span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlSelectClass_ManageSessionFee" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;" onchange="SessionBindByClass()">
+                                        </select>
+                                        <span id="SelectClass_error_ManageSessionFee" class="errorsClass"></span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Select Session<span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlSession_ManageSessionFee" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
+                                        </select>
+                                        <span id="Session_error_ManageSessionFee" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="row">
+                                <div class="col-md-11" id="Div_tbl_tablevalues">
+                                    <table id="tbl_tablevalues" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Fee Type<span class="requiredFieldClass">*</span> </th>
+                                                <th>Amount<span class="requiredFieldClass">*</span></th>
+                                                <th>Remark</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-sm-1 d-flex align-items-end mb-3">
+                                    <button type="button" class=" btn btn-primary" id="AddNewRow">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <hr />
+                            <!-- end table section -->
+                        </div>
+                        <!-- /.card-body -->
+
+                        <div class="card-footer">
+                            <button id="btnSubmitManageSessionFee" type="button" class="btn btn-primary" onclick="InsertUpdateSessionFee(1);">Submit</button>
+                            <button id="btnUpdateManageSessionFee" type="button" class="btn btn-primary" onclick="InsertUpdateSessionFee(2);">Update</button>
+                            <button type="button" class="btn btn-default" onclick="CancelForm();">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- /.card -->
+            </div>
+            <!--/.col (left) -->
+        </div>
+        <div id="dv_SessionFeeListBox" class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Session Fee Records List</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <div class="row">
+                            @Html.Partial("_ClassSessionFilter", "ClassFilter,SessionFilter")
+                        </div>
+                        <table id="tblSessionFee_ManageSessionFee" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Sno</th>
+                                    <th>Session</th>
+                                    <th>Class Name</th>
+                                    <th>Fee Type</th>
+                                    <th>Fee Amount</th>
+                                    <th>Remark</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>Sno</th>
+                                    <th>Session</th>
+                                    <th>Class Name</th>
+                                    <th>Fee Type</th>
+                                    <th>Fee Amount</th>
+                                    <th>Remark</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+<script src="/ScriptFiles/ManageSessionFee.js"></script>
+<script src="~/ScriptFiles/ClassSessionFilter.js"></script>
+
+<script>
+    $(function () {
+        $("#tblSessionFee_ManageSessionFee").DataTable();
+        document.getElementById("ddlSelectClass_Filter").onchange = function () { Filter_GetSessionFeeList(); };
+        document.getElementById("ddlSession_Filter").onchange = function () { GetDdlClassDataForFilter(Filter_GetSessionFeeList); };
+        //Initialize Select2 Elements
+        $('.select2').select2();
+        $("#ddlFeeTypeFilter_ManageSessionFee").select2({ placeholder: "Select fee Type to Pay" });
+        $("#ddlSelectClass_ManageSessionFee").select2({ placeholder: "No Class Created" });
+        $("#ddlSession_ManageSessionFee").select2({ placeholder: "No Session of selected Class" });
+        $("#ddlSelectClass_Filter").select2({ placeholder: "No Class Created" });
+        $("#ddlSession_Filter").select2({ placeholder: "No Session of selected Class" });
+    });
+</script>

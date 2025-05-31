@@ -1,0 +1,143 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.AppName | Log in</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/Content/Panel/plugins/fontawesome-free/css/all.min.css">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="/Content/Panel/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/Content/Panel/dist/css/adminlte.min.css">
+
+    <style>
+        .errorsClass {
+            color: red;
+        }
+    </style>
+</head>
+<body class="hold-transition login-page">
+    <!-- Preloader -->
+    <div class="preloader flex-column justify-content-center align-items-center">
+        <img src="/Content/Images/loadingImg.gif" alt="AdminLTELogo" height="100" width="100">
+    </div>
+    <div class="login-box">
+        <!-- /.login-logo -->
+        <div class="card card-outline card-primary">
+            <div class="card-header text-center">
+                <a href="/Login" class="h1" style="font-size:30px;"><b>@ViewBag.AppName</b></a>
+            </div>
+            <div class="card-body">
+                <p class="login-box-msg">Sign in to start your session</p>
+
+                <form action="/Login/Index" method="post">
+                    <div class="input-group">
+                        <input id="txtEmail" name="txtEmail" type="email" class="form-control" placeholder="Email" autocomplete="off">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <span id="email_error_Login" class="errorsClass"></span>
+                    </div>
+                    <div class="input-group">
+                        <input id="txtPassword" name="txtPassword" type="password" class="form-control" placeholder="Password">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <span id="password_error_Login" class="errorsClass"></span>
+                    </div>
+                    <div class="row">
+                        <div class="col-8" style="padding-top:8px;">
+                            @*<div class="icheck-primary">
+                                    <input type="checkbox" id="remember">
+                                    <label for="remember">
+                                        Remember Me
+                                    </label>
+                                </div>*@
+                            <a href="/Login/ForgotPassword">I forgot my password</a>
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-4">
+                            <button type="submit" class="btn btn-primary btn-block" onclick="return CheckLogin();">Sign In</button>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                </form>
+
+                <div class="social-auth-links text-center mt-2 mb-3">
+                    <div>
+                        <span id="resp_error_Login" class="errorsClass"></span>
+                    </div>
+                    @*<a href="#" class="btn btn-block btn-primary">
+                            <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
+                        </a>
+                        <a href="#" class="btn btn-block btn-danger">
+                            <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
+                        </a>*@
+                </div>
+                <!-- /.social-auth-links -->
+                @*<p class="mb-1">
+                        <a href="forgot-password.html">I forgot my password</a>
+                    </p>*@
+                @*<p class="mb-0">
+                        <a href="register.html" class="text-center">Register a new membership</a>
+                    </p>*@
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+    </div>
+    <!-- /.login-box -->
+    <!-- jQuery -->
+    <script src="/ScriptFiles/Loader.js"></script>
+    <script src="/Content/Panel/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/Content/Panel/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/Content/Panel/dist/js/adminlte.min.js"></script>
+    <script src="/ScriptFiles/Login.js"></script>
+    <script>
+        if ("@Session["SessionLoginCheck"]" != null) {
+        //var chk_login = '@ViewBag.ReturnVal'
+        var chk_login = '@Session["SessionLoginCheck"]';
+           @{ Session["SessionLoginCheck"] = null;}
+            //alert(chk_login);
+            if (chk_login == 0 && chk_login != '') {
+                $("#txtEmail").focus();
+                $("#txtEmail").val('');
+                $("#txtPassword").val('');
+
+                $("#resp_error_Login").html('Sorry, Invalid Login Credentials!');
+            }
+            //--if plan expired
+            else if (chk_login == -1 && chk_login != '') {
+                $("#txtEmail").focus();
+                $("#txtEmail").val('');
+                $("#txtPassword").val('');
+
+                $("#resp_error_Login").html('Your validity has been expired, please contact to (Protolabz eServices) to renew your account <br /> (Ph: 01824-461579)');
+            }
+        }
+
+    </script>
+</body>
+</html>
+
+

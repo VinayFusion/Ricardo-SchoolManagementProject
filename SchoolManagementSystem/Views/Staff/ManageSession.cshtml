@@ -1,0 +1,156 @@
+﻿
+@{
+    ViewBag.Title = "Manage Session";
+    Layout = "~/Views/Shared/_StaffLayout.cshtml";
+}
+
+<link href="~/Content/Panel/plugins/jquery-ui/jquery-ui.css" rel="stylesheet" />
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Manage Academic Session</h1>
+            </div>
+            <div class="col-sm-6" style="text-align:right;">
+                <button id="btnAddNewSession" type="button" class="btn btn-primary" onclick="AddNewSession_ShowForm();"><i class="fa fa-plus" aria-hidden="true" style="margin-right:5px;"></i> Add New Session</button>
+                @*<ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">General Form</li>
+                    </ol>*@
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div id="dv_AddUpdateSessionForm" class="row" style="display:none;">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 id="Title_SessionForm_ManageSession" class="card-title">@*Add New Session*@</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form>
+                        <div class="card-body">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Session Name <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control" id="txtSessionName_ManageSession" disabled>
+                                        <span id="sessionName_error_ManageSession" class="errorsClass"></span>
+                                    </div>
+                                </div> 
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Select Class<span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlSelectClass_ManageSession" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;"onchange="SessionNameChange();">
+                                        </select>
+                                        <span id="SelectClass_error_ManageSession" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Start Year <span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlStartYear_ManageSession" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;"onchange="StartYearChange();" placeholder="Select Start-Year"></select>
+                                        <span id="startYear_error_ManageSession" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>End Year <span class="requiredFieldClass">*</span></label>
+                                        @*<input type="text" class="form-control isDatePicker" id="txtEndDate_ManageSession" placeholder="Select End-Date" style="cursor:pointer;" readonly disabled>*@
+                                        <select id="ddlEndYear_ManageSession" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;" placeholder="Select End-Year" disabled onchange="SessionNameChange();"></select>
+                                        <span id="endYear_error_ManageSession" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="chkIsActive_ManageSession" checked hidden>
+                                        <label class="form-check-label" for="chkIsActive_ManageSession" style="cursor:pointer;" hidden>Is Active</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card-footer">
+                            <button id="btnSubmitManageSession" type="button" class="btn btn-primary" onclick="AddUpdateSession(1);">Submit</button>
+                            <button id="btnUpdateManageSession" type="button" class="btn btn-primary" onclick="AddUpdateSession(2);" style="display:none;">Update</button>
+                            <button type="button" class="btn btn-default" onclick="CancelForm();">Cancel</button>
+                        </div>
+                    </form>
+
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!--/.col (left) -->
+    </div>
+    <div id="dv_SessionListBox" class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Sessions List</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    
+                    <table id="tblSessions_ManageSession" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Sno</th>
+                                <th>Class Name</th>
+                                <th>Session</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Sno</th>
+                                <th>Class Name</th>
+                                <th>Session</th>
+                                <th>Status</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <!-- /.card-body -->
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+</section>
+<!-- /.content -->
+<script src="/ScriptFiles/ManageSession.js"></script>
+<script src="~/ScriptFiles/ClassSessionFilter.js"></script>
+
+<script>
+    $(function () {
+        $("#tblEnquiries_ManageSession").DataTable();
+
+        $(".isDatePicker").datepicker({
+            dateFormat: 'yy-mm-dd',
+            changeYear: true,
+            changeMonth: true,
+            showMonthAfterYear: true,
+ });
+
+        //Initialize Select2 Elements
+        $('.select2').select2();
+    });
+</script>

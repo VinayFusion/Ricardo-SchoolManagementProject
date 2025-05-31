@@ -1,0 +1,87 @@
+﻿
+@{
+    ViewBag.Title = "Change Password";
+    Layout = ViewBag.LayoutPath.ToString();
+}
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Change Password</h1>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div id="dv_ChangePasswordForm" class="row">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 id="Title_ChangePasswordForm" class="card-title">Change Password</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Old Password <span class="requiredFieldClass">*</span></label>
+                                        <input type="password" class="form-control" id="txtOldPassword_ChangePassword" placeholder="Enter Old Password">
+                                        <span id="" class="text-xs">*Enter your Current Password</span><br />
+                                        <span id="oldPassword_error_ChangePassword" class="errorsClass"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>New Password <span class="requiredFieldClass">*</span></label>
+                                        <input type="password" class="form-control" id="txtNewPassword_ChangePassword" placeholder="Enter New Password">
+                                        <span id="newPassword_error_ChangePassword" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Confirm New Password <span class="requiredFieldClass">*</span></label>
+                                        <input type="password" class="form-control" id="txtConfirmNewPassword_ChangePassword" placeholder="Confirm New Password">
+                                        <span id="confirmNewPassword_error_ChangePassword" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group" >
+                                        <label><input type="checkbox" id="chkAllPassword_ChangePassword" onchange="changePasswordToText()"> Show All Password</label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- /.card-body -->
+
+                        <div class="card-footer">
+                            <button id="btnSubmit_ChangePassword" type="button" class="btn btn-primary" onclick="updateChangePassword();">Update</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- /.card -->
+            </div>
+            <!--/.col (left) -->
+        </div>
+        <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+<script src="/ScriptFiles/ChangePassword.js"></script>
+

@@ -1,0 +1,20 @@
+﻿<div class=" row">
+    <div class="input-group col-md-7">
+        <div id="div1"></div>
+        <span id="div2"></span>
+        <span id="mainCaptcha" class="form-control text-center " style="user-select: none; cursor: not-allowed; " disabled readonly="readonly"></span>
+        @*<input id="mainCaptcha" type="text" class="form-control text-center " style="user-select: none; cursor: not-allowed; " disabled  readonly="readonly">*@
+        <div class="input-group-append">
+            <div class="input-group-text">
+                <span id="refreshCaptcha" class="fa fa-refresh" onclick="generateCaptcha('mainCaptcha', 'inputCaptcha', 'mainCaptcha_error');"></span>
+            </div>
+        </div>
+    </div>
+    <div class="input-group col-md-5">
+        <input id="inputCaptcha" type="text" class="form-control AvoidSpace" placeholder="Enter Captcha Code">
+    </div>
+</div>
+
+<div class="mb-3">
+    <span id="mainCaptcha_error" class="errorsClass"></span>
+</div>
