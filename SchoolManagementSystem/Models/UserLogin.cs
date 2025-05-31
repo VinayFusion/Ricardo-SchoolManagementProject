@@ -16,7 +16,7 @@ namespace SchoolManagementSystem.Models
         public string CountryPhoneCode_Only { get; set; }
         public string PhoneNumber_Only { get; set; }
         public string Password { get; set; }
-        public Int64 UserTypeId { get; set; } //Admin, Staff or Student
+        public Int64 UserTypeId { get; set; } // SuperAdmin --> 1,Admin -->2, Staff -->3 or Student --> 4
         public int LoginStatus { get; set; }
         public int IsDefaultPassword { get; set; }
     }
