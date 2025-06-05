@@ -361,6 +361,7 @@
     <Content Include="Content\BootstrapSweetAlert\sweetalert.js" />
     <Content Include="Content\BootstrapSweetAlert\sweetalert.min.js" />
     <Content Include="Content\Images\delete_icon.png" />
+    <Content Include="Content\Images\fileuploadpreview.jpg" />
     <Content Include="Content\Images\edit_icon.png" />
     <Content Include="Content\Images\loginlogo.png" />
     <Content Include="Content\Images\loadingImg.gif" />
