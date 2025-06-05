@@ -9,6 +9,8 @@ namespace SchoolManagementSystem.ViewModel
     {
         public Int64 Id { get; set; }
         public string SchoolName { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public string Address { get; set; }
         public string Pincode { get; set; }
         public string Email { get; set; }
@@ -18,5 +20,6 @@ namespace SchoolManagementSystem.ViewModel
         public int LoginStatus { get; set; } 
         public int SchoolType { get; set; }
         public string ProfileImage { get; set; }
+        public string SchoolLogoImage { get; set; }
     }
 }

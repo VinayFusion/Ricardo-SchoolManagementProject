@@ -1,4 +1,9 @@
 ﻿<!--Content Header (Page header)-->
+<style>
+    .customcolor {
+        color: #FFFFFF;
+    }
+</style>
 <section class="content-header">
     <div class="container-fluid">
         <div class="row mb-2">
@@ -19,7 +24,7 @@
                 <div class="card card-primary">
                     <div class="card card-widget widget-user">
                         <!-- Add the bg color to the header using any of the bg-* classes -->
-                        <div class="widget-user-header bg-info" style="background-color:red!important;">
+                        <div class="widget-user-header bg-info" style="background-color: #13334a !important;">
                             <h3 id="ProfileName_ManageProfile" class="widget-user-username"></h3>
                             <h5 id="ProfileEmail_ManageProfile" class="widget-user-desc"></h5>
                         </div>
@@ -27,8 +32,8 @@
                             <!--Type of profile image means this image new image upload or reset image -->
                             <input type="file" id="imgupload" style="display:none" accept="image/*" onchange=" TypeProfileImage('NewImage');" />
                             <img id="imgProfile_ManageProfile" class="img-circle elevation-2" src="" alt="User Avatar">
-                            <span id="EditProfileImageBtn" class="fas fa-edit" data-toggle="tooltip" data-placement="top" title="Edit And Upload Image"></span>
-                            <span id="ProfileImageReset" class="fas fa-sync-alt" data-toggle="tooltip" data-placement="top" title="Reset Profile Image Or Default" onclick="ConfirmProfileImageReset();"></span>
+                            <span id="EditProfileImageBtn" class="fas fa-edit customcolor" data-toggle="tooltip" data-placement="top" title="Edit And Upload Image"></span>
+                            <span id="ProfileImageReset" class="fas fa-sync-alt customcolor" data-toggle="tooltip" data-placement="top" title="Reset Profile Image Or Default" onclick="ConfirmProfileImageReset();"></span>
                         </div>
                     </div>
                     <!--card-header-->

@@ -14,6 +14,9 @@ namespace SchoolManagementSystem.Models
         public string LastName { get; set; }
         public string Pincode { get; set; }
         public string Address { get; set; }
+        public string SchoolName { get; set; }
+        public int SchoolType { get; set; }
+        public string SchoolLogoImage { get; set; }
         public DateTime CreatedOn { get; set; }
         public Int64 CreatedByLoginId { get; set; }
         public DateTime UpdatedOn { get; set; }

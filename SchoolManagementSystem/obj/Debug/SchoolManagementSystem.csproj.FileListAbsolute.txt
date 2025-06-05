@@ -906,6 +906,7 @@ E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagem
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.RemoveParameterFromSchoolTbl.resources
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.CreateTable_SuperAdmin.resources
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.CreateTable_SuperAdminTbl.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.MergeSchoolTablesParameterintoAdminsTable.resources
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.GenerateResource.cache
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.CoreCompileInputs.cache
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolMa.D9F7BBC0.Up2Date

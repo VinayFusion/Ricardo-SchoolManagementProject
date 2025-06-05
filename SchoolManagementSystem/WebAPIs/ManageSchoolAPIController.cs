@@ -71,7 +71,7 @@ namespace SchoolManagementSystem.WebAPIs
             }
         }
 
-        //--Add New School-- 
+        //--Add New School or Update Existing School--
         [Authorize(Roles = "SuperAdmin")]
         [Route("InsertUpdateSchool")]
         [HttpPost]
@@ -79,34 +79,29 @@ namespace SchoolManagementSystem.WebAPIs
         {
             try
             {
-                //--Get User Identity
                 var identity = User.Identity as ClaimsIdentity;
-
-                //--Check if user is authorized user or not
                 if (identity != null)
                 {
                     IEnumerable<Claim> claims = identity.Claims;
                     string _LoginID = claims.Where(p => p.Type == "loginid").FirstOrDefault()?.Value;
                     Int64 _LoginID_Exact = 0;
-
                     ResponseViewModel _resp = new ResponseViewModel();
 
-                    if (_LoginID != "" && _LoginID != null)
+                    if (!string.IsNullOrEmpty(_LoginID))
                     {
                         _LoginID_Exact = Convert.ToInt64(_LoginID);
                     }
 
-                    //--Get User-Login Detail
-                    UserLogin _UserLogin = db.UserLogin.Where(ul => ul.Id == _LoginID_Exact).FirstOrDefault();
+                    UserLogin _UserLogin = db.UserLogin.FirstOrDefault(ul => ul.Id == _LoginID_Exact);
 
                     if (_UserLogin != null)
                     {
-                        //--Create object of HttpRequest
                         var HttpRequest = HttpContext.Current.Request;
 
-                        //--Get all parameter's value of Form-Data (by Key-Name)
+                        // Get form data
                         Int64 _Id = Convert.ToInt64(HttpRequest.Params["Id"]);
-                        string _SchoolName = HttpRequest.Params["schoolName"];
+                        string _FirstName = HttpRequest.Params["firstName"];
+                        string _LastName = HttpRequest.Params["lastName"];
                         Int64 _SchoolTypeId = Convert.ToInt64(HttpRequest.Params["schoolTypeId"]);
                         string _Email = HttpRequest.Params["email"];
                         string _MobileNumber = HttpRequest.Params["mobile"];
@@ -115,48 +110,47 @@ namespace SchoolManagementSystem.WebAPIs
                         string _Password = HttpRequest.Params["password"];
                         string _Pincode = HttpRequest.Params["pincode"];
                         string _Address = HttpRequest.Params["address"];
-                        int _Status = Convert.ToInt32(HttpRequest.Params["status"]); // Used as isActive
+                        int _Status = Convert.ToInt32(HttpRequest.Params["status"]);
                         int _Mode = Convert.ToInt32(HttpRequest.Params["mode"]);
 
+                        // Image names
+                        string _ImageName = Guid.NewGuid().ToString("N") + ".gif";
+                        string _SchoolLogoImageName = Guid.NewGuid().ToString("N") + ".png";
 
-                        string _ImageName = Guid.NewGuid().ToString().Replace("-", "") + ".gif";
+                        string _SchoolName = _FirstName + " " + _LastName;
 
-                        //--Insert New School Detail
+                        // Execute stored procedure
                         SqlParameter[] queryParams_School = new SqlParameter[] {
-                        new SqlParameter("@id", _Id),
-                        new SqlParameter("@schoolName", _SchoolName),
-                        new SqlParameter("@schoolTypeId", _SchoolTypeId),
-                        new SqlParameter("@email", _Email),
-                        new SqlParameter("@mobile", _MobileNumber),
-                        new SqlParameter("@countryMobilePhoneCode_only", _CountryCodeOnly),
-                        new SqlParameter("@mobileNumber_only", _MobileNumberOnly),
-                        new SqlParameter("@password", EDClass.Encrypt(_Password)),
-                        new SqlParameter("@pincode", _Pincode),
-                        new SqlParameter("@address", _Address),
-                        new SqlParameter("@isActive", _Status),
-                        new SqlParameter("@profileImage", _ImageName),
-                        new SqlParameter("@submittedByLoginId", _UserLogin.Id),
-                        new SqlParameter("@mode", _Mode)
-                    };
+                    new SqlParameter("@id", _Id),
+                    new SqlParameter("@firstName", _FirstName),
+                    new SqlParameter("@lastName", _LastName),
+                    new SqlParameter("@schoolName", _SchoolName),
+                    new SqlParameter("@schoolTypeId", _SchoolTypeId),
+                    new SqlParameter("@email", _Email),
+                    new SqlParameter("@mobile", _MobileNumber),
+                    new SqlParameter("@countryMobilePhoneCode_only", _CountryCodeOnly),
+                    new SqlParameter("@mobileNumber_only", _MobileNumberOnly),
+                    new SqlParameter("@password", EDClass.Encrypt(_Password)),
+                    new SqlParameter("@pincode", _Pincode),
+                    new SqlParameter("@address", _Address),
+                    new SqlParameter("@isActive", _Status),
+                    new SqlParameter("@profileImage", _ImageName),
+                    new SqlParameter("@schoollogoImage", _SchoolLogoImageName),
+                    new SqlParameter("@submittedByLoginId", _UserLogin.Id),
+                    new SqlParameter("@mode", _Mode)
+                };
 
                         _resp = db.Database
                             .SqlQuery<ResponseViewModel>(
-                                "EXEC sp_InsertUpdateSchool @id,@schoolName,@schoolTypeId,@email,@mobile,@countryMobilePhoneCode_only,@mobileNumber_only,@password,@pincode,@address,@isActive,@profileImage,@submittedByLoginId,@mode",
+                                "EXEC sp_InsertUpdateSchool @id,@firstName,@lastName,@schoolName,@schoolTypeId,@email,@mobile,@countryMobilePhoneCode_only,@mobileNumber_only,@password,@pincode,@address,@isActive,@profileImage,@schoollogoImage,@submittedByLoginId,@mode",
                                 queryParams_School
-                            )
-                            .FirstOrDefault();
+                            ).FirstOrDefault();
 
-
-                        //--If School successfully Inserted/Updated
+                        // If inserted/updated
                         if (_resp.ret == 1 || _resp.ret == 2)
                         {
-                            //--Check if File uploaded
-                            // if (_File != null)
-                            //{
-                            #region Save Profile-Image to the Application Folder
-
+                            #region Save Profile Image
                             string _FirstCharacter_StudentName = _SchoolName.Substring(0, 1).ToUpper();
-
                             AvtarClass objAvtar = new AvtarClass();
                             Font font = new Font(FontFamily.GenericSerif, 45, FontStyle.Bold);
                             Color fontcolor = ColorTranslator.FromHtml("#FFF");
@@ -164,61 +158,65 @@ namespace SchoolManagementSystem.WebAPIs
 
                             var _img = objAvtar.GenerateAvtarImage(_FirstCharacter_StudentName, font, fontcolor, bgcolor);
                             _img.Save(HttpContext.Current.Server.MapPath("/Content/SchoolImages/" + _ImageName));
-
                             #endregion
 
-                            //--During Update-Mode only (Remove the Previous Image from Application Folder)
-                            if (_resp.ret == 2)
+                            #region Save School Logo Image (Uploaded File)
+                            var fileLogo = HttpRequest.Files["schoolLogoImageFile"];
+                            if (fileLogo != null && fileLogo.ContentLength > 0)
                             {
-                                #region Remove Previous Profile-Image from the Application Folder
-                                var filePath = HttpContext.Current.Server.MapPath("/Content/SchoolImages/" + _resp.PreviousProfileImage);
-                                if (System.IO.File.Exists(filePath))
-                                {
-                                    System.IO.File.Delete(filePath);
-                                }
-                                #endregion
+                                string logoPath = HttpContext.Current.Server.MapPath("/Content/SchoolLogos/" + _SchoolLogoImageName);
+                                fileLogo.SaveAs(logoPath);
                             }
+                            #endregion
+
+                            #region Remove old profile image on update
+                            if (_resp.ret == 2 && !string.IsNullOrEmpty(_resp.PreviousProfileImage))
+                            {
+                                string oldProfilePath = HttpContext.Current.Server.MapPath("/Content/SchoolImages/" + _resp.PreviousProfileImage);
+                                if (System.IO.File.Exists(oldProfilePath))
+                                {
+                                    System.IO.File.Delete(oldProfilePath);
+                                }
+                            }
+                            #endregion
+
+                            #region Remove old school logo image on update
+                            if (_resp.ret == 2 && !string.IsNullOrEmpty(_resp.PreviousSchoolLogoImage))
+                            {
+                                string oldLogoPath = HttpContext.Current.Server.MapPath("/Content/SchoolLogos/" + _resp.PreviousSchoolLogoImage);
+                                if (System.IO.File.Exists(oldLogoPath))
+                                {
+                                    System.IO.File.Delete(oldLogoPath);
+                                }
+                            }
+                            #endregion
                         }
-                        // ✅ Send Email if New School Created
+
                         if (_resp.ret == 1)
                         {
                             SendEmail sendEmail = new SendEmail();
                             sendEmail.SendSchoolAccountCreatedEmail(_SchoolName, _Email, _Password);
                         }
-                        //--Create response
-                        var objResponse = new
-                        {
-                            status = _resp.ret,
-                            message = _resp.responseMessage,
-                        };
 
-                        //sending response as OK
+                        var objResponse = new { status = _resp.ret, message = _resp.responseMessage };
                         return Request.CreateResponse(HttpStatusCode.OK, objResponse);
                     }
                     else
                     {
-                        //--Create response as Un-Authorized
-                        var objResponse = new { status = -101, message = "Authorization has been denied for this request!", data = "" };
-                        //sending response as Un-Authorized
-                        return Request.CreateResponse(HttpStatusCode.Unauthorized, objResponse);
+                        return Request.CreateResponse(HttpStatusCode.Unauthorized, new { status = -101, message = "Authorization has been denied for this request!" });
                     }
                 }
                 else
                 {
-                    //--Create response as Un-Authorized
-                    var objResponse = new { status = -101, message = "Authorization has been denied for this request!", data = "" };
-                    //sending response as Un-Authorized
-                    return Request.CreateResponse(HttpStatusCode.Unauthorized, objResponse);
+                    return Request.CreateResponse(HttpStatusCode.Unauthorized, new { status = -101, message = "Authorization has been denied for this request!" });
                 }
             }
             catch (Exception ex)
             {
-                //--Create response as Error
-                var objResponse = new { status = -100, message = "Internal Server Error!", data = "" };
-                //sending response as error
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, objResponse);
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { status = -100, message = "Internal Server Error!" });
             }
         }
+
 
         //--Get School Detail by Id-- 
         [Authorize(Roles = "SuperAdmin")]

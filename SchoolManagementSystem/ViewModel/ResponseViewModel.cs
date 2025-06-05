@@ -10,6 +10,7 @@ namespace SchoolManagementSystem.ViewModel
         public int ret { get; set; }
         public string responseMessage { get; set; }
         public string PreviousProfileImage { get; set; }
+        public string PreviousSchoolLogoImage { get; internal set; }
     }
 
     public class JsonResponseViewModel

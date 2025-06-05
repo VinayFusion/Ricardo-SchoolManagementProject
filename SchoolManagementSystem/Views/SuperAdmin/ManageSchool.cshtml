@@ -45,27 +45,20 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>School Name <span class="requiredFieldClass">*</span></label>
-                                        <input type="text" class="form-control" id="txtSchoolName_ManageSchool" placeholder="Enter School Name">
-                                        <span id="schoolName_error_ManageSchool" class="errorsClass"></span>
+                                        <label>First Name <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control" id="txtFirstName_ManageSchool" placeholder="Enter First Name">
+                                        <span id="firstName_error_ManageSchool" class="errorsClass"></span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Select School Type <span class="requiredFieldClass">*</span></label>
-                                        <select id="ddlSchoolType_ManageSchool" class="form-control select2">
-                                            <option value="0">Select</option>
-                                            <option value="1">Preschool</option>
-                                            <option value="2">Elementary & Middle School</option>
-                                            <option value="3">High School</option>
-                                            <option value="4">Technical / Vocational School</option>
-
-                                        </select>
-                                        <span id="schoolType_error_ManageSchool" class="errorsClass"></span>
+                                        <label>Last Name <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control" id="txtLastName_ManageSchool" placeholder="Enter Last Name">
+                                        <span id="lastName_error_ManageSchool" class="errorsClass"></span>
                                     </div>
                                 </div>
-                             </div>
-
+                            </div>
+            
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -110,10 +103,32 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
+                                        <label>Select School Type <span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlSchoolType_ManageSchool" class="form-control select2">
+                                            <option value="0">Select</option>
+                                            <option value="1">Preschool</option>
+                                            <option value="2">Elementary & Middle School</option>
+                                            <option value="3">High School</option>
+                                            <option value="4">Technical / Vocational School</option>
+
+                                        </select>
+                                        <span id="schoolType_error_ManageSchool" class="errorsClass"></span>
+                                    </div>
+
+                                    <!-- School Logo Upload Section -->
+                                    <div class="form-group mt-3">
+                                        <label>School Logo<span class="requiredFieldClass">*</span></label>
+                                        <input type="file" class="form-control" id="schoolLogoImage" accept=".png, .jpg, .jpeg, .webp">
+                                        <span id="schoolLogo_error" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
                                         <label>Address <span class="requiredFieldClass">*</span></label>
                                         <textarea class="form-control" id="txtAddress_ManageSchool" placeholder="Enter Address" rows="3"></textarea>
                                         <span id="address_error_ManageSchool" class="errorsClass"></span>
                                     </div>
+
                                 </div>
 
                             </div>

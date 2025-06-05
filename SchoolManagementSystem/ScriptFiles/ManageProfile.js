@@ -107,15 +107,15 @@ function GetProfileData() {
 
     if (logged_In_UserType_Global === 1) {
         // SuperAdmin
-        document.getElementById('a_SuperAdmin_SuperAdminLayout').style.color = "red";
+        document.getElementById('a_SuperAdmin_SuperAdminLayout').style.color = "#FFFFFF";
     }
     else if (logged_In_UserType_Global === 2) {
         // Admin
-        document.getElementById('a_Admin_AdminLayout').style.color = "red";
+        document.getElementById('a_Admin_AdminLayout').style.color = "#FFFFFF";
     }
     else if (logged_In_UserType_Global === 3) {
         // Staff
-        document.getElementById('a_Staff_StaffLayout').style.color = "red";
+        document.getElementById('a_Staff_StaffLayout').style.color = "#FFFFFF";
     }
     else {
         console.warn("Unknown user type");

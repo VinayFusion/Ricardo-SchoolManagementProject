@@ -300,6 +300,10 @@
     <Compile Include="Migrations\202506040712336_CreateTable_SuperAdminTbl.Designer.cs">
       <DependentUpon>202506040712336_CreateTable_SuperAdminTbl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202506050808224_MergeSchoolTablesParameterintoAdminsTable.cs" />
+    <Compile Include="Migrations\202506050808224_MergeSchoolTablesParameterintoAdminsTable.Designer.cs">
+      <DependentUpon>202506050808224_MergeSchoolTablesParameterintoAdminsTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\ClassDetail.cs" />
@@ -309,7 +313,6 @@
     <Compile Include="Models\FieldType.cs" />
     <Compile Include="Models\FieldTypeValue.cs" />
     <Compile Include="Models\PayFeeReceipt.cs" />
-    <Compile Include="Models\School.cs" />
     <Compile Include="Models\Section.cs" />
     <Compile Include="Models\Session.cs" />
     <Compile Include="Models\SessionFee.cs" />
@@ -2778,6 +2781,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\AdminImages\" />
     <Folder Include="Content\SchoolImages\" />
+    <Folder Include="Content\SchoolLogos\" />
     <Folder Include="Content\StudentImages\" />
     <Folder Include="Content\SuperAdminImages\" />
   </ItemGroup>
@@ -2875,6 +2879,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202506040712336_CreateTable_SuperAdminTbl.resx">
       <DependentUpon>202506040712336_CreateTable_SuperAdminTbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506050808224_MergeSchoolTablesParameterintoAdminsTable.resx">
+      <DependentUpon>202506050808224_MergeSchoolTablesParameterintoAdminsTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

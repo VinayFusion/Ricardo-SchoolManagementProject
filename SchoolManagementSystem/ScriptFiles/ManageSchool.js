@@ -32,8 +32,9 @@ function AddNewSchool_ShowForm() {
 
 // Function to cancel the form and reset fields
 function CancelForm() {
-
-    $("#txtSchoolName_ManageSchool").val('');
+    $("#schoolLogoImage").val(''); // Reset file input
+    $("#txtFirstName_ManageSchool").val('');
+    $("#txtLastName_ManageSchool").val('');
     $("#ddlSchoolType_ManageSchool").val(0).trigger('change');
     $("#txtEmail_ManageSchool").val('');
     $("#txtPassword_ManageSchool").val('');
@@ -163,8 +164,8 @@ function GetSchoolList() {
 
 // Function to add or update school information
 function AddUpdateSchool(_mode) {
-
-    var _schoolName_MS = $("#txtSchoolName_ManageSchool").val();
+    var _firstName_MS = $("#txtFirstName_ManageSchool").val();
+    var _lastName_MS = $("#txtLastName_ManageSchool").val();
     var _schoolType_MS = $("#ddlSchoolType_ManageSchool").val(); // schooltype_error_ManageSchool
     var _email_MS = $("#txtEmail_ManageSchool").val();
     var _password_MS = $("#txtPassword_ManageSchool").val();
@@ -172,7 +173,7 @@ function AddUpdateSchool(_mode) {
         
     var _pincode_MS = $("#txtPincode_ManageSchool").val();
     var _address_MS = $("#txtAddress_ManageSchool").val();
-     
+    
 
     var email_test = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -189,12 +190,6 @@ function AddUpdateSchool(_mode) {
         _is_valid = false;
         $("#schoolType_error_ManageSchool").html('Please select the School Type!');
     }
-
-    if (_schoolName_MS == '' || _schoolName_MS.replace(/\s/g, "") == "") {
-        _is_valid = false;
-        $("#schoolName_error_ManageSchool").html('Please enter school name!');
-    }
-
     if (_email_MS == '' || _email_MS.replace(/\s/g, "") == "") {
         _is_valid = false;
         $("#email_error_ManageSchool").html('Please enter the email address!');
@@ -233,7 +228,8 @@ function AddUpdateSchool(_mode) {
         var data = new FormData();
 
         data.append("Id", School_ID_Global);
-        data.append("schoolName", _schoolName_MS);
+        data.append("firstName", _firstName_MS);
+        data.append("lastName", _lastName_MS)
         data.append("schoolTypeId", _schoolType_MS);
         data.append("email", _email_MS.toLowerCase());
         data.append("mobile", '+91' + _mobile_MS);
@@ -244,6 +240,14 @@ function AddUpdateSchool(_mode) {
         data.append("address", _address_MS);
         data.append("status", status);
         data.append("mode", _mode);
+
+        // Get the schoollogo -image choosen
+        var fileInput = $('#schoolLogoImage')[0];
+
+        // Check if a file is selected
+        if (fileInput.files && fileInput.files.length > 0) {
+            data.append("schoolLogoImage", fileInput.files[0]);
+        }
 
         $.ajax({
             url: '/InsertUpdateSchool',
@@ -266,7 +270,9 @@ function AddUpdateSchool(_mode) {
                     CustomSwalPoup("Success!", dataResponse.message, "success");
 
                     //-----------Set Default Values------------
-                    $("#txtSchoolName_ManageSchool").val('');
+                    $("#txtFirstName_ManageSchool").val('');
+                    $("#schoolLogoImage").val(''); // Reset file input
+                    $("#txtLastName_ManageSchool").val('');
                     $("#ddlSchoolType_ManageSchool").val(0).trigger('change');
                     $("#txtEmail_ManageSchool").val('');
                     $("#txtPassword_ManageSchool").val('');
@@ -335,7 +341,9 @@ function EditSchoolInfo(sid) {
        
             if (data.data.School != null) {
                 var school = data.data.School;
-
+                $("#txtFirstName_ManageSchool").val(school.FirstName);
+                $("#txtLastName_ManageSchool").val(school.LastName);
+ /*               $("#schoolLogoImage").val(school.SchoolLogoImage);*/
                 $("#txtSchoolName_ManageSchool").val(school.SchoolName);
                 $("#txtEmail_ManageSchool").val(school.Email);
                 $("#txtPassword_ManageSchool").val(school.Password);

@@ -96,7 +96,7 @@ namespace SchoolManagementSystem.Common
                 MailMessage message2 = new MailMessage();
                 SmtpClient smtpClient = new SmtpClient();
                 // Enter Email Address here
-                MailAddress fromAddress = new MailAddress("", _AppName);
+                MailAddress fromAddress = new MailAddress(_From_EmailAddress, _AppName);
                 message2.From = fromAddress;
                 message2.To.Add(ToEmail);
                 message2.Subject = subject;
@@ -118,10 +118,10 @@ namespace SchoolManagementSystem.Common
                 //smtpClient.Host = "relay-hosting.secureserver.net";   //-- Donot change.
                 smtpClient.Host = "smtp.gmail.com";   //-- Donot change.
 
-                smtpClient.Port = 587; //--- Donot change
+                smtpClient.Port = 25; //--- Donot change
                 smtpClient.EnableSsl = true;//--- Donot change
                 smtpClient.UseDefaultCredentials = false;
-                smtpClient.Credentials = new System.Net.NetworkCredential("", "");
+                smtpClient.Credentials = new System.Net.NetworkCredential(_From_EmailAddress, _From_EmailPassword);
                 smtpClient.Send(message2);
                 //return 1;
                 #endregion
