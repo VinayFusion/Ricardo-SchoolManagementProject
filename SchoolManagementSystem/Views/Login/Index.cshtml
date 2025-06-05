@@ -24,9 +24,12 @@
         .errorsClass {
             color: red;
         }
+        .custombg {
+            background: #13334a;
+        }
     </style>
 </head>
-<body class="hold-transition login-page">
+<body class="hold-transition login-page custombg">
     <!-- Preloader -->
     <div class="preloader flex-column justify-content-center align-items-center">
         <img src="/Content/Images/loadingImg.gif" alt="AdminLTELogo" height="100" width="100">
@@ -34,8 +37,13 @@
     <div class="login-box">
         <!-- /.login-logo -->
         <div class="card card-outline card-primary">
-            <div class="card-header text-center">
-                <a href="/Login" class="h1" style="font-size:30px;"><b>@ViewBag.AppName</b></a>
+            <div class="card-header">
+                <a href="/Login" class="h1" style="font-size:30px;">
+                    <img src="~/Content/Images/loginlogo.png" alt="Logo" style="height: 30px; vertical-align: middle; margin-right: 8px;">
+                    <b style="font-size: 21px;">@ViewBag.AppName</b>
+
+                </a>
+                @*<a href="/Login" class="h1" style="font-size:30px;"><b>@ViewBag.AppName</b></a>*@
             </div>
             <div class="card-body">
                 <p class="login-box-msg">Sign in to start your session</p>

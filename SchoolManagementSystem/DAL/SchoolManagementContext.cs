@@ -23,6 +23,8 @@ namespace SchoolManagementSystem.DAL
         public DbSet<PayFeeReceipt> PayFeeReceipt { get; set; }
         public DbSet<PayFeeReceiptNumber> PayFeeReceiptNumber { get; set; }
         public DbSet<ReceiptFeeType> ReceiptFeeType { get; set; }
+        public DbSet<School> School { get; set; }
+        public DbSet<SuperAdmin> SuperAdmin { get; set; }
 
     }
 }

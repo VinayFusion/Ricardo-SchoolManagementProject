@@ -898,6 +898,14 @@ E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagem
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Add_PayFeeReceiptTable_PayFeeReceiptNumberTable_ReceiptFeeTypeTable.resources
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_ManagePayFee_and_ReceiptFeeType_Table.resources
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.update_StudentTable_AddTransport_COL.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.Create_SchoolTable.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddColumnsinSchool_Table.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddColumnsinSchool_Table1.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddColumnSchool_Table.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.AddColumnSchool_Table01.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.RemoveParameterFromSchoolTbl.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.CreateTable_SuperAdmin.resources
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.Migrations.CreateTable_SuperAdminTbl.resources
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.GenerateResource.cache
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.csproj.CoreCompileInputs.cache
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\obj\Debug\SchoolMa.D9F7BBC0.Up2Date

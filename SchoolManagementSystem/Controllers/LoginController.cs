@@ -159,10 +159,10 @@ namespace SchoolManagementSystem.Controllers
 
         public JsonResult LogoutUser()
         {
-    //Remove SuperAdmin login cookie
-                        HttpCookie myCookieSuperAdminn = new HttpCookie("SuperAdminCookieSMA");
-                        myCookieSuperAdminn.Expires = DateTime.Now.AddDays(-1);
-                        Response.Cookies.Add(myCookieSuperAdminn);
+           //Remove SuperAdmin login cookie
+            HttpCookie myCookieSuperAdminn = new HttpCookie("SuperAdminCookieSMA");
+            myCookieSuperAdminn.Expires = DateTime.Now.AddDays(-1);
+            Response.Cookies.Add(myCookieSuperAdminn);
 
             //Remove Admin login cookie
             HttpCookie myCookieAdminn = new HttpCookie("AdminCookieSMA");

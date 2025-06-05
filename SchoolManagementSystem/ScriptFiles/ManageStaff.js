@@ -106,8 +106,6 @@ function GetStaffTypeList() {
     });
 }
 
-
-
 function GetStaffList() {
 
     $.ajax({

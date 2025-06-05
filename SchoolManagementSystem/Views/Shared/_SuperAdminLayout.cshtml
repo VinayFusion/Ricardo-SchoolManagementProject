@@ -54,55 +54,55 @@
         }
 
         .page-item.active .page-link {
-            background-color: red;
-            border-color: red;
+            background-color: #13334a;
+            border-color: #13334a;
         }
 
         .page-link {
-            color: red;
+            color: #13334a;
         }
 
         .btn-primary {
-            background-color: red;
-            border-color: red;
+            background-color: #13334a;
+            border-color: #13334a;
         }
 
             .btn-primary:hover {
-                background-color: #d91c1c;
-                border-color: #d91c1c;
+                background-color: #13334a;
+                border-color: #13334a;
             }
 
             .btn-primary:focus {
-                background-color: #d91c1c;
-                border-color: #d91c1c;
+                background-color: #13334a;
+                border-color: #13334a;
             }
 
         .card-primary:not(.card-outline) > .card-header {
-            background-color: red;
+            background-color: #13334a;
         }
 
         a {
-            color: red;
+            color: #13334a;
         }
 
             a:hover {
-                color: #d91c1c;
+                color: #13334a;
             }
 
         .btn-primary:not(:disabled):not(.disabled):active {
-            background-color: #d91c1c;
-            border-color: #d91c1c;
+            background-color: #13334a;
+            border-color: #13334a;
         }
 
         table.table-bordered.dataTable th {
             text-align: center;
-            background-color: red;
+            background-color: #13334a;
             color: #fff;
         }
 
         table.table-bordered th {
             text-align: center;
-            background-color: red;
+            background-color: #13334a;
             color: #fff;
         }
 
@@ -125,7 +125,7 @@
         }
 
         .sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active {
-            background-color: red;
+            background-color: #13334a;
         }
 
         .table thead th {
@@ -138,8 +138,8 @@
 
         .btn-secondary {
             color: #fff;
-            background-color: red;
-            border-color: red;
+            background-color: #13334a;
+            border-color: #13334a;
         }
 
             .btn-secondary:hover {
@@ -153,6 +153,9 @@
                 background-color: #d91c1c;
                 border-color: #d91c1c;
             }
+        .main-sidebar {
+            background: #13334a !important;
+        }
     </style>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -299,7 +302,7 @@
         </nav>
         <!-- /.navbar -->
         <!-- Main Sidebar Container -->
-        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <aside class="main-sidebar sidebar-dark- elevation-4">
             <!-- Brand Logo -->
             <a href="javascript:;" class="brand-link" style="text-align: center; cursor: text;">
                 @*<img src="/Content/Panel/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">*@
@@ -319,10 +322,10 @@
                     </div>*@
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img id="img_Admin_AdminLayout" src="" class="img-circle elevation-2" alt="User Image">
+                        <img id="img_SuperAdmin_SuperAdminLayout" src="" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a id="a_Admin_AdminLayout" href="/Admin/ManageProfile" class="d-block" style="cursor:pointer;" onclick="GetProfileData()"></a>
+                        <a id="a_SuperAdmin_SuperAdminLayout" href="/SuperAdmin/ManageProfile" class="d-block" style="cursor:pointer;" onclick="GetProfileData()"></a>
                     </div>
                 </div>
 
@@ -369,96 +372,14 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a id="a_ManageStaff_Sidebar" href="/Admin/ManageSchools" class="nav-link commonNavLinkClass">
-                                <i class="nav-icon fas fa-users"></i>
+                            <a id="a_ManageStaff_Sidebar" href="/SuperAdmin/ManageSchool" class="nav-link commonNavLinkClass">
+                                <i class="nav-icon fas fa-school"></i>
                                 <p>
                                     Manage Schools
                                 </p>
                             </a>
                         </li>
-                        @*<li class="nav-item">
-                            <a id="a_ManageClass_Sidebar" href="/Admin/ManageClass" class="nav-link commonNavLinkClass">
-                                <i class="nav-icon fas fa-chalkboard-teacher"></i>
-                                <p>
-                                    Manage Class
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="a_ManageSession_Sidebar" href="/Admin/ManageSession" class="nav-link commonNavLinkClass">
-                                <i class="nav-icon fas fa-calendar-alt"></i>
-                                <p>
-                                    Manage Session
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="a_ManageSessionFee_Sidebar" href="/Admin/ManageSessionFee" class="nav-link commonNavLinkClass">
-                                <i class="nav-icon fas fa-rupee-sign"></i>
-                                <p>
-                                    Manage Session Fee
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="a_ManageSection_Sidebar" href="/Admin/ManageSection" class="nav-link commonNavLinkClass">
-                                <i class="nav-icon fas fa-clone"></i>
-                                <p>
-                                    Manage Section
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="a_ManageStudent_Sidebar" href="/Admin/ManageStudent" class="nav-link commonNavLinkClass">
-                                <i class="nav-icon fas fa-users"></i>
-                                <p>
-                                    Manage Student
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="a_ManagePayFee_Sidebar" href="/Admin/ManagePayFee" class="nav-link commonNavLinkClass">
-                                <i class="nav-icon fas fa-rupee-sign"></i>
-                                <p>
-                                    Pay Fee
-                                </p>
-                            </a>
-                        </li>
-                        <li id="li_ManageReports_Sidebar" class="nav-item">
-                            <a id="a_ManageReports_Sidebar" href="#" class="nav-link commonNavLinkClass">
-                                <i class="nav-icon far fa-file-alt"></i>
-                                <p>
-                                    Reports
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a id="a_ManagePendingFee_Sidebar" href="/Admin/PendingFee" class="nav-link commonSubNavLinkClass">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Pending Fee</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="a_ManageExpiredCourseFee_Sidebar" href="/Admin/ExpiredCourseFee" class="nav-link commonSubNavLinkClass">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Expired Fee</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="a_ManageCompletedCourseFee_Sidebar" href="/Admin/CompletedCourseFee" class="nav-link commonSubNavLinkClass">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Completed Course Fee</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="a_ManageRevenue_Sidebar" href="/Admin/ManageRevenue" class="nav-link commonSubNavLinkClass">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Revenue</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>*@
+                        
                         <li class="nav-item">
                             <a id="a_ChangePassword_Sidebar" href="/ChangePassword" class="nav-link commonNavLinkClass">
                                 <i class="nav-icon fas fa-lock fa-fw"></i>
@@ -1081,7 +1002,7 @@
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
-            <strong>Copyright &copy; 2015-2022 <a href="https://www.protolabzit.com" target="_blank">Protolabz E-Services</a>.</strong>
+            <strong>Copyright &copy; 2025 <a href="https://www.protolabzit.com" target="_blank">Protolabz E-Services</a>.</strong>
             All rights reserved.
             @*<div class="float-right d-none d-sm-inline-block">
                     <b>Version</b> 3.1.0

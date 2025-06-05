@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -47,10 +47,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.IdentityModel.Abstractions, Version=6.18.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -268,6 +268,38 @@
     <Compile Include="Migrations\202208190602132_update_StudentTable_AddTransport_COL.designer.cs">
       <DependentUpon>202208190602132_update_StudentTable_AddTransport_COL.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202506020723253_Create_SchoolTable.cs" />
+    <Compile Include="Migrations\202506020723253_Create_SchoolTable.Designer.cs">
+      <DependentUpon>202506020723253_Create_SchoolTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202506020753159_AddColumnsinSchool_Table.cs" />
+    <Compile Include="Migrations\202506020753159_AddColumnsinSchool_Table.Designer.cs">
+      <DependentUpon>202506020753159_AddColumnsinSchool_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202506020755504_AddColumnsinSchool_Table1.cs" />
+    <Compile Include="Migrations\202506020755504_AddColumnsinSchool_Table1.Designer.cs">
+      <DependentUpon>202506020755504_AddColumnsinSchool_Table1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202506021012504_AddColumnSchool_Table.cs" />
+    <Compile Include="Migrations\202506021012504_AddColumnSchool_Table.Designer.cs">
+      <DependentUpon>202506021012504_AddColumnSchool_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202506021120400_AddColumnSchool_Table01.cs" />
+    <Compile Include="Migrations\202506021120400_AddColumnSchool_Table01.Designer.cs">
+      <DependentUpon>202506021120400_AddColumnSchool_Table01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202506031010275_RemoveParameterFromSchoolTbl.cs" />
+    <Compile Include="Migrations\202506031010275_RemoveParameterFromSchoolTbl.Designer.cs">
+      <DependentUpon>202506031010275_RemoveParameterFromSchoolTbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202506040710032_CreateTable_SuperAdmin.cs" />
+    <Compile Include="Migrations\202506040710032_CreateTable_SuperAdmin.Designer.cs">
+      <DependentUpon>202506040710032_CreateTable_SuperAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202506040712336_CreateTable_SuperAdminTbl.cs" />
+    <Compile Include="Migrations\202506040712336_CreateTable_SuperAdminTbl.Designer.cs">
+      <DependentUpon>202506040712336_CreateTable_SuperAdminTbl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\ClassDetail.cs" />
@@ -277,12 +309,14 @@
     <Compile Include="Models\FieldType.cs" />
     <Compile Include="Models\FieldTypeValue.cs" />
     <Compile Include="Models\PayFeeReceipt.cs" />
+    <Compile Include="Models\School.cs" />
     <Compile Include="Models\Section.cs" />
     <Compile Include="Models\Session.cs" />
     <Compile Include="Models\SessionFee.cs" />
     <Compile Include="Models\Staff.cs" />
     <Compile Include="Models\StaffType.cs" />
     <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\SuperAdmin.cs" />
     <Compile Include="Models\UserLogin.cs" />
     <Compile Include="Models\UserType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -292,6 +326,7 @@
     <Compile Include="ViewModel\FieldTypeDataFetch.cs" />
     <Compile Include="ViewModel\FieldTypeViewModel.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
+    <Compile Include="ViewModel\SchoolViewModel.cs" />
     <Compile Include="ViewModel\SQL_ParametersViewModel_VM.cs" />
     <Compile Include="ViewModel\PayFeeViewModel.cs" />
     <Compile Include="ViewModel\ResetPasswordViewModel.cs" />
@@ -301,11 +336,13 @@
     <Compile Include="ViewModel\SessionViewModel.cs" />
     <Compile Include="ViewModel\StaffViewModel.cs" />
     <Compile Include="ViewModel\StudentViewModel.cs" />
+    <Compile Include="ViewModel\SuperAdminViewModel.cs" />
     <Compile Include="WebAPIs\ChangePasswordAPIController.cs" />
     <Compile Include="WebAPIs\DdlDataBindingAPIController.cs" />
     <Compile Include="WebAPIs\ManageClassAPIController.cs" />
     <Compile Include="WebAPIs\ManagePayFeeAPIController.cs" />
     <Compile Include="WebAPIs\ManageProfileAPIController.cs" />
+    <Compile Include="WebAPIs\ManageSchoolAPIController.cs" />
     <Compile Include="WebAPIs\ManageSectionAPIController.cs" />
     <Compile Include="WebAPIs\ManageSessionFeeAPIController.cs" />
     <Compile Include="WebAPIs\ManageStudentAPIController.cs" />
@@ -322,6 +359,7 @@
     <Content Include="Content\BootstrapSweetAlert\sweetalert.min.js" />
     <Content Include="Content\Images\delete_icon.png" />
     <Content Include="Content\Images\edit_icon.png" />
+    <Content Include="Content\Images\loginlogo.png" />
     <Content Include="Content\Images\loadingImg.gif" />
     <Content Include="Content\Images\logo.jpg" />
     <Content Include="Content\Images\logo2.png" />
@@ -2404,6 +2442,7 @@
     <Content Include="ScriptFiles\ManagePendingFee.js" />
     <Content Include="ScriptFiles\ManageProfile.js" />
     <Content Include="ScriptFiles\ManageRevenue.js" />
+    <Content Include="ScriptFiles\ManageSchool.js" />
     <Content Include="ScriptFiles\ManageSection.js" />
     <Content Include="ScriptFiles\ManageSession.js" />
     <Content Include="ScriptFiles\ManageSessionFee.js" />
@@ -2732,11 +2771,15 @@
     <Content Include="Views\Shared\_MonthsTab.cshtml" />
     <Content Include="Views\Shared\_SuperAdminLayout.cshtml" />
     <Content Include="Views\SuperAdmin\Index.cshtml" />
+    <Content Include="Views\SuperAdmin\ManageSchool.cshtml" />
+    <Content Include="Views\SuperAdmin\ManageProfile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\AdminImages\" />
+    <Folder Include="Content\SchoolImages\" />
     <Folder Include="Content\StudentImages\" />
+    <Folder Include="Content\SuperAdminImages\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -2809,6 +2852,30 @@
     <EmbeddedResource Include="Migrations\202208190602132_update_StudentTable_AddTransport_COL.resx">
       <DependentUpon>202208190602132_update_StudentTable_AddTransport_COL.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506020723253_Create_SchoolTable.resx">
+      <DependentUpon>202506020723253_Create_SchoolTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506020753159_AddColumnsinSchool_Table.resx">
+      <DependentUpon>202506020753159_AddColumnsinSchool_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506020755504_AddColumnsinSchool_Table1.resx">
+      <DependentUpon>202506020755504_AddColumnsinSchool_Table1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506021012504_AddColumnSchool_Table.resx">
+      <DependentUpon>202506021012504_AddColumnSchool_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506021120400_AddColumnSchool_Table01.resx">
+      <DependentUpon>202506021120400_AddColumnSchool_Table01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506031010275_RemoveParameterFromSchoolTbl.resx">
+      <DependentUpon>202506031010275_RemoveParameterFromSchoolTbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506040710032_CreateTable_SuperAdmin.resx">
+      <DependentUpon>202506040710032_CreateTable_SuperAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506040712336_CreateTable_SuperAdminTbl.resx">
+      <DependentUpon>202506040712336_CreateTable_SuperAdminTbl.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -2843,10 +2910,10 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
-    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
-    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
   </Target>
-  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

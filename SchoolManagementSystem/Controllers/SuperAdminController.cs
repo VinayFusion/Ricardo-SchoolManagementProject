@@ -76,5 +76,26 @@ namespace SchoolManagementSystem.Controllers
         {
             return View();
         }
+
+        public ActionResult ManageSchool()
+        {
+            return View();
+        }
+
+        public ActionResult ManageProfile()
+        {
+            bool _ValidationStatus = ValidateSuperAdmin();
+            if (_ValidationStatus == true)
+            {
+                SetSidebarCookieInfo("manageProfile");
+                ViewBag.UsertypeId = 1;
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Index", "Login");
+            }
+        }
+
     }
 }

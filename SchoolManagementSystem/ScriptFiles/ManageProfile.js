@@ -1,37 +1,85 @@
 ﻿var UserToken_Global = "";
 var logged_In_UserType_Global = 1;
-var logged_In_UserTypeName_Global = "Admin";
+var logged_In_UserTypeName_Global = "SuperAdmin";
 var Staff_ID_Global = 0;
 var Admin_ID_Global = 0;
+var SuperAdmin_ID_Global = 0;
 
 
+//$(document).ready(function () {
+//    StartLoading();
+//    $.get("/Admin/GetAdminCookieDetail", null, function (dataAdminToken) {
+//        if (dataAdminToken != "" && dataAdminToken != null) {
+
+//            UserToken_Global = dataAdminToken;
+//            logged_In_UserType_Global = 1;
+//            logged_In_UserTypeName_Global = "Admin";
+
+
+//            GetProfileData();
+//            StopLoading();
+//        }
+//        else {
+//            $.get("/Staff/GetStaffCookieDetail", null, function (dataStaffToken) {
+//                if (dataStaffToken != "" && dataStaffToken != null) {
+
+//                    UserToken_Global = dataStaffToken;
+//                    logged_In_UserType_Global = 2;
+//                    logged_In_UserTypeName_Global = "Staff";
+
+
+//                    GetProfileData();
+//                    StopLoading();
+//                }
+//                else {
+
+//                }
+//            });
+//        }
+//    });
+//});
 $(document).ready(function () {
     StartLoading();
-    $.get("/Admin/GetAdminCookieDetail", null, function (dataAdminToken) {
-        if (dataAdminToken != "" && dataAdminToken != null) {
 
-            UserToken_Global = dataAdminToken;
+    // Step 1: Check SuperAdmin
+    $.get("/SuperAdmin/GetSuperAdminCookieDetail", null, function (dataSuperAdminToken) {
+        if (dataSuperAdminToken != "" && dataSuperAdminToken != null) {
+
+            UserToken_Global = dataSuperAdminToken;
             logged_In_UserType_Global = 1;
-            logged_In_UserTypeName_Global = "Admin";
-
+            logged_In_UserTypeName_Global = "SuperAdmin";
 
             GetProfileData();
             StopLoading();
         }
         else {
-            $.get("/Staff/GetStaffCookieDetail", null, function (dataStaffToken) {
-                if (dataStaffToken != "" && dataStaffToken != null) {
+            // Step 2: Check Admin
+            $.get("/Admin/GetAdminCookieDetail", null, function (dataAdminToken) {
+                if (dataAdminToken != "" && dataAdminToken != null) {
 
-                    UserToken_Global = dataStaffToken;
+                    UserToken_Global = dataAdminToken;
                     logged_In_UserType_Global = 2;
-                    logged_In_UserTypeName_Global = "Staff";
-
+                    logged_In_UserTypeName_Global = "Admin";
 
                     GetProfileData();
                     StopLoading();
                 }
                 else {
+                    // Step 3: Check Staff
+                    $.get("/Staff/GetStaffCookieDetail", null, function (dataStaffToken) {
+                        if (dataStaffToken != "" && dataStaffToken != null) {
 
+                            UserToken_Global = dataStaffToken;
+                            logged_In_UserType_Global = 3;
+                            logged_In_UserTypeName_Global = "Staff";
+
+                            GetProfileData();
+                            StopLoading();
+                        }
+                        else {
+                            StopLoading(); // No user found
+                        }
+                    });
                 }
             });
         }
@@ -50,12 +98,29 @@ function ChangeTextEve(firstName, lastName, email) {
 
 function GetProfileData() {
 
-    if (logged_In_UserType_Global == 1) {
+    //if (logged_In_UserType_Global == 1) {
+    //    document.getElementById('a_Admin_AdminLayout').style.color = "red";
+    //}
+    //else {
+    //    document.getElementById('a_Staff_StaffLayout').style.color = "red";
+    //}
+
+    if (logged_In_UserType_Global === 1) {
+        // SuperAdmin
+        document.getElementById('a_SuperAdmin_SuperAdminLayout').style.color = "red";
+    }
+    else if (logged_In_UserType_Global === 2) {
+        // Admin
         document.getElementById('a_Admin_AdminLayout').style.color = "red";
     }
-    else {
+    else if (logged_In_UserType_Global === 3) {
+        // Staff
         document.getElementById('a_Staff_StaffLayout').style.color = "red";
     }
+    else {
+        console.warn("Unknown user type");
+    }
+
 
     StartLoading();
     $.ajax({
@@ -66,15 +131,85 @@ function GetProfileData() {
             "Content-Type": "application/json"
         },
         contentType: 'application/json',
+        //success: function (ProfileData) {
+
+        //    if (ProfileData.data.Admin != null) {
+
+
+        //        $("#txtFirstName_ManageProfile").val(ProfileData.data.Admin.FirstName);
+        //        $("#txtLastName_ManageProfile").val(ProfileData.data.Admin.LastName);
+        //        $("#txtEmail_ManageProfile").val(ProfileData.data.Admin.Email);
+        //        $("#txtUserName_ManageProfile").val((ProfileData.data.Admin.Username));
+        //        $("#txtMobile_ManageProfile").val(ProfileData.data.Admin.PhoneNumber_Only);
+        //        $("#txtPincode_ManageProfile").val(ProfileData.data.Admin.Pincode);
+        //        $("#txtAddress_ManageProfile").val(ProfileData.data.Admin.Address);
+        //        $("#ProfileName_ManageProfile").html(ProfileData.data.Admin.FirstName + " " + ProfileData.data.Admin.LastName);
+        //        $("#a_Admin_AdminLayout").html(ProfileData.data.Admin.FirstName + " " + ProfileData.data.Admin.LastName);
+        //        $("#ProfileEmail_ManageProfile").html(ProfileData.data.Admin.Email);
+        //        $("#imgProfile_ManageProfile").attr('src', '/Content/AdminImages/' + ProfileData.data.Admin.ProfileImage);
+        //        $("#img_Admin_AdminLayout").attr('src', '/Content/AdminImages/' + ProfileData.data.Admin.ProfileImage);
+        //        if (ProfileData.data.Admin.LoginStatus == 1) {
+
+        //            $('#chkIsActive_ManageProfile').prop('checked', true);
+        //        }
+        //        else {
+        //            $('#chkIsActive_ManageProfile').prop('checked', false);
+        //        }
+        //    }
+
+        //    else if (ProfileData.data.Staff != null) {
+
+
+        //        $("#txtFirstName_ManageProfile").val(ProfileData.data.Staff.FirstName);
+        //        $("#txtLastName_ManageProfile").val(ProfileData.data.Staff.LastName);
+        //        $("#txtEmail_ManageProfile").val(ProfileData.data.Staff.Email);
+        //        $("#txtUserName_ManageProfile").val((ProfileData.data.Staff.Username));
+        //        $("#txtMobile_ManageProfile").val(ProfileData.data.Staff.PhoneNumber_Only);
+        //        $("#txtPincode_ManageProfile").val(ProfileData.data.Staff.Pincode);
+        //        $("#txtAddress_ManageProfile").val(ProfileData.data.Staff.Address);
+        //        $("#ProfileName_ManageProfile").html(ProfileData.data.Staff.FirstName + " " + ProfileData.data.Staff.LastName);
+        //        $("#ProfileEmail_ManageProfile").html(ProfileData.data.Staff.Email);
+        //        $("#imgProfile_ManageProfile").attr('src', '/Content/StaffImages/' + ProfileData.data.Staff.ProfileImage);
+        //        if (ProfileData.data.Staff.LoginStatus == 1) {
+
+        //            $('#chkIsActive_ManageProfile').prop('checked', true);
+        //        }
+        //        else {
+        //            $('#chkIsActive_ManageProfile').prop('checked', false);
+        //        }
+        //    }
+
+        //    $('html, body').animate({ scrollTop: 0 }, 1200);
+
+        //    StopLoading();
+
+        //},
         success: function (ProfileData) {
 
-            if (ProfileData.data.Admin != null) {
+            if (ProfileData.data.SuperAdmin != null) {
 
+                $("#txtFirstName_ManageProfile").val(ProfileData.data.SuperAdmin.FirstName);
+                $("#txtLastName_ManageProfile").val(ProfileData.data.SuperAdmin.LastName);
+                $("#txtEmail_ManageProfile").val(ProfileData.data.SuperAdmin.Email);
+                $("#txtUserName_ManageProfile").val(ProfileData.data.SuperAdmin.Username);
+                $("#txtMobile_ManageProfile").val(ProfileData.data.SuperAdmin.PhoneNumber_Only);
+                $("#txtPincode_ManageProfile").val(ProfileData.data.SuperAdmin.Pincode);
+                $("#txtAddress_ManageProfile").val(ProfileData.data.SuperAdmin.Address);
+                $("#ProfileName_ManageProfile").html(ProfileData.data.SuperAdmin.FirstName + " " + ProfileData.data.SuperAdmin.LastName);
+                $("#a_SuperAdmin_SuperAdminLayout").html(ProfileData.data.SuperAdmin.FirstName + " " + ProfileData.data.SuperAdmin.LastName);
+                $("#ProfileEmail_ManageProfile").html(ProfileData.data.SuperAdmin.Email);
+                $("#imgProfile_ManageProfile").attr('src', '/Content/SuperAdminImages/' + ProfileData.data.SuperAdmin.ProfileImage);
+                $("#img_SuperAdmin_SuperAdminLayout").attr('src', '/Content/SuperAdminImages/' + ProfileData.data.SuperAdmin.ProfileImage);
+
+                $('#chkIsActive_ManageProfile').prop('checked', ProfileData.data.SuperAdmin.LoginStatus == 1);
+            }
+
+            else if (ProfileData.data.Admin != null) {
 
                 $("#txtFirstName_ManageProfile").val(ProfileData.data.Admin.FirstName);
                 $("#txtLastName_ManageProfile").val(ProfileData.data.Admin.LastName);
                 $("#txtEmail_ManageProfile").val(ProfileData.data.Admin.Email);
-                $("#txtUserName_ManageProfile").val((ProfileData.data.Admin.Username));
+                $("#txtUserName_ManageProfile").val(ProfileData.data.Admin.Username);
                 $("#txtMobile_ManageProfile").val(ProfileData.data.Admin.PhoneNumber_Only);
                 $("#txtPincode_ManageProfile").val(ProfileData.data.Admin.Pincode);
                 $("#txtAddress_ManageProfile").val(ProfileData.data.Admin.Address);
@@ -83,41 +218,30 @@ function GetProfileData() {
                 $("#ProfileEmail_ManageProfile").html(ProfileData.data.Admin.Email);
                 $("#imgProfile_ManageProfile").attr('src', '/Content/AdminImages/' + ProfileData.data.Admin.ProfileImage);
                 $("#img_Admin_AdminLayout").attr('src', '/Content/AdminImages/' + ProfileData.data.Admin.ProfileImage);
-                if (ProfileData.data.Admin.LoginStatus == 1) {
 
-                    $('#chkIsActive_ManageProfile').prop('checked', true);
-                }
-                else {
-                    $('#chkIsActive_ManageProfile').prop('checked', false);
-                }
+                $('#chkIsActive_ManageProfile').prop('checked', ProfileData.data.Admin.LoginStatus == 1);
             }
 
             else if (ProfileData.data.Staff != null) {
 
-
                 $("#txtFirstName_ManageProfile").val(ProfileData.data.Staff.FirstName);
                 $("#txtLastName_ManageProfile").val(ProfileData.data.Staff.LastName);
                 $("#txtEmail_ManageProfile").val(ProfileData.data.Staff.Email);
-                $("#txtUserName_ManageProfile").val((ProfileData.data.Staff.Username));
+                $("#txtUserName_ManageProfile").val(ProfileData.data.Staff.Username);
                 $("#txtMobile_ManageProfile").val(ProfileData.data.Staff.PhoneNumber_Only);
                 $("#txtPincode_ManageProfile").val(ProfileData.data.Staff.Pincode);
                 $("#txtAddress_ManageProfile").val(ProfileData.data.Staff.Address);
                 $("#ProfileName_ManageProfile").html(ProfileData.data.Staff.FirstName + " " + ProfileData.data.Staff.LastName);
+                $("#a_Staff_StaffLayout").html(ProfileData.data.Staff.FirstName + " " + ProfileData.data.Staff.LastName);
                 $("#ProfileEmail_ManageProfile").html(ProfileData.data.Staff.Email);
                 $("#imgProfile_ManageProfile").attr('src', '/Content/StaffImages/' + ProfileData.data.Staff.ProfileImage);
-                if (ProfileData.data.Staff.LoginStatus == 1) {
+                $("#img_Staff_StaffLayout").attr('src', '/Content/StaffImages/' + ProfileData.data.Staff.ProfileImage);
 
-                    $('#chkIsActive_ManageProfile').prop('checked', true);
-                }
-                else {
-                    $('#chkIsActive_ManageProfile').prop('checked', false);
-                }
+                $('#chkIsActive_ManageProfile').prop('checked', ProfileData.data.Staff.LoginStatus == 1);
             }
 
             $('html, body').animate({ scrollTop: 0 }, 1200);
-
             StopLoading();
-
         },
         error: function (result) {
             StopLoading();
@@ -237,7 +361,7 @@ function AddUpdateAdmin() {
 
                         Staff_ID_Global = 0;
                         Admin_ID_Global = 0;
-
+                        SuperAdmin_ID_Global = 0;
                         //--refresh Staff And Admin list
                         GetProfileData();
                     }
@@ -334,9 +458,12 @@ function TypeProfileImage(_TypeProfileImage) {
             if (dataResponse.status == 1) {
                 var ImagePath = dataResponse.data.imagePath;
                 if (dataResponse.data.usertype == 1) {
-                    document.getElementById('img_Admin_AdminLayout').src = ImagePath;
+                    document.getElementById('img_SuperAdmin_SuperAdminLayout').src = ImagePath;
                 }
                 else if (dataResponse.data.usertype == 2) {
+                    document.getElementById('img_Admin_AdminLayout').src = ImagePath;
+                }
+                else if (dataResponse.data.usertype == 3) {
                     document.getElementById('img_Staff_StaffLayout').src = ImagePath;
                 }
 

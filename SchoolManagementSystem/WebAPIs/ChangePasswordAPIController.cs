@@ -19,7 +19,7 @@ namespace SchoolManagementSystem.WebAPIs
         private SchoolManagementContext db = new SchoolManagementContext();
 
         //--Change Password-- 
-        [Authorize(Roles = "Admin,Staff")]
+        [Authorize(Roles = "SuperAdmin,Admin,Staff")]
         [Route("UpdatePassword")]
         [HttpPost]
         public HttpResponseMessage UpdateUserPassword()

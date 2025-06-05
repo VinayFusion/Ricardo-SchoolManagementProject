@@ -4,32 +4,37 @@ var logged_In_UserType_Global = 1;
 $(document).ready(function () {
     StartLoading();
     $('#txtOldPassword_ChangePassword').focus();
-    $.get("/Admin/GetAdminCookieDetail", null, function (dataAdminToken) {
-        if (dataAdminToken != "" && dataAdminToken != null) {
 
-            UserToken_Global = dataAdminToken;
-
-            logged_In_UserType_Global = 1;
-
+    // SuperAdmin check
+    $.get("/SuperAdmin/GetSuperAdminCookieDetail", null, function (dataSuperAdminToken) {
+        if (dataSuperAdminToken != "" && dataSuperAdminToken != null) {
+            UserToken_Global = dataSuperAdminToken;
+            logged_In_UserType_Global = 1; // SuperAdmin
             StopLoading();
-        }
-        else {
-            $.get("/Staff/GetStaffCookieDetail", null, function (dataStaffToken) {
-                if (dataStaffToken != "" && dataStaffToken != null) {
-
-                    UserToken_Global = dataStaffToken;
-
-                    logged_In_UserType_Global = 2;
-
+        } else {
+            // Admin check
+            $.get("/Admin/GetAdminCookieDetail", null, function (dataAdminToken) {
+                if (dataAdminToken != "" && dataAdminToken != null) {
+                    UserToken_Global = dataAdminToken;
+                    logged_In_UserType_Global = 2; // Admin
                     StopLoading();
-                }
-                else {
-                    StopLoading();
+                } else {
+                    // Staff check
+                    $.get("/Staff/GetStaffCookieDetail", null, function (dataStaffToken) {
+                        if (dataStaffToken != "" && dataStaffToken != null) {
+                            UserToken_Global = dataStaffToken;
+                            logged_In_UserType_Global = 3; // Staff
+                            StopLoading();
+                        } else {
+                            StopLoading(); // No token found
+                        }
+                    });
                 }
             });
         }
     });
 });
+
 
 function ResetForm() {
     //--Set Default Values Fields

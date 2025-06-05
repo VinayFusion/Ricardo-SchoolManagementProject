@@ -93,9 +93,9 @@ namespace SchoolManagementSystem.WebAPIs
             }
         }
 
-        // --Get Admin And staff Detail by Id-- 
+        // --Get SuperAdmin , Admin And staff Detail by Id-- 
 
-        [Authorize(Roles = "Admin,Staff")]
+        [Authorize(Roles = "SuperAdmin,Admin,Staff")]
         [Route("GetProfileDataById")]
         [HttpGet]
         public HttpResponseMessage GetProfileDataById()
@@ -123,10 +123,37 @@ namespace SchoolManagementSystem.WebAPIs
                     //--Get User-Login Detail
                     UserLogin _UserLogin = db.UserLogin.Where(ul => ul.Id == _LoginID_Exact).FirstOrDefault();
                     var _AdminLogin = "";//db.Admin.Where(a => a.LoginId == _LoginID_Exact).FirstOrDefault();
+                    var _SuperAdminLogin = "";
                     var _StaffLogin = db.Staff.Where(a => a.LoginId == _LoginID_Exact).FirstOrDefault();
 
+                    //------------- for superadmin ---------------------
+                    if (_SuperAdminLogin != null && _UserLogin.UserTypeId == 1)
+                    {
+                        SuperAdminViewModel lstSuperAdmin = new SuperAdminViewModel();
+
+                        //--Get Detail by username
+                        SqlParameter[] queryParams_Branch = new SqlParameter[] {
+                    new SqlParameter("loginid", _LoginID_Exact),
+                    new SqlParameter("mode", "4")
+                    };
+                        lstSuperAdmin = db.Database.SqlQuery<SuperAdminViewModel>("exec sp_ManageProfile_StaffAdmin @loginid,@mode", queryParams_Branch).FirstOrDefault();
+
+
+
+                        //--Create response
+                        var objResponse = new
+                        {
+                            status = 1,
+                            message = "Success",
+                            data = new
+                            { SuperAdmin = lstSuperAdmin }
+                        };
+                        //sending response as OK
+
+                        return Request.CreateResponse(HttpStatusCode.OK, objResponse);
+                    }
                     //------------- for admin ---------------------
-                    if (_AdminLogin != null && _UserLogin.UserTypeId == 1)
+                    else if (_AdminLogin != null && _UserLogin.UserTypeId == 2)
                     {
                         AdminViewModel lstAdmin = new AdminViewModel();
 
@@ -152,7 +179,7 @@ namespace SchoolManagementSystem.WebAPIs
                         return Request.CreateResponse(HttpStatusCode.OK, objResponse);
                     }
                     //------------- for Staff ---------------------
-                    else if (_StaffLogin != null && _UserLogin.UserTypeId == 2)
+                    else if (_StaffLogin != null && _UserLogin.UserTypeId == 3)
                     {
                         StaffViewModel lstStaff = new StaffViewModel();
 
@@ -204,7 +231,7 @@ namespace SchoolManagementSystem.WebAPIs
         }
 
         //--Insert Update Admin Data and Staff Data -- 
-        [Authorize(Roles = "Admin,Staff")]
+        [Authorize(Roles = "SuperAdmin,Admin,Staff")]
         [Route("InsertUpdateProfileData")]
         [HttpPost]
 
@@ -357,12 +384,20 @@ namespace SchoolManagementSystem.WebAPIs
                     //--Get User-Login Detail
                     UserLogin _UserLogin = db.UserLogin.Where(ul => ul.Id == _LoginID_Exact).FirstOrDefault();
                     Int64 Staff_Admin_Id = 0;
+                    //For SuperAdmin
                     if (_UserLogin.UserTypeId == 1)
+                    {
+                        var _SuperAdminLogin = db.SuperAdmin.Where(a => a.LoginId == _LoginID_Exact).FirstOrDefault();
+                        Staff_Admin_Id = _SuperAdminLogin.Id;
+                    }
+                    //For Admin 
+                    else if (_UserLogin.UserTypeId == 2)
                     {
                         var _AdminLogin = db.Admin.Where(a => a.LoginId == _LoginID_Exact).FirstOrDefault();
                         Staff_Admin_Id = _AdminLogin.Id;
                     }
-                    else if (_UserLogin.UserTypeId == 2)
+                    //For Staff
+                    else if (_UserLogin.UserTypeId == 3)
                     {
                         var _StaffLogin = db.Staff.Where(a => a.LoginId == _LoginID_Exact).FirstOrDefault();
                         Staff_Admin_Id = _StaffLogin.Id;
@@ -386,9 +421,13 @@ namespace SchoolManagementSystem.WebAPIs
                         int _mode = 0;
                         if (_UserLogin.UserTypeId == 1)
                         {
-                            _mode = 1;
+                            _mode = 3;
                         }
                         else if (_UserLogin.UserTypeId == 2)
+                        {
+                            _mode = 1;
+                        }
+                        else if (_UserLogin.UserTypeId == 3)
                         {
                             _mode = 2;
                         }
@@ -447,8 +486,8 @@ namespace SchoolManagementSystem.WebAPIs
             }
         }
 
-        //--Insert Update Admin Profile Image and Staff Profile Image -- 
-        [Authorize(Roles = "Admin,Staff")]
+        //--Insert Update SuperAdmin Profile Image , Admin Profile Image and Staff Profile Image -- 
+        [Authorize(Roles = "SuperAdmin,Admin,Staff")]
         [Route("ProfileImageSet")]
         [HttpPost]
         public HttpResponseMessage ProfileImageSet()
@@ -474,7 +513,7 @@ namespace SchoolManagementSystem.WebAPIs
 
 
                     UserLogin _UserLogin = db.UserLogin.Where(ul => ul.Id == _LoginID_Exact).FirstOrDefault();
-                    if (_UserLogin.UserTypeId == 1 || _UserLogin.UserTypeId == 2)
+                    if (_UserLogin.UserTypeId == 1 || _UserLogin.UserTypeId == 2 || _UserLogin.UserTypeId == 3)
                     {
                         var _resp = new ResponseViewModel();
                         //--Create object of HttpRequest
@@ -524,6 +563,22 @@ namespace SchoolManagementSystem.WebAPIs
                         var _mode = 0;
                         if (_UserLogin.UserTypeId == 1)
                         {
+                            _mode = 4;
+                            if (_TypeProfileImage == "NewImage")
+                            {
+                                StoreImagePath = Path.Combine(HttpContext.Current.Server.MapPath("/Content/SuperAdminImages/") + InputFileName);
+                                ImagePath = ("/Content/SuperAdminImages/") + InputFileName;
+                                _ImageName = InputFileName;
+                            }
+                            else if (_TypeProfileImage == "ResetImage")
+                            {
+                                StoreImagePath = (HttpContext.Current.Server.MapPath("/Content/SuperAdminImages/" + _ImageName));
+                                ImagePath = ("/Content/SuperAdminImages/") + _ImageName;
+                            }
+
+                        }
+                        else if (_UserLogin.UserTypeId == 2)
+                        {
                             _mode = 1;
                             if (_TypeProfileImage == "NewImage")
                             {
@@ -538,7 +593,7 @@ namespace SchoolManagementSystem.WebAPIs
                             }
 
                         }
-                        else if (_UserLogin.UserTypeId == 2)
+                        else if (_UserLogin.UserTypeId == 3)
                         {
                             _mode = 2;
                             if (_TypeProfileImage == "NewImage")
@@ -556,10 +611,10 @@ namespace SchoolManagementSystem.WebAPIs
                         //------------------------------------ Image name only save in data base ----------------------------------------------//
                         Int64 _Id = _LoginID_Exact;
                         SqlParameter[] queryParams_Admin = new SqlParameter[] {
-                        new SqlParameter("id", _Id),
-                        new SqlParameter("profileImage", _ImageName),
-                        new SqlParameter("mode", _mode)
-                        };
+                      new SqlParameter("id", _Id),
+                      new SqlParameter("profileImage", _ImageName),
+                      new SqlParameter("mode", _mode)
+                      };
                         _resp = db.Database.SqlQuery<ResponseViewModel>("exec sp_InsertUpdateProfileImage @id,@profileImage,@mode", queryParams_Admin).FirstOrDefault();
 
                         //-----------------------------------------------Image save in defined path ------------------------------------------------------//
@@ -579,9 +634,13 @@ namespace SchoolManagementSystem.WebAPIs
                             var filePath = "";
                             if (_UserLogin.UserTypeId == 1)
                             {
-                                filePath = HttpContext.Current.Server.MapPath("/Content/AdminImages/" + _resp.PreviousProfileImage);
+                                filePath = HttpContext.Current.Server.MapPath("/Content/SuperAdminImages/" + _resp.PreviousProfileImage);
                             }
                             else if (_UserLogin.UserTypeId == 2)
+                            {
+                                filePath = HttpContext.Current.Server.MapPath("/Content/AdminImages/" + _resp.PreviousProfileImage);
+                            }
+                            else if (_UserLogin.UserTypeId == 3)
                             {
                                 filePath = HttpContext.Current.Server.MapPath("/Content/StaffImages/" + _resp.PreviousProfileImage);
                             }

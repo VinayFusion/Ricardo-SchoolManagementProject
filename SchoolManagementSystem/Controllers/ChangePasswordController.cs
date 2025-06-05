@@ -12,7 +12,11 @@ namespace SchoolManagementSystem.Controllers
         public ActionResult Index()
         {
             bool HasChangePasswordAccess = true;
-            if (Request.Cookies["AdminCookieSMA"] != null)
+            if (Request.Cookies["SuperAdminCookieSMA"] != null)
+            {
+                ViewBag.LayoutPath = "~/Views/Shared/_SuperAdminLayout.cshtml";
+            }
+            else if (Request.Cookies["AdminCookieSMA"] != null)
             {
                 ViewBag.LayoutPath = "~/Views/Shared/_AdminLayout.cshtml";
             }
