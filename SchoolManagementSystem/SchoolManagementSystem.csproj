@@ -304,6 +304,14 @@
     <Compile Include="Migrations\202506050808224_MergeSchoolTablesParameterintoAdminsTable.Designer.cs">
       <DependentUpon>202506050808224_MergeSchoolTablesParameterintoAdminsTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202506060653242_Update Parameters in Field and Superadmins Tbl.cs" />
+    <Compile Include="Migrations\202506060653242_Update Parameters in Field and Superadmins Tbl.Designer.cs">
+      <DependentUpon>202506060653242_Update Parameters in Field and Superadmins Tbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202506060755464_redo.cs" />
+    <Compile Include="Migrations\202506060755464_redo.Designer.cs">
+      <DependentUpon>202506060755464_redo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\ClassDetail.cs" />
@@ -2424,9 +2432,26 @@
     <Content Include="Content\Panel\plugins\uplot\uPlot.iife.js" />
     <Content Include="Content\Panel\plugins\uplot\uPlot.iife.min.js" />
     <Content Include="Content\Panel\plugins\uplot\uPlot.min.css" />
-    <Content Include="Content\StaffImages\fd131de8a5914f58a5ab3a4e1e4ad309.gif" />
+    <Content Include="Content\StaffImages\1872d703cd0049d6acc7d28f64011526.gif" />
+    <Content Include="Content\StaffImages\236afd8cfd5c48a393934a3e963cb250.gif" />
+    <Content Include="Content\StaffImages\67b89f9f580d465ebbb16a0c64e6f646_ImageWithLaptopBlack.jpg" />
+    <Content Include="Content\StaffImages\733ce86b29ae4e128db1685050a54ec5_ImageWithLaptopBlack.jpg" />
+    <Content Include="Content\StaffImages\a0c2de4b9d8c4b6094a48cfe77290b2e.gif" />
+    <Content Include="Content\StaffImages\a5d504062bc24668a8d373b60bb94c8e.gif" />
+    <Content Include="Content\StaffImages\bd675f860b0e476faea130593169b1d3.gif" />
+    <Content Include="Content\StaffImages\e67888aab93746b8a6447f3b6a0d02f2.gif" />
+    <Content Include="Content\StaffImages\ebfa9954e06d4fe3b082ab95232f2bc8.gif" />
     <Content Include="Content\StylishAlert\iao-alert.css" />
     <Content Include="Content\StylishAlert\iao-alert.jquery.js" />
+    <Content Include="Content\SuperAdminImages\065602d5c6094eecaae5504c00f54ef0_image.png" />
+    <Content Include="Content\SuperAdminImages\346d2d39417541989ab43ad68db04c17_Group 19.png" />
+    <Content Include="Content\SuperAdminImages\5a0e07ba0a99414b8c567b30ebea88d2_ImageBlack.jpg" />
+    <Content Include="Content\SuperAdminImages\67551e40d5cd41e3951edd8aab3460b1_SUPER VISÃO %286%29.png" />
+    <Content Include="Content\SuperAdminImages\6ffb76afb1564ef28d05562b6f131e5a.gif" />
+    <Content Include="Content\SuperAdminImages\aae56b2bab3846108e4aef44df0ff170_SUPER VISÃO %286%29.png" />
+    <Content Include="Content\SuperAdminImages\b6f99147b2b645f789587bc4678cf725_image.png" />
+    <Content Include="Content\SuperAdminImages\c5fc2b2d5e604d108ee4e25acf784d8a_Group 20 %281%29.png" />
+    <Content Include="Content\SuperAdminImages\f8f73d1e78cb4574a88a1c1222c4194f_SUPER VISÃO %286%29.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -2784,7 +2809,6 @@
     <Folder Include="Content\SchoolImages\" />
     <Folder Include="Content\SchoolLogos\" />
     <Folder Include="Content\StudentImages\" />
-    <Folder Include="Content\SuperAdminImages\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -2883,6 +2907,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202506050808224_MergeSchoolTablesParameterintoAdminsTable.resx">
       <DependentUpon>202506050808224_MergeSchoolTablesParameterintoAdminsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506060653242_Update Parameters in Field and Superadmins Tbl.resx">
+      <DependentUpon>202506060653242_Update Parameters in Field and Superadmins Tbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506060755464_redo.resx">
+      <DependentUpon>202506060755464_redo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

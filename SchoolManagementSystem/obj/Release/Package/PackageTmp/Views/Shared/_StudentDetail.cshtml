@@ -1,0 +1,87 @@
+﻿<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Student Info</h1>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div id="dv_StudentInfo_StudentDetail" class="row">
+            <!-- /.col -->
+            <div class="col-md-12">
+                <!-- Widget: user widget style 1 -->
+                <div class="card card-widget widget-user">
+                    <!-- Add the bg color to the header using any of the bg-* classes -->
+                    <div class="widget-user-header bg-info" style="background-color:red!important;">
+                        <h3 id="StudentName_StudentDetail" class="widget-user-username"></h3>
+                        <h5 id="StudentEmail_StudentDetail" class="widget-user-desc"></h5>
+                    </div>
+                    @*<div class="widget-user-image">
+                            <img id="imgStudent_StudentDetail" class="img-circle elevation-2" src="" alt="User Avatar">
+                        </div>*@
+                    <div class="widget-user-image">
+                        <!--Type of profile image means this image new image upload or reset image -->
+                        <input type="file" id="imgupload" style="display:none" accept="image/*" onchange=" TypeProfileImage('NewImage');" />
+                        <img id="imgProfile_StudentDetail" class="img-circle elevation-2" src="" alt="User Avatar">
+                        <span id="EditProfileImageBtn" class="fas fa-edit" data-toggle="tooltip" data-placement="top" title="Edit And Upload Image"></span>
+                        <span id="ProfileImageReset" class="fas fa-sync-alt" data-toggle="tooltip" data-placement="top" title="Reset Profile Image Or Default" onclick="ConfirmProfileImageReset();"></span>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row" style="text-align: center;">
+                            <div class="col-md-12" style="margin-bottom: 10px;">
+                                <small class="badge badge-danger" style="font-size:15px;">Student</small>
+                            </div>
+                        </div>
+                        <div class="row" style="border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; margin-bottom:20px;">
+                            <div class="col-sm-4 border-right">
+                                <div class="description-block">
+                                    <div class="description-header"><i class="fas fa-birthday-cake"></i> Birth</div>
+                                    <span id="DateOfBirth_StudentDetail" class="description-text">N/A</span>
+                                </div>
+                                <!-- /.description-block -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-sm-4 border-right">
+                                <div class="description-block">
+                                    <div class="description-header"><i class="fas fa-map-marker-alt"></i> Address</div>
+                                    <span id="Address_StudentDetail" class="description-text"></span>
+                                </div>
+                                <!-- /.description-block -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-sm-4">
+                                <div class="description-block">
+                                    <div class="description-header"><i class="fas fa-phone-volume"></i> Mobile</div>
+                                    <span id="Mobile_StudentDetail" class="description-text"></span>
+                                </div>
+                                <!-- /.description-block -->
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                        <!-- /.row -->
+                        <div class="row" style="margin-bottom:20px;">
+                            <div class="col-md-4">
+                                <label>Select Session</label>
+                                <select id="ddlSession_ManageStudent" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger">
+                                </select>
+                            </div>
+                            <div class="col-md-8">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.widget-user -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</section>
+<!-- /.content -->

@@ -1,0 +1,8 @@
+﻿
+@{
+    ViewBag.Title = "ManageProfile";
+    Layout = "~/Views/Shared/_SuperAdminLayout.cshtml";
+}
+
+@Html.Partial("_ManageProfileView", (int?)@ViewBag.UsertypeId)
+

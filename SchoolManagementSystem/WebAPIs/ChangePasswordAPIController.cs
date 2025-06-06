@@ -96,6 +96,7 @@ namespace SchoolManagementSystem.WebAPIs
                     }
                     else
                     {
+
                         //--Create response as Un-Authorized
                         var objResponse = new { status = -101, message = "Authorization has been denied for this request!", data = "" };
                         //sending response as Un-Authorized
@@ -112,8 +113,9 @@ namespace SchoolManagementSystem.WebAPIs
             }
             catch (Exception ex)
             {
+               
                 //--Create response as Error
-                var objResponse = new { status = -100, message = "Internal Server Error!", data = "" };
+                var objResponse = new { status = -100, message = "Internal Server Error!", data = "", errorMessage = ex.Message.ToString() };
                 //sending response as error
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, objResponse);
             }

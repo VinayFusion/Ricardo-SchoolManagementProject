@@ -1,0 +1,216 @@
+﻿
+@{
+    ViewBag.Title = "ManageSchool";
+    Layout = "~/Views/Shared/_SuperAdminLayout.cshtml";
+}
+
+
+@*<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">*@
+<link href="~/Content/Panel/plugins/jquery-ui/jquery-ui.css" rel="stylesheet" />
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Manage School </h1>
+            </div>
+            <div class="col-sm-6" style="text-align:right;">
+                <button id="btnAddNewSchool" type="button" class="btn btn-primary" onclick="AddNewSchool_ShowForm();"><i class="fa fa-plus" aria-hidden="true" style="margin-right:5px;"></i> Add New School</button>
+                @*<ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">General Form</li>
+                    </ol>*@
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div id="dv_AddUpdateSchoolForm" class="row" style="display:none;">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 id="Title_SchoolForm_ManageSchool" class="card-title">@*Add New School*@</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form>
+                        <div class="card-body">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>First Name <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control" id="txtFirstName_ManageSchool" placeholder="Enter First Name">
+                                        <span id="firstName_error_ManageSchool" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Last Name <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control" id="txtLastName_ManageSchool" placeholder="Enter Last Name">
+                                        <span id="lastName_error_ManageSchool" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Email <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control isEmailField AvoidSpace" id="txtEmail_ManageSchool" placeholder="Enter Email">
+                                        <span id="email_error_ManageSchool" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Password <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control" id="txtPassword_ManageSchool" placeholder="Enter Password">
+                                        <span id="password_error_ManageSchool" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Mobile <span class="requiredFieldClass">*</span></label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">+91</span>
+                                            </div>
+                                            <input type="text" class="form-control IsNumeric" id="txtMobile_ManageSchool" placeholder="Enter Mobile-Number" maxlength="10">
+                                        </div>
+                                        <span id="mobile_error_ManageSchool" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Pincode <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control" id="txtPincode_ManageSchool" placeholder="Enter Pincode">
+
+                                        <span id="pincode_error_ManageSchool" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Select School Type <span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlSchoolType_ManageSchool" class="form-control select2">
+                                            <option value="0">Select</option>
+                                            <option value="1">Preschool</option>
+                                            <option value="2">Elementary & Middle School</option>
+                                            <option value="3">High School</option>
+                                            <option value="4">Technical / Vocational School</option>
+
+                                        </select>
+                                        <span id="schoolType_error_ManageSchool" class="errorsClass"></span>
+                                    </div>
+
+                                    <!-- School Logo Upload Section -->
+                                    <div class="form-group mt-3">
+                                        <label>School Logo<span class="requiredFieldClass">*</span></label>
+                                        <input type="file" class="form-control" id="schoolLogoImage" accept=".png, .jpg, .jpeg, .webp">
+                                        <span id="schoolLogo_error" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Address <span class="requiredFieldClass">*</span></label>
+                                        <textarea class="form-control" id="txtAddress_ManageSchool" placeholder="Enter Address" rows="3"></textarea>
+                                        <span id="address_error_ManageSchool" class="errorsClass"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="chkIsActive_ManageSchool" checked>
+                                        <label class="form-check-label" for="chkIsActive_ManageSchool" style="cursor:pointer;">Is Active</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- /.card-body -->
+
+                        <div class="card-footer">
+                            <button id="btnSubmitManageSchool" type="button" class="btn btn-primary" onclick="AddUpdateSchool(1);">Submit</button>
+                            <button id="btnUpdateManageSchool" type="button" class="btn btn-primary" onclick="AddUpdateSchool(2);" style="display:none;">Update</button>
+                            <button type="button" class="btn btn-default" onclick="CancelForm();">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- /.card -->
+            </div>
+            <!--/.col (left) -->
+        </div>
+        <div id="dv_SchoolListBox" class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">School List</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+
+                        <table id="tblSchool_ManageSchool" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Sno</th>
+                                    <th>SchoolName</th>
+                                    <th>SchoolType</th>
+                                    <th>Email</th>
+                                    <th>Pincode</th>
+                                    <th>Status</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>Sno</th>
+                                    <th>SchoolName</th>
+                                    <th>SchoolType</th>
+                                    <th>Email</th>
+                                    <th>Pincode</th>
+                                    <th>Status</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+<script src="~/ScriptFiles/ManageSchool.js"></script>
+
+<script>
+    $(function () {
+        $("#tblSchool_ManageSchool").DataTable();
+        $(".isDatePicker").datepicker({ dateFormat: 'yy-mm-dd' });
+        //Initialize Select2 Elements
+        $('.select2').select2();
+
+    });
+</script>
+

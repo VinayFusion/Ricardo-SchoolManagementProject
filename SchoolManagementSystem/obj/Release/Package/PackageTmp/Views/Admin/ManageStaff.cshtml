@@ -1,0 +1,247 @@
+﻿
+@{
+    ViewBag.Title = "Manage Staff";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+@*<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">*@
+<link href="~/Content/Panel/plugins/jquery-ui/jquery-ui.css" rel="stylesheet" />
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Manage Staff</h1>
+            </div>
+            <div class="col-sm-6" style="text-align:right;">
+                <button id="btnAddNewStaff" type="button" class="btn btn-primary" onclick="AddNewStaff_ShowForm();"><i class="fa fa-plus" aria-hidden="true" style="margin-right:5px;"></i> Add New Staff</button>
+                @*<ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">General Form</li>
+                    </ol>*@
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div id="dv_AddUpdateStaffForm" class="row" style="display:none;">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 id="Title_StaffForm_ManageStaff" class="card-title">@*Add New Course*@</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form>
+                        <div class="card-body">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>First Name <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control" id="txtFirstName_ManageStaff" placeholder="Enter First Name">
+                                        <span id="firstName_error_ManageStaff" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Last Name <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control" id="txtLastName_ManageStaff" placeholder="Enter Last Name">
+                                        <span id="lastName_error_ManageStaff" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Email <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control isEmailField AvoidSpace" id="txtEmail_ManageStaff" placeholder="Enter Email">
+                                        <span id="email_error_ManageStaff" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Password <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control" id="txtPassword_ManageStaff" placeholder="Enter Password">
+                                        <span id="password_error_ManageStaff" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Mobile <span class="requiredFieldClass">*</span></label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">+91</span>
+                                            </div>
+                                            <input type="text" class="form-control IsNumeric" id="txtMobile_ManageStaff" placeholder="Enter Mobile-Number" maxlength="10">
+                                        </div>
+                                        <span id="mobile_error_ManageStaff" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Select Staff Type <span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlStaffType_ManageStaff" class="form-control select2"></select>
+                                        <span id="staffType_error_ManageStaff" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Gender <span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlGender_ManageStaff" class="form-control select2">
+                                            <option value="0">Select</option>
+                                            <option value="M">Male</option>
+                                            <option value="F">Female</option>
+                                            <option value="O">Other</option>
+                                        </select>
+                                        <span id="gender_error_ManageStaff" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Work Experience (In Years) <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control IsDecimal" id="txtWrokExperience_ManageStaff" placeholder="Enter Work Experience">
+                                        <span id="workExperience_error_ManageStaff" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Salary <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control IsDecimal" id="txtSalary_ManageStaff" placeholder="Enter Salary">
+                                        <span id="salary_error_ManageStaff" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Joining Date <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control isDatePicker" id="txtJoiningDate_ManageStaff" placeholder="Select Joining-Date" style="cursor:pointer;" readonly>
+                                        <span id="joiningDate_error_ManageStaff" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Address <span class="requiredFieldClass">*</span></label>
+                                        <textarea class="form-control" id="txtAddress_ManageStaff" placeholder="Enter Address" rows="3"></textarea>
+                                        <span id="address_error_ManageStaff" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Pincode <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control" id="txtPincode_ManageStaff" placeholder="Enter Pincode">
+
+                                        <span id="pincode_error_ManageStaff" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                @*<div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Select Branch <span class="requiredFieldClass">*</span></label>
+                                            <select id="ddlBranch_ManageStaff" class="form-control"></select>
+                                            <span id="branch_error_ManageStaff" class="errorsClass"></span>
+                                        </div>
+                                    </div>*@
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="chkIsActive_ManageStaff" checked>
+                                        <label class="form-check-label" for="chkIsActive_ManageStaff" style="cursor:pointer;">Is Active</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- /.card-body -->
+
+                        <div class="card-footer">
+                            <button id="btnSubmitManageStaff" type="button" class="btn btn-primary" onclick="AddUpdateStaff(1);">Submit</button>
+                            <button id="btnUpdateManageStaff" type="button" class="btn btn-primary" onclick="AddUpdateStaff(2);" style="display:none;">Update</button>
+                            <button type="button" class="btn btn-default" onclick="CancelForm();">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- /.card -->
+            </div>
+            <!--/.col (left) -->
+        </div>
+        <div id="dv_StaffListBox" class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Staff List</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        
+                        <table id="tblStaff_ManageStaff" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Sno</th>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Gender</th>
+                                    <th>Pincode</th>
+                                    <th>Status</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>Sno</th>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Gender</th>
+                                    <th>Pincode</th>
+                                    <th>Status</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+<script src="/ScriptFiles/ManageStaff.js"></script>
+
+<script>
+    $(function () {
+        $("#tblStaff_ManageStaff").DataTable();
+        $(".isDatePicker").datepicker({ dateFormat: 'yy-mm-dd' });
+        //Initialize Select2 Elements
+        $('.select2').select2();
+        
+    });
+</script>
+

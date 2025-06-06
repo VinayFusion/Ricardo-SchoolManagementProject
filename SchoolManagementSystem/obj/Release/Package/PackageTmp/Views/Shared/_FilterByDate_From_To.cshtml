@@ -1,0 +1,21 @@
+﻿<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+<div class="col-md-4">
+    <div class="form-group">
+        <label>From</label>
+        <input type="text" class="form-control isDatePicker" id="_txtFromDate" placeholder="Select From-Date" style="cursor:pointer;" onchange="DateChangeFun('StartDateChangeFun');" readonly>
+        <a href="#" class="ml-1 mt-1 d-none" id="btnShowAllRecordsFilter" onclick="showAllRecords();">Show all</a>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="form-group">
+        <label>To</label>
+        <input type="text" class="form-control isDatePicker" id="_txtToDate" placeholder="Select To-Date" style="cursor:pointer;" onchange="DateChangeFun('EndDateChangeFun');" readonly>
+    </div>
+</div>
+@*<div class="col-md-2">
+    <div class="form-group">
+        <button type="button" href="#" class="ml-1 mt-5 d-none btn btn-xs btn-secondary" id="btnShowAllRecordsFilter" onclick="showAllRecords();">Show all</button>
+    </div>
+</div>*@
+
+

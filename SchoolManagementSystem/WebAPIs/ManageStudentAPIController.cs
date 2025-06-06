@@ -85,7 +85,7 @@ namespace SchoolManagementSystem.WebAPIs
             catch (Exception ex)
             {
                 //--Create response as Error
-                var objResponse = new { status = -100, message = "Internal Server Error!", data = "" };
+                var objResponse = new { status = -100, message = "Internal Server Error!", data = "", errorMessage = ex.Message.ToString() };
                 //sending response as error
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, objResponse);
             }
@@ -136,7 +136,7 @@ namespace SchoolManagementSystem.WebAPIs
             catch (Exception ex)
             {
                 //--Create response as Error
-                var objResponse = new { status = -100, message = "Internal Server Error!", data = "" };
+                var objResponse = new { status = -100, message = "Internal Server Error!", data = "", errorMessage = ex.Message.ToString() };
                 //sending response as error
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, objResponse);
             }
@@ -190,7 +190,7 @@ namespace SchoolManagementSystem.WebAPIs
             catch (Exception ex)
             {
                 //--Create response as Error
-                var objResponse = new { status = -100, message = "Internal Server Error!", data = "" };
+                var objResponse = new { status = -100, message = "Internal Server Error!", data = "", errorMessage = ex.Message.ToString() };
                 //sending response as error
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, objResponse);
             }
@@ -346,7 +346,7 @@ namespace SchoolManagementSystem.WebAPIs
             catch (Exception ex)
             {
                 //--Create response as Error
-                var objResponse = new { status = -100, message = "Internal Server Error!", data = "" };
+                var objResponse = new { status = -100, message = "Internal Server Error!", data = "", errorMessage = ex.Message.ToString() };
                 //sending response as error
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, objResponse);
             }
@@ -405,7 +405,7 @@ namespace SchoolManagementSystem.WebAPIs
             catch (Exception ex)
             {
                 //--Create response as Error
-                var objResponse = new { status = -100, message = "Internal Server Error!", data = "" };
+                var objResponse = new { status = -100, message = "Internal Server Error!", data = "", errorMessage = ex.Message.ToString() };
                 //sending response as error
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, objResponse);
             }
@@ -595,7 +595,7 @@ namespace SchoolManagementSystem.WebAPIs
             catch (Exception ex)
             {
                 //--Create response as Error
-                var objResponse = new { status = -100, message = "Internal Server Error!", data = "" };
+                var objResponse = new { status = -100, message = "Internal Server Error!", data = "", errorMessage = ex.Message.ToString() };
                 //sending response as error
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, objResponse);
             }
@@ -646,7 +646,7 @@ namespace SchoolManagementSystem.WebAPIs
             catch (Exception ex)
             {
                 //--Create response as Error
-                var objResponse = new { status = -100, message = "Internal Server Error!" };
+                var objResponse = new { status = -100, message = "Internal Server Error!", errorMessage = ex.Message.ToString() };
                 //sending response as error
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, objResponse);
             }
@@ -815,7 +815,7 @@ namespace SchoolManagementSystem.WebAPIs
             catch (Exception ex)
             {
                 //--Create response as Error
-                var objResponse = new { status = -100, message = "Internal Server Error!", data = "" };
+                var objResponse = new { status = -100, message = "Internal Server Error!", data = "", errorMessage = ex.Message.ToString() };
                 //sending response as error
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, objResponse);
             }

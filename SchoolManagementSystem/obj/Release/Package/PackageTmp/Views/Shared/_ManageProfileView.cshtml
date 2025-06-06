@@ -1,0 +1,153 @@
+﻿<!--Content Header (Page header)-->
+<style>
+    .customcolor {
+        color: #FFFFFF;
+    }
+</style>
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Manage Profile</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Main content-->
+<section class="content">
+    <div class="container-fluid">
+
+        <div class="row">
+            <!--left column-->
+            <div class="col-md-12">
+                <div class="card card-primary">
+                    <div class="card card-widget widget-user">
+                        <!-- Add the bg color to the header using any of the bg-* classes -->
+                        <div class="widget-user-header bg-info" style="background-color: #13334a !important;">
+                            <h3 id="ProfileName_ManageProfile" class="widget-user-username"></h3>
+                            <h5 id="ProfileEmail_ManageProfile" class="widget-user-desc"></h5>
+                        </div>
+                        <div class="widget-user-image">
+                            <!--Type of profile image means this image new image upload or reset image -->
+                            <input type="file" id="imgupload" style="display:none" accept="image/*" onchange=" TypeProfileImage('NewImage');" />
+                            <img id="imgProfile_ManageProfile" class="img-circle elevation-2" src="" alt="User Avatar">
+                            <span id="EditProfileImageBtn" class="fas fa-edit customcolor" data-toggle="tooltip" data-placement="top" title="Edit And Upload Image"></span>
+                            <span id="ProfileImageReset" class="fas fa-sync-alt customcolor" data-toggle="tooltip" data-placement="top" title="Reset Profile Image Or Default" onclick="ConfirmProfileImageReset();"></span>
+                        </div>
+                    </div>
+                    <!--card-header-->
+                    <!--form start-->
+                    <form class="pt-md-2">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>First Name <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control" id="txtFirstName_ManageProfile" placeholder="Enter First Name" onchange="ChangeTextEve('txtFirstName_ManageProfile','txtLastName_ManageProfile','txtEmail_ManageProfile')">
+                                        <span id="firstName_error_ManageProfile" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Last Name <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control" id="txtLastName_ManageProfile" placeholder="Enter Last Name" onchange="ChangeTextEve('txtFirstName_ManageProfile','txtLastName_ManageProfile','txtEmail_ManageProfile')">
+                                        <span id="lastName_error_ManageProfile" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Mobile <span class="requiredFieldClass">*</span></label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">+91</span>
+                                            </div>
+                                            <input type="text" class="form-control IsNumeric" id="txtMobile_ManageProfile" placeholder="Enter Mobile-Number" maxlength="10">
+                                        </div>
+                                        <span id="mobile_error_ManageProfile" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                @{if (Model == 1)
+                                    {
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Email <span class="requiredFieldClass">*</span></label>
+                                                <input type="text" class="form-control isEmailField AvoidSpace" id="txtEmail_ManageProfile" placeholder="Enter Email">
+                                                <span id="email_error_ManageProfile" class="errorsClass"></span>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                            </div>
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Pincode <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control IsNumeric" id="txtPincode_ManageProfile" placeholder="Enter Pincode" maxlength="6">
+
+                                        <span id="pincode_error_ManageProfile" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Address <span class="requiredFieldClass">*</span></label>
+                                        <textarea class="form-control" id="txtAddress_ManageProfile" placeholder="Enter Address" rows="3"></textarea>
+                                        <span id="address_error_ManageProfile" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                @{if (Model == 1)
+                                    {
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="chkIsActive_ManageProfile" checked>
+                                                <label class="form-check-label" for="chkIsActive_ManageProfile" style="cursor:pointer;">Is Active</label>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                            </div>
+
+                        </div>
+                        <!--/.card-body-->
+
+                        <div class="card-footer">
+                            <button id="btnUpdateManageProfile" type="button" class="btn btn-primary" onclick="AddUpdateAdmin();">Update</button>
+                            @if (Model == 1)
+                            {
+                                <button type="button" class="btn btn-default" onclick="window.location.href = '/Admin/Index';">Cancel</button>
+                            }
+                            else
+                            {
+                                <button type="button" class="btn btn-default" onclick="window.location.href = '/Staff/Index';">Cancel</button>
+                            }
+                        </div>
+                    </form>
+                </div>
+                <!--/.card-->
+            </div>
+            <!--/.col (left)-->
+        </div>
+        <!--/.row-->
+
+    </div>
+    <!--/.container-fluid-->
+</section>
+
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })</script>
+<script src="~/ScriptFiles/ManageProfile.js"></script>
+<script>$('#EditProfileImageBtn').click(function () { $('#imgupload').trigger('click'); });</script>
+
+
+
+

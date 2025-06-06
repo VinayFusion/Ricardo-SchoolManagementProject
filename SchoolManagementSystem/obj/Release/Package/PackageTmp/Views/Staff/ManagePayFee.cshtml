@@ -1,0 +1,307 @@
+﻿
+@{
+    ViewBag.Title = "Pay Course Fee";
+    Layout = "~/Views/Shared/_StaffLayout.cshtml";
+}
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+@*<script src="https://code.jquery.com/jquery-3.6.0.js"></script>*@
+@*<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>*@
+
+<style>
+    .hr-line-dashed {
+        border-top: 1px dashed #b6b8ba;
+        color: #ffffff;
+        background-color: #ffffff;
+        height: 1px;
+        margin: 20px 0;
+    }
+</style>
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Manage Fee</h1>
+            </div>
+            <div class="col-sm-6" style="text-align:right;">
+                <button id="btnPayFee" type="button" class="btn btn-primary" onclick="PayFee_ShowForm();"><i class="fa fa-plus" aria-hidden="true" style="margin-right:5px;"></i> Pay Course Fee</button>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div id="dv_PayFeeForm" class="row" style="display:none;">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 id="Title_PayFeeForm_ManagePayFee" class="card-title"></h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Select Class<span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlSelectClass_ManagePayFee" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;" onchange="SessionBindByClass()">
+                                        </select>
+                                        <span id="SelectClass_error_ManagePayFee" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Select Session<span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlSession_ManagePayFee" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;" onchange="StudentBindBySession()">
+                                        </select>
+                                        <span id="Session_error_ManagePayFee" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Select Student<span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlStudent_ManagePayFee" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
+                                            <option value="0">Select</option>
+                                        </select>
+                                        <span id="student_error_ManagePayFee" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Receipt Number<span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control" id="txtReceipt_ManagePayFee" placeholder="Enter Receipt Number">
+                                        <span id="Receipt_error_ManagePayFee" class="errorsClass"></span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Paid on <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control isDatePicker" id="txtPaidOnDate_ManagePayFee" placeholder="Select Date" style="cursor:pointer;" readonly disabled>
+                                        <span id="paidOnDate_error_ManagePayFee" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            @*<div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Fee Type<span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlFeeType_ManagePayFee" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
+                                        </select>
+                                        <span id="FeeType_error_ManagePayFee" class="errorsClass"></span>
+                                    </div>
+                                </div>*@
+                            @*<div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Course Fee <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control IsNumeric" id="txtCourseFee_ManagePayFee" placeholder="Enter Course Fee" onkeyup="CourseFeeChange();" disabled>
+                                        <input type="hidden" id="hdnCourseFee_ManagePayFee" value="0" />
+                                        <span id="courseFee_error_ManagePayFee" class="errorsClass"></span>
+                                    </div>
+                                </div>*@
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Fee Type Filter<span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlFeeTypeFilter_ManagePayFee" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;" multiple="multiple">
+                                            <option value="tution">Tution</option>
+                                            <option value="book">Books</option>
+                                            <option value="transport">Transport</option>
+                                            <option value="uniform">Uniform</option>
+                                            <option value="other">Others</option>
+                                        </select>
+                                        <span id="FeeTypeFilter_error_ManagePayFee" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Payment Method <span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlPaymentMethod_ManagePayFee" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
+                                            <option value="0">Select Payment method</option>
+                                            <option value="CA">Cash</option>
+                                            <option value="U">UPI</option>
+                                            <option value="BT">Bank transfer</option>
+                                            <option value="CH">Check</option>
+                                            <option value="DD">Direct Deposit</option>
+                                            <option value="O">Other</option>
+                                        </select>
+                                        <span id="PaymentMethod_error_ManagePayFee" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                                @Html.Partial("_FeeTypeFilter")
+                                <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Fee To Pay <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control IsNumeric" id="txtPayToFee_ManagePayFee" placeholder="Enter Fee To Pay" onkeyup="CalculateFee();" disabled>
+                                        <span id="payToFee_error_ManagePayFee" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Pending Fee <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control IsNumeric" id="txtpendingFee_ManagePayFee" placeholder="Enter Pending Fee" onkeyup="CalculateDiscount();" value="0" disabled>
+                                        <span id="pendingFee_error_ManagePayFee" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6" style="text-align:center;">
+                                    <div class="form-group">
+                                        <label>Discount</label><br />
+                                        <label id="lblDiscountVal" style="color:green;">0</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Remarks (Optional)</label>
+                                        <input type="text" id="txtRemarks_ManagePayFee" class="form-control" placeholder="Enter Remarks" maxlength="50" disabled />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- /.card-body -->
+
+                        <div class="card-footer">
+                            <button id="btnSubmitManagePayFee" type="button" class="btn btn-primary" onclick="SubmitPayCourseFee();">Pay</button>
+                            <button type="button" class="btn btn-default" onclick="CancelForm();">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- /.card -->
+            </div>
+            <!--/.col (left) -->
+        </div>
+        <div id="dv_PayFeeListBox" class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Fee Records List</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Select Class</label>
+                                    <select id="ddlSelectClass_Filter_ManagePayFee" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;" onchange="SessionBindByClass()">
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Select Session</label>
+                                    <select id="ddlSession_Filter_ManagePayFee" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;" onchange="SectionBindBySession()">
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <table id="tblPayFee_ManagePayFee_Pagination" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Sno</th>
+                                    <th>Student</th>
+                                    <th>Course</th>
+                                    <th>Fee (Paid)</th>
+                                    <th>Discount</th>
+                                    <th>Pending Fee</th>
+                                    <th>Paid On</th>
+                                    <th>Start-Date</th>
+                                    <th>Valid Upto</th>
+                                    <th>Remarks</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>Sno</th>
+                                    <th>Student</th>
+                                    <th>Course</th>
+                                    <th>Fee (Paid)</th>
+                                    <th>Discount</th>
+                                    <th>Pending Fee</th>
+                                    <th>Paid On</th>
+                                    <th>Start-Date</th>
+                                    <th>Valid Upto</th>
+                                    <th>Remarks</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</section>
+
+<button id="btn_SendReceipt_PayFee_Modal" type="button" class="btn btn-default" data-toggle="modal" data-target="#SendReceipt_PayFee_Modal" style="display:none;">
+    Launch Default Modal
+</button>
+
+<div class="modal fade" id="SendReceipt_PayFee_Modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Email</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="form-group">
+                            <label>Please check the email below <span class="requiredFieldClass">*</span></label>
+                            <input id="txtEmail_ManagePayFee_Modal" type="text" class="form-control isEmailField AvoidSpace" />
+                            <span id="email_FeeModal_error_ManagePayFee" class="errorsClass"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button id="btnClose_SendReceipt_PayFee_Modal" type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" onclick="ConfirmSendReceiptEmail();">Send</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<!-- /.content -->
+<script src="~/ScriptFiles/AddRowInDataTabe.js"></script>
+<script src="/ScriptFiles/ManagePayFee.js"></script>
+<script src="~/ScriptFiles/ClassSessionFilter.js"></script>
+
+<script>
+    $(function () {
+        $("#tblPayFee_ManagePayFee").DataTable({
+            "scrollX": true
+        });
+
+        //Initialize Select2 Elements
+        $('.select2').select2();
+        $("#ddlFeeTypeFilter_ManagePayFee").select2({ placeholder: "Select fee Type to Pay" });
+        $(".isDatePicker").datepicker({ dateFormat: 'yy-mm-dd' });
+
+        
+       
+    });
+</script>

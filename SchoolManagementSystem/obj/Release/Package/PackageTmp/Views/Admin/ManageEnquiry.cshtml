@@ -1,0 +1,259 @@
+﻿
+@{
+    ViewBag.Title = "Manage Enquiry";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@*<style>
+        table.dataTable tbody td {
+            word-break: break-word;
+            vertical-align: top;
+        }
+    </style>*@
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Manage Enquiry</h1>
+            </div>
+            <div class="col-sm-6" style="text-align:right;">
+                <button id="btnAddNewEnquiry" type="button" class="btn btn-primary" onclick="AddNewEnquiry_ShowForm();"><i class="fa fa-plus" aria-hidden="true" style="margin-right:5px;"></i> Add New Enquiry</button>
+                @*<ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">General Form</li>
+                    </ol>*@
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <input type="hidden" id="hdn_receiptNumber" value="" />
+    <div class="container-fluid">
+        <div id="dv_AddUpdateEnquiryForm" class="row" style="display:none;">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 id="Title_EnquiryForm_ManageEnquiry" class="card-title">@*Add New Enquiry*@</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Select Branch <span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlBranch_ManageEnquiry" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;" onchange="ChangeBranch();"></select>
+                                        <span id="branch_error_ManageEnquiry" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Enquiry Related to Course <span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlCourse_ManageEnquiry" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
+                                            <option value="0">Select</option>
+                                        </select>
+                                        <span id="course_error_ManageEnquiry" class="errorsClass"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Student Name <span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control" id="txtStudentName_ManageEnquiry" placeholder="Enter Student Name">
+                                        <span id="studentName_error_ManageEnquiry" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Phone Number <span class="requiredFieldClass">*</span></label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">+91</span>
+                                            </div>
+                                            <input type="text" class="form-control IsNumeric" id="txtPhoneNumber_ManageEnquiry" placeholder="Enter Phone-Number" maxlength="10">
+                                        </div>
+                                        <span id="phoneNumber_error_ManageEnquiry" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Email <span class="requiredFieldClass"></span></label>
+                                        <input type="email" class="form-control" id="txtStudentEmail_ManageEnquiry" placeholder="Enter Student Email">
+                                        <span id="studentEmail_error_ManageEnquiry" class="errorsClass"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Select Status <span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlEnquiryStatus_ManageEnquiry" class="form-control">
+                                            <option value="0">Select</option>
+                                            <option value="1" selected>Not-Converted</option>
+                                            <option value="2">Converted</option>
+                                        </select>
+                                        <span id="enquiryStatus_error_ManageEnquiry" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Remarks <span class="requiredFieldClass"></span></label>
+                                        <textarea class="form-control" id="txtNotes_ManageEnquiry" rows="3" placeholder="Enter Remarks"></textarea>
+                                        <span id="notes_error_ManageEnquiry" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6" id="divReceiptNo">
+                                    <label>Receipt Number <span class="requiredFieldClass">*</span></label>
+                                    <input type="text" class="form-control" id="txtReceiptNo_ManageEnquiry" placeholder="Enter Receipt Number">
+                                    <span id="ReceiptNo_error_ManageEnquiry" class="errorsClass"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <button id="btnSubmitManageEnquiry" type="button" class="btn btn-primary" onclick="AddUpdateEnquiry(1);">Submit</button>
+                            <button id="btnUpdateManageEnquiry" type="button" class="btn btn-primary" onclick="AddUpdateEnquiry(2);" style="display:none;">Update</button>
+                            <button type="button" class="btn btn-default" onclick="CancelForm();">Cancel</button>
+                        </div>
+                    </form>
+
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!--/.col (left) -->
+    </div>
+    <div id="dv_EnquiryListBox" class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Enquiry List</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <div class="row">
+                        @Html.Partial("_FilterByDate_From_To")
+                        <div class="col-md-4">
+                            <label>Select Branch</label>
+                            <select id="ddlBranch_Filter_ManageEnquiry" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;" onchange="FilterEnquiriesByBranch();">
+                            </select>
+                        </div>
+                    </div>
+                    <table id="tblEnquiries_ManageEnquiry" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Sno</th>
+                                <th>Student</th>
+                                @*<th>Phone Number</th>*@
+                                <th>Remarks</th>
+                                <th>Branch</th>
+                                <th>Enquired Course</th>
+                                <th>Enquiry Date</th>
+                                <th>Receipt Number</th>
+                                <th>Status</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Sno</th>
+                                <th>Student</th>
+                                @*<th>Phone Number</th>*@
+                                <th>Remarks</th>
+                                <th>Branch</th>
+                                <th>Enquired Course</th>
+                                <th>Enquiry Date</th>
+                                <th>Receipt Number</th>
+                                <th>Status</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <!-- /.card-body -->
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+</section>
+
+
+<!-- Trigger the modal with a button -->
+<button id="btnReceiptNumber_Modal" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#ReceiptNumber_Modal" style="display:none;"  data-backdrop="static" data-keyboard="false"></button>
+
+<!------------------------------------------------- Modal ---------------------------------------------------------------->
+<div class="modal fade" id="ReceiptNumber_Modal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                @*<button type="button" class="close" data-dismiss="modal">&times;</button>*@
+                <h4 class="modal-title">Provide Receipt-Number</h4>
+            </div>
+            <div class="modal-body">
+                <form id="ReceiptNumberForm">
+                    <div class="card-body" style="padding:0px;">
+                        <input type="hidden" id="hdn_EnquiryId_ManageInquiry" />
+                        <input type="hidden" id="hdn_EnquiryStatus_ManageInquiry" />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Enter Receipt Number <span class="requiredFieldClass">*</span></label>
+                                    <input type="text" class="form-control" id="txtReceiptNumber_ManageEnquiry" placeholder="Receipt Number">
+                                    <span id="receiptNumber_error_ManageEnquiry" class="errorsClass"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="Enquiry_Id_popup()">Done</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- /.content -->
+
+
+<script src="/ScriptFiles/ManageEnquiry.js"></script>
+<script src="~/ScriptFiles/DateCheck.js"></script>
+<script>
+    $(function () {
+        $("#tblEnquiries_ManageEnquiry").DataTable();
+
+        //Initialize Select2 Elements
+        $('.select2').select2();
+        $(".isDatePicker").datepicker({ dateFormat: 'yy-mm-dd' });
+    });
+
+    $("#divReceiptNo").css('display', 'none');
+    $(document).on('change', '#ddlEnquiryStatus_ManageEnquiry', function () {
+        var hdn_receipt = $('#hdn_receiptNumber').val();
+        receiptNoHide(hdn_receipt);
+    });
+    $(document).on("keydown", "#ReceiptNumberForm", function (event) {
+        return event.key != "Enter";
+    });
+</script>

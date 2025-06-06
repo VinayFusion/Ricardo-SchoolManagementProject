@@ -1,0 +1,117 @@
+﻿
+@{
+    ViewBag.Title = "Manage Class";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Manage Class</h1>
+            </div>
+            <div class="col-sm-6" style="text-align:right;">
+                <button id="btnAddNewClass" type="button" class="btn btn-primary" onclick="AddNewClass_ShowForm();"><i class="fa fa-plus" aria-hidden="true" style="margin-right:5px;"></i> Add New Class</button>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<style>
+    .disable-select {
+        user-select: none; /* supported by Chrome and Opera */
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+    }
+</style>
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div id="dv_AddUpdateClassForm" class="row" style="display:none;">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 id="Title_ClassForm_ManageClass" class="card-title">@*Add New Class*@</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Class<span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control" id="txtSelectClass_ManageClass" placeholder="Enter Class Name" />
+                                        <span id="SelectClass_error_ManageClass" class="errorsClass"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <button id="btnSubmitManageClass" type="button" class="btn btn-primary" onclick="AddUpdateClass(1);">Submit</button>
+                            <button id="btnUpdateManageClass" type="button" class="btn btn-primary" onclick="AddUpdateClass(2);" style="display:none;">Update</button>
+                            <button type="button" class="btn btn-default" onclick="CancelForm();">Cancel</button>
+                        </div>
+                    </form>
+
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!--/.col (left) -->
+    </div>
+    <div id="dv_ClassListBox" class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Class List</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <table id="tblCLass_ManageClass" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Sno</th>
+                                <th>Class</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Sno</th>
+                                <th>Class</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <!-- /.card-body -->
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+</section>
+<!-- /.content -->
+
+
+<script src="~/ScriptFiles/ManageClass.js"></script>
+<script>
+    $(function () {
+        $("#tblCLass_ManageClass").DataTable();
+        //Initialize Select2 Elements
+        $('.select2').select2();
+
+    });
+</script>
