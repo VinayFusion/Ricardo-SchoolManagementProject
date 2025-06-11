@@ -14,7 +14,7 @@ $(document).ready(function () {
 
             UserToken_Global = dataAdminToken;
 
-            logged_In_UserType_Global = 1;
+            logged_In_UserType_Global = 2;
             
             GetDdlSessionDataForFilter(currentSession);
 
@@ -25,7 +25,7 @@ $(document).ready(function () {
 
                     UserToken_Global = dataStaffToken;
 
-                    logged_In_UserType_Global = 2;
+                    logged_In_UserType_Global = 3;
 
                     GetDdlSessionDataForFilter(currentSession);
                 }
@@ -62,7 +62,7 @@ function AddNewSession_ShowForm() {
     $("#btnAddNewSession").hide();
     $("#dv_AddUpdateSessionForm").show();
     $("#txtSessionName_ManageSession").val('');
-    $("#Title_SessionForm_ManageSession").html('Add New Session');
+    $("#Title_SessionForm_ManageSession").html(window.localizedLabels.sessionTitle);
 
     
 }
@@ -118,6 +118,7 @@ function GetSessionsList() {
             },
             contentType: 'application/json',
             success: function (dataSessions) {
+                console.log(dataSessions);
                 StopLoading();
                 var sno = 0;
                 var _status = '';
@@ -133,15 +134,14 @@ function GetSessionsList() {
                     sno++;
                     //---Check Session-Status
                     if (dataSessions.data.sessions[i].Status == 1) {
-                        _status = '<a class="btn btn-success btn-sm" style="width:80px;" onclick="ConfirmChangeStatusSession(' + dataSessions.data.sessions[i].Id + ');">Active</a>';
-                    }
-                    else {
-                        _status = '<a class="btn btn-danger btn-sm" style="width:80px;" onclick="ConfirmChangeStatusSession(' + dataSessions.data.sessions[i].Id + ');">In-Active</a>';
+                        _status = '<a class="btn btn-success btn-sm" style="width:80px;" onclick="ConfirmChangeStatusSession(' + dataSessions.data.sessions[i].Id + ');">' + window.localizedLabels.active + '</a>';
+                    } else {
+                        _status = '<a class="btn btn-danger btn-sm" style="width:80px;" onclick="ConfirmChangeStatusSession(' + dataSessions.data.sessions[i].Id + ');">' + window.localizedLabels.inactive + '</a>';
                     }
 
                     _edit = '<img src="/Content/Images/edit_icon.png" style="width:25px;height:25px;cursor:pointer;" title="Edit Session-Information" onclick="EditSessionInfo(' + dataSessions.data.sessions[i].Id + ');" />';
                     _delete = '<img src="/Content/Images/delete_icon.png" style="width:25px;height:25px;cursor:pointer;" title="Delete Session" onclick="ConfirmDeleteSession(' + dataSessions.data.sessions[i].Id + ');" />';
-                    if (logged_In_UserType_Global == 1) {
+                    if (logged_In_UserType_Global == 2) {
                         data.push([
                             sno,
                             dataSessions.data.sessions[i].ClassName,
@@ -157,6 +157,7 @@ function GetSessionsList() {
                             dataSessions.data.sessions[i].ClassName,
                             dataSessions.data.sessions[i].SessionName,
                             _status
+                    
                         ]);
                     }
 

@@ -11,10 +11,10 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1>Manage Academic Session</h1>
+                <h1>@HttpContext.GetGlobalResourceObject("Resource", "MS_ManageAcademicSession")</h1>
             </div>
             <div class="col-sm-6" style="text-align:right;">
-                <button id="btnAddNewSession" type="button" class="btn btn-primary" onclick="AddNewSession_ShowForm();"><i class="fa fa-plus" aria-hidden="true" style="margin-right:5px;"></i> Add New Session</button>
+                <button id="btnAddNewSession" type="button" class="btn btn-primary" onclick="AddNewSession_ShowForm();"><i class="fa fa-plus" aria-hidden="true" style="margin-right:5px;"></i>@HttpContext.GetGlobalResourceObject("Resource", "MS_AddNewSession")</button>
             </div>
         </div>
     </div><!-- /.container-fluid -->
@@ -39,14 +39,14 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Session Name <span class="requiredFieldClass">*</span></label>
+                                        <label>@HttpContext.GetGlobalResourceObject("Resource", "MS_SessionName")<span class="requiredFieldClass">*</span></label>
                                         <input type="text" class="form-control" id="txtSessionName_ManageSession" disabled>
                                         <span id="sessionName_error_ManageSession" class="errorsClass"></span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Select Class<span class="requiredFieldClass">*</span></label>
+                                        <label>@HttpContext.GetGlobalResourceObject("Resource", "MS_SelectClass")<span class="requiredFieldClass">*</span></label>
                                         <select id="ddlSelectClass_ManageSession" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;" onchange="SessionNameChange();">
                                         </select>
                                         <span id="SelectClass_error_ManageSession" class="errorsClass"></span>
@@ -56,15 +56,15 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Start Year <span class="requiredFieldClass">*</span></label>
-                                        <select id="ddlStartYear_ManageSession" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;" onchange="StartYearChange();" placeholder="Select Start-Year"></select>
+                                        <label>@HttpContext.GetGlobalResourceObject("Resource", "MS_StartYear")<span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlStartYear_ManageSession" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;" onchange="StartYearChange();" placeholder="Select @HttpContext.GetGlobalResourceObject("Resource", "MS_StartYear")"></select>
                                         <span id="startYear_error_ManageSession" class="errorsClass"></span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>End Year <span class="requiredFieldClass">*</span></label>
-                                        <select id="ddlEndYear_ManageSession" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;" placeholder="Select End-Year" disabled onchange="SessionNameChange();"></select>
+                                        <label>@HttpContext.GetGlobalResourceObject("Resource", "MS_EndYear")<span class="requiredFieldClass">*</span></label>
+                                        <select id="ddlEndYear_ManageSession" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;" placeholder="Select @HttpContext.GetGlobalResourceObject("Resource", "MS_EndYear")" disabled onchange="SessionNameChange();"></select>
                                         <span id="endYear_error_ManageSession" class="errorsClass"></span>
                                     </div>
                                 </div>
@@ -73,7 +73,7 @@
                                 <div class="col-md-12 ">
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="chkIsActive_ManageSession" checked hidden>
-                                        <label class="form-check-label" for="chkIsActive_ManageSession" style="cursor:pointer;" hidden>Is Active</label>
+                                        <label class="form-check-label" for="chkIsActive_ManageSession" style="cursor:pointer;" hidden>@HttpContext.GetGlobalResourceObject("Resource", "SA_IsActive")</label>
                                     </div>
                                 </div>
                             </div>
@@ -81,10 +81,10 @@
                         </div>
 
                         <div class="card-footer">
-                            <button id="btnSubmitManageSession" type="button" class="btn btn-primary" onclick="AddUpdateSession(1);">Submit</button>
-                            <button id="btnUpdateManageSession" type="button" class="btn btn-primary" onclick="AddUpdateSession(2);" style="display:none;">Update</button>
-                            <button type="button" class="btn btn-default" onclick="CancelForm();">Cancel</button>
-                        </div>
+                            <button id="btnSubmitManageSession" type="button" class="btn btn-primary" onclick="AddUpdateSession(1);">@HttpContext.GetGlobalResourceObject("Resource", "SA_Submit")</button>
+                            <button id="btnUpdateManageSession" type="button" class="btn btn-primary" onclick="AddUpdateSession(2);" style="display:none;">@HttpContext.GetGlobalResourceObject("Resource", "SA_Update")</button>
+                            <button type="button" class="btn btn-default" onclick="CancelForm();">@HttpContext.GetGlobalResourceObject("Resource", "SA_Cancel")</button>
+                       </div>
                     </form>
 
                 </div>
@@ -98,7 +98,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">Sessions List</h3>
+                    <h3 class="card-title">@HttpContext.GetGlobalResourceObject("Resource", "MS_SessionsList")</h3>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -114,24 +114,24 @@
                     <table id="tblSessions_ManageSession" class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th>Sno</th>
-                                <th>Class Name</th>
-                                <th>Session</th>
-                                <th>Status</th>
-                                <th>Edit</th>
-                                <th>Delete</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_Sno")</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_ClassName")</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_Session")</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "MS_Status")</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_SchoolEdit")</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_SchoolDelete")</th>
                             </tr>
                         </thead>
                         <tbody>
                         </tbody>
                         <tfoot>
                             <tr>
-                                <th>Sno</th>
-                                <th>Class Name</th>
-                                <th>Session</th>
-                                <th>Status</th>
-                                <th>Edit</th>
-                                <th>Delete</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_Sno")</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_ClassName")</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_Session")</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "MS_Status")</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_SchoolEdit")</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_SchoolDelete")</th>
                             </tr>
                         </tfoot>
                     </table>
@@ -154,4 +154,11 @@
         //Initialize Select2 Elements
         $('.select2').select2();
     });
+</script>
+<script>
+    window.localizedLabels = {
+        sessionTitle: '@HttpContext.GetGlobalResourceObject("Resource", "MS_AddNewSession")',
+        active: '@HttpContext.GetGlobalResourceObject("Resource", "MS_Active")',
+        inactive: '@HttpContext.GetGlobalResourceObject("Resource", "MS_InActive")',
+    };
 </script>

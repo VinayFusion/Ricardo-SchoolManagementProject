@@ -74,12 +74,32 @@ namespace SchoolManagementSystem.Controllers
         // GET: SuperAdmin
         public ActionResult Index()
         {
-            return View();
+            bool _ValidateStatus = ValidateSuperAdmin();
+
+            if (_ValidateStatus == true)
+            {
+                SetSidebarCookieInfo("manageDashboard");
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Index", "Login");
+            }
         }
 
         public ActionResult ManageSchool()
         {
-            return View();
+            bool _ValidateStatus = ValidateSuperAdmin();
+
+            if (_ValidateStatus == true)
+            {
+                SetSidebarCookieInfo("manageSchool");
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Index", "Login");
+            }
         }
 
         public ActionResult ManageProfile()

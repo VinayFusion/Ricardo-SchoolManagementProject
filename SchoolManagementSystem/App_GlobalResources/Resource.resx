@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SA_Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="SA_AddNewSchool" xml:space="preserve">
+    <value>Add New School</value>
+  </data>
+  <data name="SA_FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="SA_LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="SA_SelectSchoolType" xml:space="preserve">
+    <value>Select School Type</value>
+  </data>
+  <data name="SA_Select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="SA_Preschool" xml:space="preserve">
+    <value>Preschool</value>
+  </data>
+  <data name="SA_ElementaryMiddleSchool" xml:space="preserve">
+    <value>Elementary&amp;MiddleSchool</value>
+  </data>
+  <data name="SA_HighSchool" xml:space="preserve">
+    <value>HighSchool</value>
+  </data>
+  <data name="SA_TechnicalVocationalSchool" xml:space="preserve">
+    <value>Technical/Vocational School</value>
+  </data>
+  <data name="SA_SchoolName" xml:space="preserve">
+    <value>School Name</value>
+  </data>
+  <data name="SA_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="SA_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="SA_Mobile" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="SA_Pincode" xml:space="preserve">
+    <value>Pincode </value>
+  </data>
+  <data name="SA_SchoolLogo" xml:space="preserve">
+    <value>School Logo</value>
+  </data>
+  <data name="SA_Preview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="SA_Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="SA_IsActive" xml:space="preserve">
+    <value>Is Active</value>
+  </data>
+  <data name="SA_Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="SA_Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="SA_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Language_English" xml:space="preserve">
+    <value>Language_English</value>
+  </data>
+  <data name="Language_Portuguese" xml:space="preserve">
+    <value>Language_Portuguese</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="ManageSchools" xml:space="preserve">
+    <value>ManageSchools</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Super Admin Panel</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>ChangePassword</value>
+  </data>
+  <data name="SA_SchoolList" xml:space="preserve">
+    <value>School List</value>
+  </data>
+  <data name="SA_Sno" xml:space="preserve">
+    <value>Sno</value>
+  </data>
+  <data name="SA_SchoolType" xml:space="preserve">
+    <value>SchoolType</value>
+  </data>
+  <data name="SA_SchoolStatus" xml:space="preserve">
+    <value>School Status</value>
+  </data>
+  <data name="SA_SchoolEdit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="SA_SchoolDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="SA_SchoolInfo" xml:space="preserve">
+    <value>School Info</value>
+  </data>
+  <data name="SA_OldPassword" xml:space="preserve">
+    <value>Old Password </value>
+  </data>
+  <data name="SA_CurrentPassword" xml:space="preserve">
+    <value>*Enter your Current Password</value>
+  </data>
+  <data name="SA_NewPassword" xml:space="preserve">
+    <value>New Password </value>
+  </data>
+  <data name="SA_CNewPassword" xml:space="preserve">
+    <value>Confirm New Password </value>
+  </data>
+  <data name="SA_ShowAllPassword" xml:space="preserve">
+    <value>Show All Password</value>
+  </data>
+  <data name="SelectLanguage" xml:space="preserve">
+    <value>Select Language</value>
+  </data>
+  <data name="StartSessionMsg" xml:space="preserve">
+    <value>Sign in to start your session</value>
+  </data>
+  <data name="ForgotPasswordMsg" xml:space="preserve">
+    <value>I forgot my password</value>
+  </data>
+  <data name="SignInButton" xml:space="preserve">
+    <value>Sign In</value>
+  </data>
+  <data name="SchoolPanelTitle" xml:space="preserve">
+    <value>School Panel</value>
+  </data>
+  <data name="Attendance" xml:space="preserve">
+    <value>Attendance</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="ConnectDevice" xml:space="preserve">
+    <value>Connect Device</value>
+  </data>
+  <data name="ManageStudent" xml:space="preserve">
+    <value>Manage Student</value>
+  </data>
+  <data name="ManageSection" xml:space="preserve">
+    <value>Manage Section</value>
+  </data>
+  <data name="ManageSessionFee" xml:space="preserve">
+    <value>Manage Session Fee</value>
+  </data>
+  <data name="ManageSession" xml:space="preserve">
+    <value>Manage Session</value>
+  </data>
+  <data name="ManageClass" xml:space="preserve">
+    <value>Manage Class</value>
+  </data>
+  <data name="ManageStaff" xml:space="preserve">
+    <value>Manage Staff</value>
+  </data>
+  <data name="WLCMSchool" xml:space="preserve">
+    <value> Welcome to the School Dashboard</value>
+  </data>
+  <data name="MS_AddNewStaff" xml:space="preserve">
+    <value>Add New Staff</value>
+  </data>
+  <data name="SelectStaffType" xml:space="preserve">
+    <value>Select Staff Type</value>
+  </data>
+  <data name="MS_Gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="MS_Male" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="MS_Female" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="MS_Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="MS_WorkExp" xml:space="preserve">
+    <value>Work Experience (In Years)</value>
+  </data>
+  <data name="MS_Salary" xml:space="preserve">
+    <value>Salary</value>
+  </data>
+  <data name="MS_JD" xml:space="preserve">
+    <value>Joining Date</value>
+  </data>
+  <data name="MS_StaffList" xml:space="preserve">
+    <value>Staff List</value>
+  </data>
+  <data name="MS_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="MS_Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="MS_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="MS_Class" xml:space="preserve">
+    <value>Class</value>
+  </data>
+  <data name="MS_AddNewClass" xml:space="preserve">
+    <value>Add New Class</value>
+  </data>
+  <data name="MS_ClassList" xml:space="preserve">
+    <value>Class List</value>
+  </data>
+  <data name="MS_ManageAcademicSession" xml:space="preserve">
+    <value>Manage Academic Session</value>
+  </data>
+  <data name="MS_AddNewSession" xml:space="preserve">
+    <value>Add New Session</value>
+  </data>
+  <data name="MS_SessionName" xml:space="preserve">
+    <value>Session Name</value>
+  </data>
+  <data name="MS_SelectClass" xml:space="preserve">
+    <value>Select Class</value>
+  </data>
+  <data name="MS_StartYear" xml:space="preserve">
+    <value>Start Year</value>
+  </data>
+  <data name="MS_EndYear" xml:space="preserve">
+    <value>End Year</value>
+  </data>
+  <data name="MS_SessionsList" xml:space="preserve">
+    <value>Sessions List</value>
+  </data>
+  <data name="SA_ClassName" xml:space="preserve">
+    <value>Class Name</value>
+  </data>
+  <data name="SA_Session" xml:space="preserve">
+    <value>Session</value>
+  </data>
+  <data name="MS_Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="MS_InActive" xml:space="preserve">
+    <value>In-Active</value>
+  </data>
+  <data name="MS_AddNewSessionFee" xml:space="preserve">
+    <value>Add New Session Fee</value>
+  </data>
+  <data name="MS_SelectSession" xml:space="preserve">
+    <value>Select Session</value>
+  </data>
+  <data name="MS_FeeType" xml:space="preserve">
+    <value>Fee Type</value>
+  </data>
+  <data name="MS_Action" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="MS_Remark" xml:space="preserve">
+    <value>Remark</value>
+  </data>
+  <data name="MS_Amount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="MS_SessionFeeList" xml:space="preserve">
+    <value>Session Fee Records List</value>
+  </data>
+  <data name="MS_FeeAmount" xml:space="preserve">
+    <value>Fee Amount</value>
+  </data>
+  <data name="SessionCourseFee" xml:space="preserve">
+    <value>Session Course Fee</value>
+  </data>
+  <data name="MS_AddNewSection" xml:space="preserve">
+    <value>Add New Section</value>
+  </data>
+  <data name="MS_SCS" xml:space="preserve">
+    <value>Select Class Sections</value>
+  </data>
+  <data name="SA_Section" xml:space="preserve">
+    <value>Section</value>
+  </data>
+  <data name="SA_Session(Class)" xml:space="preserve">
+    <value>Session (Class)</value>
+  </data>
+  <data name="MS_AddNewStudent" xml:space="preserve">
+    <value>Add New Student</value>
+  </data>
+  <data name="SA_DOB" xml:space="preserve">
+    <value>Date Of Birth</value>
+  </data>
+  <data name="SA_IsExists" xml:space="preserve">
+    <value>Is Exists</value>
+  </data>
+  <data name="SA_FatherName" xml:space="preserve">
+    <value>Father Name</value>
+  </data>
+  <data name="SA_MotherName" xml:space="preserve">
+    <value>Mother Name</value>
+  </data>
+  <data name="MS_SelectGender" xml:space="preserve">
+    <value>Select Gender</value>
+  </data>
+  <data name="MS_SBG" xml:space="preserve">
+    <value>Select Blood Group</value>
+  </data>
+  <data name="MS_UserName" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="MS_Transport" xml:space="preserve">
+    <value>Transport</value>
+  </data>
+  <data name="MS_StudentsList" xml:space="preserve">
+    <value>Students List</value>
+  </data>
+</root>

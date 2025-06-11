@@ -11,10 +11,10 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1>Manage Class</h1>
+                <h1>@HttpContext.GetGlobalResourceObject("Resource", "ManageClass")</h1>
             </div>
             <div class="col-sm-6" style="text-align:right;">
-                <button id="btnAddNewClass" type="button" class="btn btn-primary" onclick="AddNewClass_ShowForm();"><i class="fa fa-plus" aria-hidden="true" style="margin-right:5px;"></i> Add New Class</button>
+                <button id="btnAddNewClass" type="button" class="btn btn-primary" onclick="AddNewClass_ShowForm();"><i class="fa fa-plus" aria-hidden="true" style="margin-right:5px;"></i>@HttpContext.GetGlobalResourceObject("Resource", "MS_AddNewClass")</button>
             </div>
         </div>
     </div><!-- /.container-fluid -->
@@ -46,8 +46,8 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Class<span class="requiredFieldClass">*</span></label>
-                                        <input type="text" class="form-control" id="txtSelectClass_ManageClass" placeholder="Enter Class Name" />
+                                        <label>@HttpContext.GetGlobalResourceObject("Resource", "MS_Class")<span class="requiredFieldClass">*</span></label>
+                                        <input type="text" class="form-control" id="txtSelectClass_ManageClass" placeholder="Enter @HttpContext.GetGlobalResourceObject("Resource", "MS_Class") Name" />
                                         <span id="SelectClass_error_ManageClass" class="errorsClass"></span>
                                     </div>
                                 </div>
@@ -55,9 +55,9 @@
                         </div>
 
                         <div class="card-footer">
-                            <button id="btnSubmitManageClass" type="button" class="btn btn-primary" onclick="AddUpdateClass(1);">Submit</button>
-                            <button id="btnUpdateManageClass" type="button" class="btn btn-primary" onclick="AddUpdateClass(2);" style="display:none;">Update</button>
-                            <button type="button" class="btn btn-default" onclick="CancelForm();">Cancel</button>
+                            <button id="btnSubmitManageClass" type="button" class="btn btn-primary" onclick="AddUpdateClass(1);">@HttpContext.GetGlobalResourceObject("Resource", "SA_Submit")</button>
+                            <button id="btnUpdateManageClass" type="button" class="btn btn-primary" onclick="AddUpdateClass(2);" style="display:none;">@HttpContext.GetGlobalResourceObject("Resource", "SA_Update")</button>
+                            <button type="button" class="btn btn-default" onclick="CancelForm();">@HttpContext.GetGlobalResourceObject("Resource", "SA_Cancel")</button>
                         </div>
                     </form>
 
@@ -72,27 +72,27 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">Class List</h3>
+                    <h3 class="card-title">@HttpContext.GetGlobalResourceObject("Resource", "MS_ClassList")Class List</h3>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
                     <table id="tblCLass_ManageClass" class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th>Sno</th>
-                                <th>Class</th>
-                                <th>Edit</th>
-                                <th>Delete</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_Sno")</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "MS_Class")</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_SchoolEdit")</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_SchoolDelete")</th>
                             </tr>
                         </thead>
                         <tbody>
                         </tbody>
                         <tfoot>
                             <tr>
-                                <th>Sno</th>
-                                <th>Class</th>
-                                <th>Edit</th>
-                                <th>Delete</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_Sno")</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "MS_Class")</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_SchoolEdit")</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_SchoolDelete")</th>
                             </tr>
                         </tfoot>
                     </table>
@@ -114,4 +114,9 @@
         $('.select2').select2();
 
     });
+</script>
+<script>
+    window.localizedLabels = {
+        classTitle: '@HttpContext.GetGlobalResourceObject("Resource", "MS_AddNewClass")',
+    };
 </script>

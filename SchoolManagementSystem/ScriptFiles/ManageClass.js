@@ -122,7 +122,7 @@ function CancelForm() {
 function AddNewClass_ShowForm() {
     $("#dv_ClassListBox").hide();
     $("#btnAddNewClass").hide();
-    $("#Title_ClassForm_ManageClass").html('Add New Class');
+    $("#Title_ClassForm_ManageClass").html(window.localizedLabels.classTitle);
     $("#dv_AddUpdateClassForm").show();
     setClassFormDefaultValues();
 }

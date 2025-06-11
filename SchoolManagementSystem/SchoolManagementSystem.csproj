@@ -173,6 +173,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\Resource.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resource.en1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resource.pt.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.pt.resx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -361,6 +376,9 @@
     <Compile Include="WebAPIs\StaffAPIController.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\AdminImages\5a0e07ba0a99414b8c567b30ebea88d2_ImageBlack.jpg" />
+    <Content Include="Content\AdminImages\86bac0ae749149e69a44055194247715.gif" />
+    <Content Include="Content\AdminImages\efa5b583dc1643b7abb5bb9a3c389caa.gif" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -2432,6 +2450,25 @@
     <Content Include="Content\Panel\plugins\uplot\uPlot.iife.js" />
     <Content Include="Content\Panel\plugins\uplot\uPlot.iife.min.js" />
     <Content Include="Content\Panel\plugins\uplot\uPlot.min.css" />
+    <Content Include="Content\SchoolImages\012b1bc71a0b416aa785527587bebd74.gif" />
+    <Content Include="Content\SchoolImages\10e63e9e0628491084dbdfc84e4a6b78.gif" />
+    <Content Include="Content\SchoolImages\29fb3fe25e0545a4b814e5c1deef1eaa.gif" />
+    <Content Include="Content\SchoolImages\36da2aae9eab418e8d586c8169232161.gif" />
+    <Content Include="Content\SchoolImages\3bb64cf7cd7f4eeab80280be98994e97.gif" />
+    <Content Include="Content\SchoolImages\3c3a3aaae2064d0c975c644772c5e1a9.gif" />
+    <Content Include="Content\SchoolImages\3cfe5cf3fcd8418f8e0b7c003e8d9da0.gif" />
+    <Content Include="Content\SchoolImages\9bbe3cdc84d4436093e34ca8c775dd1a.gif" />
+    <Content Include="Content\SchoolImages\9c4750c0cdb5415c81da29f47cf8372c.gif" />
+    <Content Include="Content\SchoolImages\9ca642a7c96d410a8320ee727f81caf7.gif" />
+    <Content Include="Content\SchoolImages\b31a8fd0d2a540bc8d1d94a234c2c8f4.gif" />
+    <Content Include="Content\SchoolImages\b3e83e5f1a15460cb75b689d3d37247d.gif" />
+    <Content Include="Content\SchoolImages\b80ddc2389b54f77adb49d2a7950a784.gif" />
+    <Content Include="Content\SchoolImages\bc07a30a449d423f9c9445a67c5d3996.gif" />
+    <Content Include="Content\SchoolImages\db9a5a2ac8404087bf0a00f8378d7669.gif" />
+    <Content Include="Content\SchoolImages\e40e527f6ba04ea7b57328b82c55791a.gif" />
+    <Content Include="Content\SchoolImages\ed745662a1db4961a3fde5d5e7008198.gif" />
+    <Content Include="Content\SchoolImages\f972f21ec52f4a30b9d47cddfa174599.gif" />
+    <Content Include="Content\SchoolLogos\bf213e46c31740c0966d1ac34b17b27a.png" />
     <Content Include="Content\StaffImages\1872d703cd0049d6acc7d28f64011526.gif" />
     <Content Include="Content\StaffImages\236afd8cfd5c48a393934a3e963cb250.gif" />
     <Content Include="Content\StaffImages\67b89f9f580d465ebbb16a0c64e6f646_ImageWithLaptopBlack.jpg" />
@@ -2459,6 +2496,7 @@
     <Content Include="ScriptFiles\ChangePassword.js" />
     <Content Include="ScriptFiles\ClassSessionFilter.js" />
     <Content Include="ScriptFiles\CommonLogin.js" />
+    <Content Include="ScriptFiles\ConnectDevice.js" />
     <Content Include="ScriptFiles\CustomSwal.js" />
     <Content Include="ScriptFiles\DateCheck.js" />
     <Content Include="ScriptFiles\ForgotPassword.js" />
@@ -2802,12 +2840,10 @@
     <Content Include="Views\SuperAdmin\Index.cshtml" />
     <Content Include="Views\SuperAdmin\ManageSchool.cshtml" />
     <Content Include="Views\SuperAdmin\ManageProfile.cshtml" />
+    <Content Include="Views\Admin\ConnectDevice.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\AdminImages\" />
-    <Folder Include="Content\SchoolImages\" />
-    <Folder Include="Content\SchoolLogos\" />
     <Folder Include="Content\StudentImages\" />
   </ItemGroup>
   <ItemGroup>
@@ -2824,6 +2860,18 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_GlobalResources\Resource.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resource.pt.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Resource.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resource1.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Resource.en.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resource.en1.designer.cs</LastGenOutput>
+    </Content>
     <EmbeddedResource Include="Migrations\202205301255146_update_1.resx">
       <DependentUpon>202205301255146_update_1.cs</DependentUpon>
     </EmbeddedResource>

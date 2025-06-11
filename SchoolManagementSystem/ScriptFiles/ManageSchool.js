@@ -3,7 +3,9 @@ var School_ID_Global = 0;
 var SchoolTypeId_Global = 0;
 
 $(document).ready(function () {
+
     StartLoading();
+
     $.get("/SuperAdmin/GetSuperAdminCookieDetail", null, function (dataSuperAdminToken) {
         if (dataSuperAdminToken != "" && dataSuperAdminToken != null) {
 
@@ -23,18 +25,24 @@ $(document).ready(function () {
 
 // Function to show the form for adding a new school
 function AddNewSchool_ShowForm() {
+
+    $('#chkIsActive_ManageSchool').prop('checked', false);
     $("#dv_SchoolListBox").hide();
     $("#btnAddNewSchool").hide();
     $("#dv_AddUpdateSchoolForm").show();
 
     $("#Title_SchoolForm_ManageSchool").html('Add New School');
+    handleShowSchoolLogoImagePreview('/Content/Images/fileuploadpreview.jpg');
 }
 
 // Function to cancel the form and reset fields
 function CancelForm() {
+
+    $('#chkIsActive_ManageSchool').prop('checked', false);
     $("#schoolLogoImage").val(''); // Reset file input
     $("#txtFirstName_ManageSchool").val('');
     $("#txtLastName_ManageSchool").val('');
+    $("#txtSchoolName_ManageSchool").val('');
     $("#ddlSchoolType_ManageSchool").val(0).trigger('change');
     $("#txtEmail_ManageSchool").val('');
     $("#txtPassword_ManageSchool").val('');
@@ -98,9 +106,9 @@ function GetSchoolList() {
                 // Status button
                 var _status = '';
                 if (school.LoginStatus == 1) {
-                    _status = '<a class="btn btn-success btn-sm" style="width:80px;" onclick="ConfirmChangeStatusSchool(' + schoolId + ');">Active</a>';
+                    _status = '<a class="btn btn-success btn-sm" style="width:80px;" onclick="ConfirmChangeStatusSchool(' + schoolId + ');">' + window.localizedLabels.active + '</a>';
                 } else {
-                    _status = '<a class="btn btn-danger btn-sm" style="width:80px;" onclick="ConfirmChangeStatusSchool(' + schoolId + ');">In-Active</a>';
+                    _status = '<a class="btn btn-danger btn-sm" style="width:80px;" onclick="ConfirmChangeStatusSchool(' + schoolId + ');">' + window.localizedLabels.inactive + '</a>';
                 }
 
                 var schoolTypeMap = {
@@ -122,23 +130,14 @@ function GetSchoolList() {
                 ]);
             }
 
-            // Initialize DataTable
             $('#tblSchool_ManageSchool').DataTable({
                 data: tableData,
                 deferRender: true,
+                //scrollY: 200,
                 scrollCollapse: true,
-                scroller: true,
-                columns: [
-                    { title: "S.No" },
-                    { title: "School Info" },
-                    { title: "School Type" },
-                    { title: "Address" },
-                    { title: "Pincode" },
-                    { title: "Status" },
-                    { title: "Edit" },
-                    { title: "Delete" }
-                ]
+                scroller: true
             });
+
 
             StopLoading();
         },
@@ -166,6 +165,7 @@ function GetSchoolList() {
 function AddUpdateSchool(_mode) {
     var _firstName_MS = $("#txtFirstName_ManageSchool").val();
     var _lastName_MS = $("#txtLastName_ManageSchool").val();
+    var _schoolName_MS = $("#txtSchoolName_ManageSchool").val();
     var _schoolType_MS = $("#ddlSchoolType_ManageSchool").val(); // schooltype_error_ManageSchool
     var _email_MS = $("#txtEmail_ManageSchool").val();
     var _password_MS = $("#txtPassword_ManageSchool").val();
@@ -185,7 +185,19 @@ function AddUpdateSchool(_mode) {
         // checked
         status = 1;
     }
+    if (_firstName_MS == '' || _firstName_MS.replace(/\s/g, "") == "") {
+        _is_valid = false;
+        $("#firstName_error_ManageSchool").html('Please enter first name!');
+    }
 
+    if (_lastName_MS == '' || _lastName_MS.replace(/\s/g, "") == "") {
+        _is_valid = false;
+        $("#lastName_error_ManageSchool").html('Please enter last name!');
+    }
+    if (_schoolName_MS == '' || _schoolName_MS.replace(/\s/g, "") == "") {
+        _is_valid = false;
+        $("#schoolName_error_ManageSchool").html('Please enter school name!');
+    }
     if (_schoolType_MS == undefined || _schoolType_MS == null || _schoolType_MS == '' || _schoolType_MS == 0) {
         _is_valid = false;
         $("#schoolType_error_ManageSchool").html('Please select the School Type!');
@@ -221,6 +233,14 @@ function AddUpdateSchool(_mode) {
         _is_valid = false;
         $("#address_error_ManageSchool").html('Please enter address!');
     }
+    // Validate school logo input
+    var fileInput = $('#schoolLogoImage')[0];
+    if (!fileInput.files || fileInput.files.length === 0) {
+        _is_valid = false;
+        $("#schoolLogo_error_ManageSchool").html('Please upload a school logo image!');
+    } else {
+        $("#schoolLogo_error_ManageSchool").html('');
+    }
 
     if (_is_valid == true) {
         StartLoading();
@@ -230,6 +250,7 @@ function AddUpdateSchool(_mode) {
         data.append("Id", School_ID_Global);
         data.append("firstName", _firstName_MS);
         data.append("lastName", _lastName_MS)
+        data.append("schoolName", _schoolName_MS)
         data.append("schoolTypeId", _schoolType_MS);
         data.append("email", _email_MS.toLowerCase());
         data.append("mobile", '+91' + _mobile_MS);
@@ -273,6 +294,7 @@ function AddUpdateSchool(_mode) {
                     $("#txtFirstName_ManageSchool").val('');
                     $("#schoolLogoImage").val(''); // Reset file input
                     $("#txtLastName_ManageSchool").val('');
+                    $("#txtSchoolName_ManageSchool").val('');
                     $("#ddlSchoolType_ManageSchool").val(0).trigger('change');
                     $("#txtEmail_ManageSchool").val('');
                     $("#txtPassword_ManageSchool").val('');
@@ -351,6 +373,12 @@ function EditSchoolInfo(sid) {
                 $("#txtPincode_ManageSchool").val(school.Pincode);
                 $("#txtAddress_ManageSchool").val(school.Address);
                 $("#ddlSchoolType_ManageSchool").val(school.SchoolType).trigger('change');
+
+                // Set the school logo preview
+                if (school.SchoolLogoImage && school.SchoolLogoImage.trim() != "") {
+                    $('#schoolLogoImagePreview').attr('src', school.SchoolLogoImage)
+                }
+
 
                 // Status checkbox
                 //$('#chkIsActive_ManageSchool').prop('checked', school.Status == 1);
@@ -538,4 +566,93 @@ function ChangeStatusSchool(sid) {
             }
         }
     });
+}
+
+function ShowSchoolImagePreview(input) {
+
+    $('#schoolLogo_error').html('');
+
+    var fileExtension = ['jpeg', 'jpg', 'png'];
+    if ($.inArray(input.value.split('.').pop().toLowerCase(), fileExtension) == -1) {
+        //removeBarcodeImage();
+        $('#schoolLogo_error').html('Sorry!, Only .jpeg, .jpg and .png  formats are allowed.')
+
+    }
+    else {
+        //--if select the valid image file---
+
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+
+                var image = new Image();
+                //Set the Base64 string return from FileReader as source.
+                image.src = e.target.result;
+                image.onload = function () {
+
+                    //var width = this.width;
+                    //var height = this.height;
+
+                    // Create a square canvas
+                    const canvas = document.getElementById('canvas');
+                    const ctx = canvas.getContext('2d');
+
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    // Determine the size of the square (smallest dimension)
+                    const squareSize = Math.min(image.width, image.height);
+
+                    // Set canvas dimensions to the square size
+                    canvas.width = squareSize;
+                    canvas.height = squareSize;
+
+                    // Calculate the top-left coordinates to crop the image to the center
+                    const xOffset = (image.width - squareSize) / 2;
+                    const yOffset = (image.height - squareSize) / 2;
+
+                    // Draw the cropped image onto the canvas
+                    ctx.drawImage(image, xOffset, yOffset, squareSize, squareSize, 0, 0, squareSize, squareSize);
+
+                    // Convert canvas to Blob
+                    canvas.toBlob(function (blob) {
+                        // Create a File object
+                        const croppedFile = new File([blob], 'schoollogo_image.png', { type: 'image/png' });
+
+                        var fileInput = document.getElementById('schoolLogoImage');
+
+                        // Replace the file input with the cropped image
+                        var dataTransfer = new DataTransfer(); // Create a DataTransfer object
+                        dataTransfer.items.add(croppedFile); // Add the cropped file
+                        fileInput.files = dataTransfer.files; // Assign the new file list to the input
+
+                        // Call the function to handle the preview of the cropped image
+                        handleShowSchoolLogoImagePreview(URL.createObjectURL(croppedFile));
+                    }, 'image/png');
+
+
+                    // Convert canvas back to an image URL and set it to the img element
+                    //const croppedImageUrl = canvas.toDataURL('image/png');
+                    //document.getElementById('croppedImage').src = croppedImageUrl;
+                    //document.getElementById('croppedImage').style.display = 'block';
+
+                    //handleShowStudentProfileImagePreview(croppedImageUrl);
+                    //// Check if the image is square
+                    //if (width === height) {
+                    //    handleShowStudentProfileImagePreview(e.target.result);
+                    //    return true;
+                    //} else {
+                    //    $('#profilePicture_error_ManageStudent').html('Sorry!, Only square images are allowed (equal width and height).')
+
+                    //    input.value = '';
+                    //    return false;
+                    //}
+                };
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+}
+
+function handleShowSchoolLogoImagePreview(imageSrc) {
+    $('#schoolLogoImagePreview').attr('src', imageSrc);
 }

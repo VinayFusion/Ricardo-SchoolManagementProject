@@ -27,9 +27,15 @@
         .custombg {
             background: #13334a;
         }
+
+        .requiredFieldClass {
+            color: red;
+        }
+
     </style>
 </head>
 <body class="hold-transition login-page custombg">
+
     <!-- Preloader -->
     <div class="preloader flex-column justify-content-center align-items-center">
         <img src="/Content/Images/loadingImg.gif" alt="AdminLTELogo" height="100" width="100">
@@ -46,8 +52,17 @@
                 @*<a href="/Login" class="h1" style="font-size:30px;"><b>@ViewBag.AppName</b></a>*@
             </div>
             <div class="card-body">
-                <p class="login-box-msg">Sign in to start your session</p>
+                <p class="login-box-msg">@HttpContext.GetGlobalResourceObject("Resource", "StartSessionMsg")</p>
 
+                <!-- Language Dropdown -->
+                <form id="languageForm" action="/Home/ChangeLanguage" method="post" class="languageForm">
+                    <label>@HttpContext.GetGlobalResourceObject("Resource", "SelectLanguage") <span class="requiredFieldClass">*</span></label>
+                    <select name="language" onchange="document.getElementById('languageForm').submit();" class="form-select form-control">
+                        <option value="en" @(Session["CurrentCulture"] as string == "en" ? "selected" : "")>@HttpContext.GetGlobalResourceObject("Resource", "Language_English")</option>
+                        <option value="pt" @(Session["CurrentCulture"] as string == "pt" ? "selected" : "")>@HttpContext.GetGlobalResourceObject("Resource", "Language_Portuguese")</option>
+                    </select>
+                </form>
+                <br/>
                 <form action="/Login/Index" method="post">
                     <div class="input-group">
                         <input id="txtEmail" name="txtEmail" type="email" class="form-control" placeholder="Email" autocomplete="off">
@@ -64,7 +79,7 @@
                         <input id="txtPassword" name="txtPassword" type="password" class="form-control" placeholder="Password">
                         <div class="input-group-append">
                             <div class="input-group-text">
-                                <span class="fas fa-lock"></span>
+                                <span class="fas fa-eye" id="togglePassword" style="cursor: pointer;"></span>
                             </div>
                         </div>
                     </div>
@@ -74,16 +89,16 @@
                     <div class="row">
                         <div class="col-8" style="padding-top:8px;">
                             @*<div class="icheck-primary">
-                                    <input type="checkbox" id="remember">
-                                    <label for="remember">
-                                        Remember Me
-                                    </label>
-                                </div>*@
-                            <a href="/Login/ForgotPassword">I forgot my password</a>
+                        <input type="checkbox" id="remember">
+                        <label for="remember">
+                            Remember Me
+                        </label>
+                    </div>*@
+                            <a href="/Login/ForgotPassword">@HttpContext.GetGlobalResourceObject("Resource", "ForgotPasswordMsg")</a>
                         </div>
                         <!-- /.col -->
                         <div class="col-4">
-                            <button type="submit" class="btn btn-primary btn-block" onclick="return CheckLogin();">Sign In</button>
+                            <button type="submit" class="btn btn-primary btn-block" onclick="return CheckLogin();">@HttpContext.GetGlobalResourceObject("Resource", "SignInButton")</button>
                         </div>
                         <!-- /.col -->
                     </div>
@@ -94,19 +109,19 @@
                         <span id="resp_error_Login" class="errorsClass"></span>
                     </div>
                     @*<a href="#" class="btn btn-block btn-primary">
-                            <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
-                        </a>
-                        <a href="#" class="btn btn-block btn-danger">
-                            <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
-                        </a>*@
+                <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
+            </a>
+            <a href="#" class="btn btn-block btn-danger">
+                <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
+            </a>*@
                 </div>
                 <!-- /.social-auth-links -->
                 @*<p class="mb-1">
-                        <a href="forgot-password.html">I forgot my password</a>
-                    </p>*@
+            <a href="forgot-password.html">I forgot my password</a>
+        </p>*@
                 @*<p class="mb-0">
-                        <a href="register.html" class="text-center">Register a new membership</a>
-                    </p>*@
+            <a href="register.html" class="text-center">Register a new membership</a>
+        </p>*@
             </div>
             <!-- /.card-body -->
         </div>
@@ -143,6 +158,19 @@
                 $("#resp_error_Login").html('Your validity has been expired, please contact to (Protolabz eServices) to renew your account <br /> (Ph: 01824-461579)');
             }
         }
+        //Hide and Show Password
+        const togglePassword = document.getElementById("togglePassword");
+        const passwordInput = document.getElementById("txtPassword");
+
+        togglePassword.addEventListener("click", function () {
+            // Toggle password visibility
+            const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+            passwordInput.setAttribute("type", type);
+
+            // Toggle eye icon
+            this.classList.toggle("fa-eye");
+            this.classList.toggle("fa-eye-slash");
+        });
 
     </script>
 </body>

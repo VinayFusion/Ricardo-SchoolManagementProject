@@ -11,10 +11,10 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1>Manage Section</h1>
+                <h1>@HttpContext.GetGlobalResourceObject("Resource", "ManageSection")</h1>
             </div>
             <div class="col-sm-6" style="text-align:right;">
-                <button id="btnAddNewSection" type="button" class="btn btn-primary" onclick="AddNewSection_ShowForm();"><i class="fa fa-plus" aria-hidden="true" style="margin-right:5px;"></i> Add New Section</button>
+                <button id="btnAddNewSection" type="button" class="btn btn-primary" onclick="AddNewSection_ShowForm();"><i class="fa fa-plus" aria-hidden="true" style="margin-right:5px;"></i>@HttpContext.GetGlobalResourceObject("Resource", "MS_AddNewSection")</button>
             </div>
         </div>
     </div><!-- /.container-fluid -->
@@ -46,7 +46,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Select Class<span class="requiredFieldClass">*</span></label>
+                                        <label>@HttpContext.GetGlobalResourceObject("Resource", "MS_SelectClass")<span class="requiredFieldClass">*</span></label>
                                         <select id="ddlSelectClass_ManageSection" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;"onchange="SessionBindByClass()">
                                         </select>
                                         <span id="SelectClass_error_ManageSection" class="errorsClass"></span>
@@ -54,7 +54,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Select Session<span class="requiredFieldClass">*</span></label>
+                                        <label>@HttpContext.GetGlobalResourceObject("Resource", "MS_SelectSession")<span class="requiredFieldClass">*</span></label>
                                         <select id="ddlSession_ManageSection" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;"onchange="SectionBindBySession()">
                                         </select>
                                         <span id="Session_error_ManageSection" class="errorsClass"></span>
@@ -64,7 +64,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Select Class Sections<span class="requiredFieldClass">*</span></label>
+                                        <label>@HttpContext.GetGlobalResourceObject("Resource", "MS_SCS")<span class="requiredFieldClass">*</span></label>
                                         <select id="ddlSection_ManageSection" class="form-control select2 select2-danger " data-dropdown-css-class="select2-danger" style="width: 100%;" multiple="multiple">
                                         </select>
                                         <span id="Section_error_ManageSection" class="errorsClass"></span>
@@ -74,9 +74,9 @@
                         </div>
 
                         <div class="card-footer">
-                            <button id="btnSubmitManageSection" type="button" class="btn btn-primary" onclick="AddUpdateClass(1);">Submit</button>
-                            <button id="btnUpdateManageSection" type="button" class="btn btn-primary" onclick="AddUpdateClass(2);" style="display:none;">Update</button>
-                            <button type="button" class="btn btn-default" onclick="CancelForm();">Cancel</button>
+                            <button id="btnSubmitManageSection" type="button" class="btn btn-primary" onclick="AddUpdateClass(1);">@HttpContext.GetGlobalResourceObject("Resource", "SA_Submit")</button>
+                            <button id="btnUpdateManageSection" type="button" class="btn btn-primary" onclick="AddUpdateClass(2);" style="display:none;">@HttpContext.GetGlobalResourceObject("Resource", "SA_Update")</button>
+                            <button type="button" class="btn btn-default" onclick="CancelForm();">@HttpContext.GetGlobalResourceObject("Resource", "SA_Cancel")</button>
                         </div>
                     </form>
 
@@ -91,7 +91,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">Class List</h3>
+                    <h3 class="card-title">@HttpContext.GetGlobalResourceObject("Resource", "MS_ClassList")</h3>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -107,20 +107,20 @@
                     <table id="tblSection_ManageSection" class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th>Sno</th>
-                                <th>Session (Class)</th>
-                                <th>Section</th>
-                                <th>Edit</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_Sno")</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_Session (Class)")</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_Section")</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_SchoolEdit")</th>
                             </tr>
                         </thead>
                         <tbody>
                         </tbody>
                         <tfoot>
                             <tr>
-                                <th>Sno</th>
-                                <th>Session (Class)</th>
-                                <th>Section</th>
-                                <th>Edit</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_Sno")</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_Session (Class)")</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_Section")</th>
+                                <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_SchoolEdit")</th>
                             </tr>
                         </tfoot>
                     </table>

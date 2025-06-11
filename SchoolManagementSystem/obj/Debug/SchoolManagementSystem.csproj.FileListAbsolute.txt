@@ -771,6 +771,8 @@ E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\School
 E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolMa.D9F7BBC0.Up2Date
 E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.dll
 E:\Vinay\Projects\SchoolManagementSystem\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.pdb
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Reflection.Metadata.dll
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\SchoolManagementSystem.dll.config
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\SchoolManagementSystem.dll
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\SchoolManagementSystem.pdb
@@ -785,7 +787,6 @@ E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\Microsoft.Co
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\Microsoft.CSharp.Core.targets
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
@@ -805,7 +806,6 @@ E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.IO.Fi
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Net.Http.dll
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Net.Sockets.dll
-E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Reflection.Metadata.dll
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
 E:\Vinay\Ricardo-SchoolManagement\SchoolManagementSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll

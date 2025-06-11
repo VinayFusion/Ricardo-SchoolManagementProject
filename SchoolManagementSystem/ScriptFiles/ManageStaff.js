@@ -141,11 +141,12 @@ function GetStaffList() {
 
                 //---Check Staff-Status
                 if (dataStaff.data.staff[i].LoginStatus == 1) {
-                    _status = '<a class="btn btn-success btn-sm" style="width:80px;" onclick="ConfirmChangeStatusStaff(' + dataStaff.data.staff[i].Id + ');">Active</a>';
+                    _status = '<a class="btn btn-success btn-sm" style="width:80px;" onclick="ConfirmChangeStatusStaff(' + dataStaff.data.staff[i].Id + ');">' + window.localizedLabels.active + '</a>';
                 }
                 else {
-                    _status = '<a class="btn btn-danger btn-sm" style="width:80px;" onclick="ConfirmChangeStatusStaff(' + dataStaff.data.staff[i].Id + ');">In-Active</a>';
+                    _status = '<a class="btn btn-danger btn-sm" style="width:80px;" onclick="ConfirmChangeStatusStaff(' + dataStaff.data.staff[i].Id + ');">' + window.localizedLabels.inactive + '</a>';
                 }
+
                 console.log(dataStaff.data.staff[i].StaffTypeName);
                 data.push([
                     sno,

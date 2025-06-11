@@ -8,7 +8,10 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1>Change Password</h1>
+                <h1>
+                    @HttpContext.GetGlobalResourceObject("Resource", "ChangePassword")
+                    
+                </h1>
             </div>
         </div>
     </div><!-- /.container-fluid -->
@@ -23,7 +26,7 @@
                 <!-- general form elements -->
                 <div class="card card-primary">
                     <div class="card-header">
-                        <h3 id="Title_ChangePasswordForm" class="card-title">Change Password</h3>
+                        <h3 id="Title_ChangePasswordForm" class="card-title">@HttpContext.GetGlobalResourceObject("Resource", "ChangePassword")</h3>
                     </div>
                     <!-- /.card-header -->
                     <!-- form start -->
@@ -32,9 +35,9 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Old Password <span class="requiredFieldClass">*</span></label>
-                                        <input type="password" class="form-control" id="txtOldPassword_ChangePassword" placeholder="Enter Old Password">
-                                        <span id="" class="text-xs">*Enter your Current Password</span><br />
+                                        <label>@HttpContext.GetGlobalResourceObject("Resource", "SA_OldPassword")<span class="requiredFieldClass">*</span></label>
+                                        <input type="password" class="form-control" id="txtOldPassword_ChangePassword" placeholder="Enter @HttpContext.GetGlobalResourceObject("Resource", "SA_OldPassword")">
+                                        <span id="" class="text-xs">@HttpContext.GetGlobalResourceObject("Resource", "SA_CurrentPassword")</span><br />
                                         <span id="oldPassword_error_ChangePassword" class="errorsClass"></span>
 
                                     </div>
@@ -43,8 +46,8 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>New Password <span class="requiredFieldClass">*</span></label>
-                                        <input type="password" class="form-control" id="txtNewPassword_ChangePassword" placeholder="Enter New Password">
+                                        <label>@HttpContext.GetGlobalResourceObject("Resource", "SA_NewPassword")<span class="requiredFieldClass">*</span></label>
+                                        <input type="password" class="form-control" id="txtNewPassword_ChangePassword" placeholder="Enter @HttpContext.GetGlobalResourceObject("Resource", "SA_NewPassword")">
                                         <span id="newPassword_error_ChangePassword" class="errorsClass"></span>
                                     </div>
                                 </div>
@@ -52,8 +55,8 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Confirm New Password <span class="requiredFieldClass">*</span></label>
-                                        <input type="password" class="form-control" id="txtConfirmNewPassword_ChangePassword" placeholder="Confirm New Password">
+                                        <label>@HttpContext.GetGlobalResourceObject("Resource", "SA_CNewPassword")<span class="requiredFieldClass">*</span></label>
+                                        <input type="password" class="form-control" id="txtConfirmNewPassword_ChangePassword" placeholder="@HttpContext.GetGlobalResourceObject("Resource", "SA_CNewPassword")">
                                         <span id="confirmNewPassword_error_ChangePassword" class="errorsClass"></span>
                                     </div>
                                 </div>
@@ -61,7 +64,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group" >
-                                        <label><input type="checkbox" id="chkAllPassword_ChangePassword" onchange="changePasswordToText()"> Show All Password</label>
+                                        <label><input type="checkbox" id="chkAllPassword_ChangePassword" onchange="changePasswordToText()"> @HttpContext.GetGlobalResourceObject("Resource", "SA_ShowAllPassword")Show All Password</label>
                                     </div>
                                 </div>
                             </div>
@@ -71,7 +74,7 @@
                         <!-- /.card-body -->
 
                         <div class="card-footer">
-                            <button id="btnSubmit_ChangePassword" type="button" class="btn btn-primary" onclick="updateChangePassword();">Update</button>
+                            <button id="btnSubmit_ChangePassword" type="button" class="btn btn-primary" onclick="updateChangePassword();">@HttpContext.GetGlobalResourceObject("Resource", "SA_Update")</button>
                         </div>
                     </form>
                 </div>

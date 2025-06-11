@@ -104,6 +104,7 @@ namespace SchoolManagementSystem.WebAPIs
                         Int64 _Id = Convert.ToInt64(HttpRequest.Params["Id"]);
                         string _FirstName = HttpRequest.Params["firstName"];
                         string _LastName = HttpRequest.Params["lastName"];
+                        string _SchoolName = HttpRequest.Params["schoolName"];
                         Int64 _SchoolTypeId = Convert.ToInt64(HttpRequest.Params["schoolTypeId"]);
                         string _Email = HttpRequest.Params["email"];
                         string _MobileNumber = HttpRequest.Params["mobile"];
@@ -118,8 +119,6 @@ namespace SchoolManagementSystem.WebAPIs
                         // Image names
                         string _ImageName = Guid.NewGuid().ToString("N") + ".gif";
                         string _SchoolLogoImageName = Guid.NewGuid().ToString("N") + ".png";
-
-                        string _SchoolName = _FirstName + " " + _LastName;
 
                         // Execute stored procedure
                         SqlParameter[] queryParams_School = new SqlParameter[] {
@@ -163,7 +162,7 @@ namespace SchoolManagementSystem.WebAPIs
                             #endregion
 
                             #region Save School Logo Image (Uploaded File)
-                            var fileLogo = HttpRequest.Files["schoolLogoImageFile"];
+                            var fileLogo = HttpRequest.Files["schoolLogoImage"];
                             if (fileLogo != null && fileLogo.ContentLength > 0)
                             {
                                 string logoPath = HttpContext.Current.Server.MapPath("/Content/SchoolLogos/" + _SchoolLogoImageName);

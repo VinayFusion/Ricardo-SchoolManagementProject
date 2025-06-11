@@ -19,10 +19,10 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1>Manage Session Fee</h1>
+                <h1>@HttpContext.GetGlobalResourceObject("Resource", "ManageSessionFee")</h1>
             </div>
             <div class="col-sm-6" style="text-align:right;">
-                <button id="btnSessionFee" type="button" class="btn btn-primary" onclick="SessionFee_ShowForm();"><i class="fa fa-plus" aria-hidden="true" style="margin-right:5px;"></i> Add New Session Fee</button>
+                <button id="btnSessionFee" type="button" class="btn btn-primary" onclick="SessionFee_ShowForm();"><i class="fa fa-plus" aria-hidden="true" style="margin-right:5px;"></i>@HttpContext.GetGlobalResourceObject("Resource", "MS_AddNewSessionFee")</button>
             </div>
         </div>
     </div><!-- /.container-fluid -->
@@ -46,7 +46,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Select Class<span class="requiredFieldClass">*</span></label>
+                                        <label>@HttpContext.GetGlobalResourceObject("Resource", "MS_SelectClass")<span class="requiredFieldClass">*</span></label>
                                         <select id="ddlSelectClass_ManageSessionFee" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;" onchange="SessionBindByClass()">
                                         </select>
                                         <span id="SelectClass_error_ManageSessionFee" class="errorsClass"></span>
@@ -55,7 +55,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Select Session<span class="requiredFieldClass">*</span></label>
+                                        <label>@HttpContext.GetGlobalResourceObject("Resource", "MS_SelectSession")<span class="requiredFieldClass">*</span></label>
                                         <select id="ddlSession_ManageSessionFee" class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
                                         </select>
                                         <span id="Session_error_ManageSessionFee" class="errorsClass"></span>
@@ -68,10 +68,10 @@
                                     <table id="tbl_tablevalues" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
-                                                <th>Fee Type<span class="requiredFieldClass">*</span> </th>
-                                                <th>Amount<span class="requiredFieldClass">*</span></th>
-                                                <th>Remark</th>
-                                                <th>Action</th>
+                                                <th>@HttpContext.GetGlobalResourceObject("Resource", "MS_FeeType")<span class="requiredFieldClass">*</span> </th>
+                                                <th>@HttpContext.GetGlobalResourceObject("Resource", "MS_Amount")<span class="requiredFieldClass">*</span></th>
+                                                <th>@HttpContext.GetGlobalResourceObject("Resource", "MS_Remark")</th>
+                                                <th>@HttpContext.GetGlobalResourceObject("Resource", "MS_Action")</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -90,9 +90,9 @@
                         <!-- /.card-body -->
 
                         <div class="card-footer">
-                            <button id="btnSubmitManageSessionFee" type="button" class="btn btn-primary" onclick="InsertUpdateSessionFee(1);">Submit</button>
-                            <button id="btnUpdateManageSessionFee" type="button" class="btn btn-primary" onclick="InsertUpdateSessionFee(2);">Update</button>
-                            <button type="button" class="btn btn-default" onclick="CancelForm();">Cancel</button>
+                            <button id="btnSubmitManageSessionFee" type="button" class="btn btn-primary" onclick="InsertUpdateSessionFee(1);">@HttpContext.GetGlobalResourceObject("Resource", "SA_Submit")</button>
+                            <button id="btnUpdateManageSessionFee" type="button" class="btn btn-primary" onclick="InsertUpdateSessionFee(2);">@HttpContext.GetGlobalResourceObject("Resource", "SA_Update")</button>
+                            <button type="button" class="btn btn-default" onclick="CancelForm();">@HttpContext.GetGlobalResourceObject("Resource", "SA_Cancel")</button>
                         </div>
                     </form>
                 </div>
@@ -104,7 +104,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">Session Fee Records List</h3>
+                        <h3 class="card-title">@HttpContext.GetGlobalResourceObject("Resource", "MS_SessionFeeList")</h3>
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
@@ -114,26 +114,26 @@
                         <table id="tblSessionFee_ManageSessionFee" class="table table-bordered table-striped">
                             <thead>
                                 <tr>
-                                    <th>Sno</th>
-                                    <th>Session</th>
-                                    <th>Class Name</th>
-                                    <th>Fee Type</th>
-                                    <th>Fee Amount</th>
-                                    <th>Remark</th>
-                                    <th>Actions</th>
+                                    <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_Sno")</th>
+                                    <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_Session")</th>
+                                    <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_ClassName")</th>
+                                    <th>@HttpContext.GetGlobalResourceObject("Resource", "MS_FeeType")</th>
+                                    <th>@HttpContext.GetGlobalResourceObject("Resource", "MS_FeeAmount")t</th>
+                                    <th>@HttpContext.GetGlobalResourceObject("Resource", "MS_Remark")t</th>
+                                    <th>@HttpContext.GetGlobalResourceObject("Resource", "MS_Action")t</th>
                                 </tr>
                             </thead>
                             <tbody>
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <th>Sno</th>
-                                    <th>Session</th>
-                                    <th>Class Name</th>
-                                    <th>Fee Type</th>
-                                    <th>Fee Amount</th>
-                                    <th>Remark</th>
-                                    <th>Actions</th>
+                                    <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_Sno")</th>
+                                    <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_Session")</th>
+                                    <th>@HttpContext.GetGlobalResourceObject("Resource", "SA_ClassName")</th>
+                                    <th>@HttpContext.GetGlobalResourceObject("Resource", "MS_FeeType")</th>
+                                    <th>@HttpContext.GetGlobalResourceObject("Resource", "MS_FeeAmount")t</th>
+                                    <th>@HttpContext.GetGlobalResourceObject("Resource", "MS_Remark")t</th>
+                                    <th>@HttpContext.GetGlobalResourceObject("Resource", "MS_Action")t</th>
                                 </tr>
                             </tfoot>
                         </table>
@@ -162,4 +162,11 @@
         $("#ddlSelectClass_Filter").select2({ placeholder: "No Class Created" });
         $("#ddlSession_Filter").select2({ placeholder: "No Session of selected Class" });
     });
+</script>
+<script>
+    window.localizedLabels = {
+        sessionCourseFee: '@HttpContext.GetGlobalResourceObject("Resource", "SessionCourseFee")',
+        feeAmount: '@HttpContext.GetGlobalResourceObject("Resource", "MS_FeeAmount")',
+        remark: '@HttpContext.GetGlobalResourceObject("Resource", "MS_Remark")',
+    };
 </script>

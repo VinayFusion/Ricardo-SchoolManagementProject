@@ -93,8 +93,8 @@ function InsertOneRow() {
     var actions = '<a class="DeleteRow" id ="DeleteRow_' + rowNumber + '"  title="Delete" data-toggle="tooltip"><i class="fa fa-trash"></i></a>';
     var row = '<tr>' +
         '<td><select class="select2 select2-danger form-control" data-dropdown-css-class="select2-danger" style="width: 100%;" id="ddlFeeTypes_' + rowNumber + '"></select><span id="ddlFeeTypes_error_' + rowNumber + '" class="errorsClass"></span></td>' +
-        '<td><input type="text" class="form-control _Amount"  name = "_Amount" placeholder="Enter Fee Amount" id="Fees_' + rowNumber + '"oninput="validateNumber(this);"/><span id="Fees_error_' + rowNumber + '" class="errorsClass"></td>' +
-        '<td><input type="text" class="form-control" id="FeeTypeRemark_' + rowNumber + '" placeholder="Enter Remark"/></td>' +
+        '<td><input type="text" class="form-control _Amount"  name = "_Amount" placeholder="' + window.localizedLabels.feeAmount + '" id="Fees_' + rowNumber + '"oninput="validateNumber(this);"/><span id="Fees_error_' + rowNumber + '" class="errorsClass"></td>' +
+        '<td><input type="text" class="form-control" id="FeeTypeRemark_' + rowNumber + '" placeholder="Enter ' + window.localizedLabels.remark + '" /></td>' +
         '<td style="text-align:center;">' + actions + '</td>' +
         '</tr>';
     $("#tbl_tablevalues").append(row);
@@ -190,7 +190,7 @@ function GotoOnInsertFormHideButton(InsertFormTitle, Action) {
 }
 
 function SessionFee_ShowForm() {
-    GotoOnInsertFormHideButton('Session Course Fee', "Insert");
+    GotoOnInsertFormHideButton(window.localizedLabels.sessionCourseFee, "Insert");
     DefaultValues();
 }
 

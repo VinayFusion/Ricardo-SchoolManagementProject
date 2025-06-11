@@ -131,7 +131,7 @@ namespace SchoolManagementSystem.Controllers
 
             if (_ValidateStatus == true)
             {
-                SetSidebarCookieInfo("manageDashboard");
+                SetSidebarCookieInfo("manageDashboardAdmin");
                 return View();
             }
             else
@@ -145,7 +145,7 @@ namespace SchoolManagementSystem.Controllers
 
             if (_ValidateStatus == true)
             {
-                SetSidebarCookieInfo("manageStaff");
+                SetSidebarCookieInfo("manageStaffAdmin");
                 return View();
             }
             else
@@ -160,7 +160,7 @@ namespace SchoolManagementSystem.Controllers
 
             if (_ValidateStatus == true)
             {
-                SetSidebarCookieInfo("manageClass");
+                SetSidebarCookieInfo("manageClassAdmin");
                 return View();
             }
             else
@@ -174,7 +174,7 @@ namespace SchoolManagementSystem.Controllers
 
             if (_ValidateStatus == true)
             {
-                SetSidebarCookieInfo("manageSession");
+                SetSidebarCookieInfo("manageSessionAdmin");
                 return View();
             }
             else
@@ -188,7 +188,7 @@ namespace SchoolManagementSystem.Controllers
 
             if (_ValidateStatus == true)
             {
-                SetSidebarCookieInfo("manageSessionFee");
+                SetSidebarCookieInfo("manageSessionFeeAdmin");
                 return View();
             }
             else
@@ -203,7 +203,7 @@ namespace SchoolManagementSystem.Controllers
 
             if (_ValidateStatus == true)
             {
-                SetSidebarCookieInfo("manageSection");
+                SetSidebarCookieInfo("manageSectionAdmin");
                 return View();
             }
             else
@@ -218,7 +218,7 @@ namespace SchoolManagementSystem.Controllers
 
             if (_ValidateStatus == true)
             {
-                SetSidebarCookieInfo("manageStudent");
+                SetSidebarCookieInfo("manageStudentAdmin");
                 return View();
             }
             else
@@ -390,6 +390,21 @@ namespace SchoolManagementSystem.Controllers
                 return RedirectToAction("Index", "Login");
             }
 
+        }
+
+        public ActionResult ConnectDevice()
+        {
+            bool _ValidateStatus = ValidateAdmin();
+
+            if (_ValidateStatus == true)
+            {
+                SetSidebarCookieInfo("manageDeviceConfigurationAdmin");
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Index", "Login");
+            }
         }
     }
 }
